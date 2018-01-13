@@ -68,7 +68,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Turquoise")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("LightSeaGreen")>  _
         Public Property color() As Global.System.Drawing.Color
             Get
                 Return CType(Me("color"),Global.System.Drawing.Color)

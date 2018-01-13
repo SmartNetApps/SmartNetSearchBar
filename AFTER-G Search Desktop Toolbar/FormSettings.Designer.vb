@@ -47,12 +47,13 @@ Partial Class FormSettings
         Me.AutomaticUpdatesGroupBox = New System.Windows.Forms.GroupBox()
         Me.AutoUpdatesCheckBox = New System.Windows.Forms.CheckBox()
         Me.BrowserTabPage = New System.Windows.Forms.TabPage()
-        Me.BuiltInBrowserCheckBox = New System.Windows.Forms.CheckBox()
-        Me.AdvancedSettingsTabPage = New System.Windows.Forms.TabPage()
-        Me.DeleteHistoryButton = New System.Windows.Forms.Button()
+        Me.BrowserDataGroupBox = New System.Windows.Forms.GroupBox()
         Me.DeleteCookiesButton = New System.Windows.Forms.Button()
         Me.DeleteCache = New System.Windows.Forms.Button()
-        Me.BrowserDataGroupBox = New System.Windows.Forms.GroupBox()
+        Me.DeleteHistoryButton = New System.Windows.Forms.Button()
+        Me.BuiltInBrowserCheckBox = New System.Windows.Forms.CheckBox()
+        Me.AdvancedSettingsTabPage = New System.Windows.Forms.TabPage()
+        Me.RestoreDefaultColorLinkLabel = New System.Windows.Forms.LinkLabel()
         Me.GeneralSettingsGroupBox.SuspendLayout()
         Me.SearchBarColorGroupBox.SuspendLayout()
         Me.ImportExportSettingsGroupBox.SuspendLayout()
@@ -63,8 +64,8 @@ Partial Class FormSettings
         Me.UpdatesManagementGroupBox.SuspendLayout()
         Me.AutomaticUpdatesGroupBox.SuspendLayout()
         Me.BrowserTabPage.SuspendLayout()
-        Me.AdvancedSettingsTabPage.SuspendLayout()
         Me.BrowserDataGroupBox.SuspendLayout()
+        Me.AdvancedSettingsTabPage.SuspendLayout()
         Me.SuspendLayout()
         '
         'AutoLaunchCheckBox
@@ -91,11 +92,12 @@ Partial Class FormSettings
         '
         'SearchBarColorGroupBox
         '
+        Me.SearchBarColorGroupBox.Controls.Add(Me.RestoreDefaultColorLinkLabel)
         Me.SearchBarColorGroupBox.Controls.Add(Me.ChangeBarColorButton)
         Me.SearchBarColorGroupBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SearchBarColorGroupBox.Location = New System.Drawing.Point(6, 61)
         Me.SearchBarColorGroupBox.Name = "SearchBarColorGroupBox"
-        Me.SearchBarColorGroupBox.Size = New System.Drawing.Size(391, 54)
+        Me.SearchBarColorGroupBox.Size = New System.Drawing.Size(391, 71)
         Me.SearchBarColorGroupBox.TabIndex = 2
         Me.SearchBarColorGroupBox.TabStop = False
         Me.SearchBarColorGroupBox.Text = "Couleur de la barre de recherche"
@@ -156,7 +158,7 @@ Partial Class FormSettings
         Me.SearchEngineGroupBox.Controls.Add(Me.RadioButtonBing)
         Me.SearchEngineGroupBox.Controls.Add(Me.RadioButtonGoogle)
         Me.SearchEngineGroupBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SearchEngineGroupBox.Location = New System.Drawing.Point(6, 121)
+        Me.SearchEngineGroupBox.Location = New System.Drawing.Point(6, 138)
         Me.SearchEngineGroupBox.Name = "SearchEngineGroupBox"
         Me.SearchEngineGroupBox.Size = New System.Drawing.Size(391, 103)
         Me.SearchEngineGroupBox.TabIndex = 5
@@ -317,6 +319,45 @@ Partial Class FormSettings
         Me.BrowserTabPage.Text = "Navigateur"
         Me.BrowserTabPage.UseVisualStyleBackColor = True
         '
+        'BrowserDataGroupBox
+        '
+        Me.BrowserDataGroupBox.Controls.Add(Me.DeleteCookiesButton)
+        Me.BrowserDataGroupBox.Controls.Add(Me.DeleteCache)
+        Me.BrowserDataGroupBox.Controls.Add(Me.DeleteHistoryButton)
+        Me.BrowserDataGroupBox.Location = New System.Drawing.Point(6, 31)
+        Me.BrowserDataGroupBox.Name = "BrowserDataGroupBox"
+        Me.BrowserDataGroupBox.Size = New System.Drawing.Size(391, 106)
+        Me.BrowserDataGroupBox.TabIndex = 5
+        Me.BrowserDataGroupBox.TabStop = False
+        Me.BrowserDataGroupBox.Text = "Gestion des données de navigation"
+        '
+        'DeleteCookiesButton
+        '
+        Me.DeleteCookiesButton.Location = New System.Drawing.Point(9, 46)
+        Me.DeleteCookiesButton.Name = "DeleteCookiesButton"
+        Me.DeleteCookiesButton.Size = New System.Drawing.Size(206, 23)
+        Me.DeleteCookiesButton.TabIndex = 3
+        Me.DeleteCookiesButton.Text = "Supprimer les cookies"
+        Me.DeleteCookiesButton.UseVisualStyleBackColor = True
+        '
+        'DeleteCache
+        '
+        Me.DeleteCache.Location = New System.Drawing.Point(9, 70)
+        Me.DeleteCache.Name = "DeleteCache"
+        Me.DeleteCache.Size = New System.Drawing.Size(206, 23)
+        Me.DeleteCache.TabIndex = 4
+        Me.DeleteCache.Text = "Supprimer le cache"
+        Me.DeleteCache.UseVisualStyleBackColor = True
+        '
+        'DeleteHistoryButton
+        '
+        Me.DeleteHistoryButton.Location = New System.Drawing.Point(9, 22)
+        Me.DeleteHistoryButton.Name = "DeleteHistoryButton"
+        Me.DeleteHistoryButton.Size = New System.Drawing.Size(206, 23)
+        Me.DeleteHistoryButton.TabIndex = 2
+        Me.DeleteHistoryButton.Text = "Supprimer l'historique de la session"
+        Me.DeleteHistoryButton.UseVisualStyleBackColor = True
+        '
         'BuiltInBrowserCheckBox
         '
         Me.BuiltInBrowserCheckBox.AutoSize = True
@@ -337,44 +378,18 @@ Partial Class FormSettings
         Me.AdvancedSettingsTabPage.Text = "Paramètres avancés"
         Me.AdvancedSettingsTabPage.UseVisualStyleBackColor = True
         '
-        'DeleteHistoryButton
+        'RestoreDefaultColorLinkLabel
         '
-        Me.DeleteHistoryButton.Location = New System.Drawing.Point(9, 22)
-        Me.DeleteHistoryButton.Name = "DeleteHistoryButton"
-        Me.DeleteHistoryButton.Size = New System.Drawing.Size(206, 23)
-        Me.DeleteHistoryButton.TabIndex = 2
-        Me.DeleteHistoryButton.Text = "Supprimer l'historique de la session"
-        Me.DeleteHistoryButton.UseVisualStyleBackColor = True
-        '
-        'DeleteCookiesButton
-        '
-        Me.DeleteCookiesButton.Location = New System.Drawing.Point(9, 46)
-        Me.DeleteCookiesButton.Name = "DeleteCookiesButton"
-        Me.DeleteCookiesButton.Size = New System.Drawing.Size(206, 23)
-        Me.DeleteCookiesButton.TabIndex = 3
-        Me.DeleteCookiesButton.Text = "Supprimer les cookies"
-        Me.DeleteCookiesButton.UseVisualStyleBackColor = True
-        '
-        'DeleteCache
-        '
-        Me.DeleteCache.Location = New System.Drawing.Point(9, 70)
-        Me.DeleteCache.Name = "DeleteCache"
-        Me.DeleteCache.Size = New System.Drawing.Size(206, 23)
-        Me.DeleteCache.TabIndex = 4
-        Me.DeleteCache.Text = "Supprimer le cache"
-        Me.DeleteCache.UseVisualStyleBackColor = True
-        '
-        'BrowserDataGroupBox
-        '
-        Me.BrowserDataGroupBox.Controls.Add(Me.DeleteCookiesButton)
-        Me.BrowserDataGroupBox.Controls.Add(Me.DeleteCache)
-        Me.BrowserDataGroupBox.Controls.Add(Me.DeleteHistoryButton)
-        Me.BrowserDataGroupBox.Location = New System.Drawing.Point(6, 31)
-        Me.BrowserDataGroupBox.Name = "BrowserDataGroupBox"
-        Me.BrowserDataGroupBox.Size = New System.Drawing.Size(391, 106)
-        Me.BrowserDataGroupBox.TabIndex = 5
-        Me.BrowserDataGroupBox.TabStop = False
-        Me.BrowserDataGroupBox.Text = "Gestion des données de navigation"
+        Me.RestoreDefaultColorLinkLabel.ActiveLinkColor = System.Drawing.SystemColors.HotTrack
+        Me.RestoreDefaultColorLinkLabel.AutoSize = True
+        Me.RestoreDefaultColorLinkLabel.LinkColor = System.Drawing.SystemColors.HotTrack
+        Me.RestoreDefaultColorLinkLabel.Location = New System.Drawing.Point(9, 48)
+        Me.RestoreDefaultColorLinkLabel.Name = "RestoreDefaultColorLinkLabel"
+        Me.RestoreDefaultColorLinkLabel.Size = New System.Drawing.Size(168, 15)
+        Me.RestoreDefaultColorLinkLabel.TabIndex = 5
+        Me.RestoreDefaultColorLinkLabel.TabStop = True
+        Me.RestoreDefaultColorLinkLabel.Text = "Restaurer la couleur par défaut"
+        Me.RestoreDefaultColorLinkLabel.VisitedLinkColor = System.Drawing.SystemColors.HotTrack
         '
         'FormSettings
         '
@@ -394,6 +409,7 @@ Partial Class FormSettings
         Me.GeneralSettingsGroupBox.ResumeLayout(False)
         Me.GeneralSettingsGroupBox.PerformLayout()
         Me.SearchBarColorGroupBox.ResumeLayout(False)
+        Me.SearchBarColorGroupBox.PerformLayout()
         Me.ImportExportSettingsGroupBox.ResumeLayout(False)
         Me.SearchEngineGroupBox.ResumeLayout(False)
         Me.SearchEngineGroupBox.PerformLayout()
@@ -406,8 +422,8 @@ Partial Class FormSettings
         Me.AutomaticUpdatesGroupBox.PerformLayout()
         Me.BrowserTabPage.ResumeLayout(False)
         Me.BrowserTabPage.PerformLayout()
-        Me.AdvancedSettingsTabPage.ResumeLayout(False)
         Me.BrowserDataGroupBox.ResumeLayout(False)
+        Me.AdvancedSettingsTabPage.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -441,4 +457,5 @@ Partial Class FormSettings
     Friend WithEvents DeleteCookiesButton As Button
     Friend WithEvents DeleteCache As Button
     Friend WithEvents DeleteHistoryButton As Button
+    Friend WithEvents RestoreDefaultColorLinkLabel As LinkLabel
 End Class

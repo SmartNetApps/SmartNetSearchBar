@@ -6,7 +6,7 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="color" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">Turquoise</Value>
+      <Value Profile="(Default)">LightSeaGreen</Value>
     </Setting>
     <Setting Name="searchengine" Type="System.String" Scope="User">
       <Value Profile="(Default)">1</Value>

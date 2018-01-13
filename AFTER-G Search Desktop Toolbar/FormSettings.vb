@@ -240,4 +240,10 @@ StopVersionChecking:
             MsgBox("Erreur : " + ex.Message, MsgBoxStyle.Critical, "SmartNet Search Bar")
         End Try
     End Sub
+
+    Private Sub RestoreDefaultColorLinkLabel_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles RestoreDefaultColorLinkLabel.LinkClicked
+        My.Settings.color = Color.LightSeaGreen
+        FormSearchBar.BackColor = My.Settings.color
+        FormSearchBar.TextBox1.BackColor = My.Settings.color
+    End Sub
 End Class
