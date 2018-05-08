@@ -14,7 +14,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Vos recherches sont plus rapides avec SmartNet Search Bar sur votre bureau Windows")>
 <Assembly: AssemblyCompany("Quentin Pugeat")>
 <Assembly: AssemblyProduct("SmartNet Search Bar")>
-<Assembly: AssemblyCopyright("© 2015-2017 Quentin Pugeat")>
+<Assembly: AssemblyCopyright("© 2015-2018 Quentin Pugeat")>
 <Assembly: AssemblyTrademark("SmartNet Apps")>
 
 <Assembly: ComVisible(False)> 
@@ -33,7 +33,7 @@ Imports System.Runtime.InteropServices
 ' en utilisant '*', comme indiqué ci-dessous :
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("2.7.1.0")>
-<Assembly: AssemblyFileVersion("2.7.1.0")>
+<Assembly: AssemblyVersion("2.8.0.0")>
+<Assembly: AssemblyFileVersion("2.8.0.0")>
 
 <Assembly: NeutralResourcesLanguageAttribute("fr-FR")> 
