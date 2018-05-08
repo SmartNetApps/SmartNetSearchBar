@@ -31,41 +31,38 @@ Public Class FormSettings
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If My.Settings.searchengine = "1" Then
-            RadioButtonGoogle.Checked = True
-            RadioButtonBing.Checked = False
-            RadioButtonYahoo.Checked = False
-            RadioButtonDuckDuckGo.Checked = False
-            RadioButtonQwant.Checked = False
-        End If
-        If My.Settings.searchengine = "2" Then
-            RadioButtonGoogle.Checked = False
-            RadioButtonBing.Checked = True
-            RadioButtonYahoo.Checked = False
-            RadioButtonDuckDuckGo.Checked = False
-            RadioButtonQwant.Checked = False
-        End If
-        If My.Settings.searchengine = "3" Then
-            RadioButtonGoogle.Checked = False
-            RadioButtonBing.Checked = False
-            RadioButtonYahoo.Checked = True
-            RadioButtonDuckDuckGo.Checked = False
-            RadioButtonQwant.Checked = False
-        End If
-        If My.Settings.searchengine = "4" Then
-            RadioButtonGoogle.Checked = False
-            RadioButtonBing.Checked = False
-            RadioButtonYahoo.Checked = False
-            RadioButtonDuckDuckGo.Checked = True
-            RadioButtonQwant.Checked = False
-        End If
-        If My.Settings.searchengine = "5" Then
-            RadioButtonGoogle.Checked = False
-            RadioButtonBing.Checked = False
-            RadioButtonYahoo.Checked = False
-            RadioButtonDuckDuckGo.Checked = False
-            RadioButtonQwant.Checked = True
-        End If
+        Select Case My.Settings.searchengine
+            Case 1
+                RadioButtonGoogle.Checked = True
+                RadioButtonBing.Checked = False
+                RadioButtonYahoo.Checked = False
+                RadioButtonDuckDuckGo.Checked = False
+                RadioButtonQwant.Checked = False
+            Case 2
+                RadioButtonGoogle.Checked = False
+                RadioButtonBing.Checked = True
+                RadioButtonYahoo.Checked = False
+                RadioButtonDuckDuckGo.Checked = False
+                RadioButtonQwant.Checked = False
+            Case 3
+                RadioButtonGoogle.Checked = False
+                RadioButtonBing.Checked = False
+                RadioButtonYahoo.Checked = True
+                RadioButtonDuckDuckGo.Checked = False
+                RadioButtonQwant.Checked = False
+            Case 4
+                RadioButtonGoogle.Checked = False
+                RadioButtonBing.Checked = False
+                RadioButtonYahoo.Checked = False
+                RadioButtonDuckDuckGo.Checked = True
+                RadioButtonQwant.Checked = False
+            Case 5
+                RadioButtonGoogle.Checked = False
+                RadioButtonBing.Checked = False
+                RadioButtonYahoo.Checked = False
+                RadioButtonDuckDuckGo.Checked = False
+                RadioButtonQwant.Checked = True
+        End Select
         Try
             Dim PathStartup As String = Environment.GetFolderPath(Environment.SpecialFolder.Startup)
             If Exists(PathStartup & "\SmartNet Search Bar.lnk") = True Then
@@ -104,59 +101,39 @@ Public Class FormSettings
     End Sub
 
     Private Sub RadioButtonGoogle_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonGoogle.CheckedChanged
-        My.Settings.searchengine = "1"
-        FormSearchBar.PictureBoxGoogle.Visible = True
-        FormSearchBar.PictureBoxBing.Visible = False
-        FormSearchBar.PictureBoxYahoo.Visible = False
-        FormSearchBar.PictureBoxDuckDuckGo.Visible = False
-        FormSearchBar.PictureBoxQwant.Visible = False
+        My.Settings.searchengine = 1
+        FormSearchBar.PictureBoxSearchEngineLogo.Image = My.Resources.google
     End Sub
 
     Private Sub RadioButtonBing_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonBing.CheckedChanged
-        My.Settings.searchengine = "2"
-        FormSearchBar.PictureBoxQwant.Visible = False
-        FormSearchBar.PictureBoxGoogle.Visible = False
-        FormSearchBar.PictureBoxBing.Visible = True
-        FormSearchBar.PictureBoxYahoo.Visible = False
-        FormSearchBar.PictureBoxDuckDuckGo.Visible = False
+        My.Settings.searchengine = 2
+        FormSearchBar.PictureBoxSearchEngineLogo.Image = My.Resources.bing
     End Sub
 
     Private Sub RadioButtonYahoo_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonYahoo.CheckedChanged
-        My.Settings.searchengine = "3"
-        FormSearchBar.PictureBoxQwant.Visible = False
-        FormSearchBar.PictureBoxGoogle.Visible = False
-        FormSearchBar.PictureBoxBing.Visible = False
-        FormSearchBar.PictureBoxYahoo.Visible = True
-        FormSearchBar.PictureBoxDuckDuckGo.Visible = False
+        My.Settings.searchengine = 3
+        FormSearchBar.PictureBoxSearchEngineLogo.Image = My.Resources.yahoo
     End Sub
 
     Private Sub RadioButtonDuckDuckGo_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonDuckDuckGo.CheckedChanged
-        My.Settings.searchengine = "4"
-        FormSearchBar.PictureBoxQwant.Visible = False
-        FormSearchBar.PictureBoxGoogle.Visible = False
-        FormSearchBar.PictureBoxBing.Visible = False
-        FormSearchBar.PictureBoxYahoo.Visible = False
-        FormSearchBar.PictureBoxDuckDuckGo.Visible = True
+        My.Settings.searchengine = 4
+        FormSearchBar.PictureBoxSearchEngineLogo.Image = My.Resources.duckduckgo
     End Sub
 
     Private Sub RadioButtonQwant_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonQwant.CheckedChanged
-        My.Settings.searchengine = "5"
-        FormSearchBar.PictureBoxQwant.Visible = True
-        FormSearchBar.PictureBoxGoogle.Visible = False
-        FormSearchBar.PictureBoxBing.Visible = False
-        FormSearchBar.PictureBoxYahoo.Visible = False
-        FormSearchBar.PictureBoxDuckDuckGo.Visible = False
+        My.Settings.searchengine = 5
+        FormSearchBar.PictureBoxSearchEngineLogo.Image = My.Resources.qwant
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles CheckUpdatesNowButton.Click
         Try
             Dim MiniNTVersionChecker As New WebClient
             Dim NTActualVersion As Version = Environment.OSVersion.Version
-            Dim MiniNTVersion As Version = New Version(MiniNTVersionChecker.DownloadString("http://quentinpugeat.pagesperso-orange.fr/downloads/smartnet-searchbar/MinimumNTVersion.txt"))
+            Dim MiniNTVersion As Version = New Version(MiniNTVersionChecker.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/MinimumNTVersion.txt"))
             Dim MAJ As New WebClient
             Dim VersionActuelle As Version = My.Application.Info.Version
-            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/downloads/smartnet-searchbar/smartnetsearchbar-version.txt"))
-            Dim SupportStatus As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/downloads/smartnet-searchbar/support-status.txt")
+            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/version.txt"))
+            Dim SupportStatus As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/support-status.txt")
             If VersionActuelle > DerniereVersion Then
                 MsgBox("Il semblerait que vous utilisez une version de SmartNet Search Bar non publique, réservée aux développeurs du logiciel. Cette utilisation n'est pas autorisée, veuillez retélécharger le logiciel sur SmartNet Apps. Veuillez nous contacter si vous pensez qu'il s'agit d'une erreur.", MsgBoxStyle.Exclamation, "Utilisation non autorisée")
             Else

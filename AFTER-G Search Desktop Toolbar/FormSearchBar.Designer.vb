@@ -28,7 +28,6 @@ Partial Class FormSearchBar
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.AffichermasquerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PictureBoxQwant = New System.Windows.Forms.PictureBox()
         Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ParamètresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SupportSurAFTERGAppsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -46,22 +45,15 @@ Partial Class FormSearchBar
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.UpdateNotifyIcon = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.PictureBoxGoogle = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxBing = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxYahoo = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxDuckDuckGo = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxSearchEngineLogo = New System.Windows.Forms.PictureBox()
         Me.ContextMenuStrip1.SuspendLayout()
-        CType(Me.PictureBoxQwant, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenuStrip2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxGoogle, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxBing, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxYahoo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxDuckDuckGo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxSearchEngineLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'NotifyIcon1
@@ -92,19 +84,6 @@ Partial Class FormSearchBar
         Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Name = "FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem"
         Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Size = New System.Drawing.Size(251, 22)
         Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Text = "Quitter"
-        '
-        'PictureBoxQwant
-        '
-        Me.PictureBoxQwant.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBoxQwant.ContextMenuStrip = Me.ContextMenuStrip2
-        Me.PictureBoxQwant.ErrorImage = CType(resources.GetObject("PictureBoxQwant.ErrorImage"), System.Drawing.Image)
-        Me.PictureBoxQwant.Image = CType(resources.GetObject("PictureBoxQwant.Image"), System.Drawing.Image)
-        Me.PictureBoxQwant.InitialImage = CType(resources.GetObject("PictureBoxQwant.InitialImage"), System.Drawing.Image)
-        Me.PictureBoxQwant.Location = New System.Drawing.Point(3, 2)
-        Me.PictureBoxQwant.Name = "PictureBoxQwant"
-        Me.PictureBoxQwant.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBoxQwant.TabIndex = 1
-        Me.PictureBoxQwant.TabStop = False
         '
         'ContextMenuStrip2
         '
@@ -242,58 +221,6 @@ Partial Class FormSearchBar
         Me.UpdateNotifyIcon.Icon = CType(resources.GetObject("UpdateNotifyIcon.Icon"), System.Drawing.Icon)
         Me.UpdateNotifyIcon.Text = "Mise à jour disponible"
         '
-        'PictureBoxGoogle
-        '
-        Me.PictureBoxGoogle.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBoxGoogle.ContextMenuStrip = Me.ContextMenuStrip2
-        Me.PictureBoxGoogle.ErrorImage = CType(resources.GetObject("PictureBoxGoogle.ErrorImage"), System.Drawing.Image)
-        Me.PictureBoxGoogle.Image = CType(resources.GetObject("PictureBoxGoogle.Image"), System.Drawing.Image)
-        Me.PictureBoxGoogle.InitialImage = CType(resources.GetObject("PictureBoxGoogle.InitialImage"), System.Drawing.Image)
-        Me.PictureBoxGoogle.Location = New System.Drawing.Point(3, 2)
-        Me.PictureBoxGoogle.Name = "PictureBoxGoogle"
-        Me.PictureBoxGoogle.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBoxGoogle.TabIndex = 6
-        Me.PictureBoxGoogle.TabStop = False
-        '
-        'PictureBoxBing
-        '
-        Me.PictureBoxBing.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBoxBing.ContextMenuStrip = Me.ContextMenuStrip2
-        Me.PictureBoxBing.ErrorImage = CType(resources.GetObject("PictureBoxBing.ErrorImage"), System.Drawing.Image)
-        Me.PictureBoxBing.Image = CType(resources.GetObject("PictureBoxBing.Image"), System.Drawing.Image)
-        Me.PictureBoxBing.InitialImage = CType(resources.GetObject("PictureBoxBing.InitialImage"), System.Drawing.Image)
-        Me.PictureBoxBing.Location = New System.Drawing.Point(3, 2)
-        Me.PictureBoxBing.Name = "PictureBoxBing"
-        Me.PictureBoxBing.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBoxBing.TabIndex = 7
-        Me.PictureBoxBing.TabStop = False
-        '
-        'PictureBoxYahoo
-        '
-        Me.PictureBoxYahoo.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBoxYahoo.ContextMenuStrip = Me.ContextMenuStrip2
-        Me.PictureBoxYahoo.ErrorImage = CType(resources.GetObject("PictureBoxYahoo.ErrorImage"), System.Drawing.Image)
-        Me.PictureBoxYahoo.Image = CType(resources.GetObject("PictureBoxYahoo.Image"), System.Drawing.Image)
-        Me.PictureBoxYahoo.InitialImage = CType(resources.GetObject("PictureBoxYahoo.InitialImage"), System.Drawing.Image)
-        Me.PictureBoxYahoo.Location = New System.Drawing.Point(3, 2)
-        Me.PictureBoxYahoo.Name = "PictureBoxYahoo"
-        Me.PictureBoxYahoo.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBoxYahoo.TabIndex = 8
-        Me.PictureBoxYahoo.TabStop = False
-        '
-        'PictureBoxDuckDuckGo
-        '
-        Me.PictureBoxDuckDuckGo.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBoxDuckDuckGo.ContextMenuStrip = Me.ContextMenuStrip2
-        Me.PictureBoxDuckDuckGo.ErrorImage = CType(resources.GetObject("PictureBoxDuckDuckGo.ErrorImage"), System.Drawing.Image)
-        Me.PictureBoxDuckDuckGo.Image = CType(resources.GetObject("PictureBoxDuckDuckGo.Image"), System.Drawing.Image)
-        Me.PictureBoxDuckDuckGo.InitialImage = CType(resources.GetObject("PictureBoxDuckDuckGo.InitialImage"), System.Drawing.Image)
-        Me.PictureBoxDuckDuckGo.Location = New System.Drawing.Point(3, 2)
-        Me.PictureBoxDuckDuckGo.Name = "PictureBoxDuckDuckGo"
-        Me.PictureBoxDuckDuckGo.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBoxDuckDuckGo.TabIndex = 9
-        Me.PictureBoxDuckDuckGo.TabStop = False
-        '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.White
@@ -304,6 +231,19 @@ Partial Class FormSearchBar
         Me.PictureBox1.Size = New System.Drawing.Size(285, 1)
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
+        '
+        'PictureBoxSearchEngineLogo
+        '
+        Me.PictureBoxSearchEngineLogo.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBoxSearchEngineLogo.ContextMenuStrip = Me.ContextMenuStrip2
+        Me.PictureBoxSearchEngineLogo.ErrorImage = Global.SmartNet_Search_Bar.My.Resources.Resources.google
+        Me.PictureBoxSearchEngineLogo.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.google
+        Me.PictureBoxSearchEngineLogo.InitialImage = Global.SmartNet_Search_Bar.My.Resources.Resources.google
+        Me.PictureBoxSearchEngineLogo.Location = New System.Drawing.Point(3, 2)
+        Me.PictureBoxSearchEngineLogo.Name = "PictureBoxSearchEngineLogo"
+        Me.PictureBoxSearchEngineLogo.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBoxSearchEngineLogo.TabIndex = 7
+        Me.PictureBoxSearchEngineLogo.TabStop = False
         '
         'FormSearchBar
         '
@@ -317,11 +257,7 @@ Partial Class FormSearchBar
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.PictureBoxGoogle)
-        Me.Controls.Add(Me.PictureBoxQwant)
-        Me.Controls.Add(Me.PictureBoxDuckDuckGo)
-        Me.Controls.Add(Me.PictureBoxYahoo)
-        Me.Controls.Add(Me.PictureBoxBing)
+        Me.Controls.Add(Me.PictureBoxSearchEngineLogo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -331,16 +267,12 @@ Partial Class FormSearchBar
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.Text = "SmartNet Search Bar"
         Me.ContextMenuStrip1.ResumeLayout(False)
-        CType(Me.PictureBoxQwant, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContextMenuStrip2.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxGoogle, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxBing, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxYahoo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxDuckDuckGo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxSearchEngineLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -349,7 +281,6 @@ Partial Class FormSearchBar
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AffichermasquerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PictureBoxQwant As System.Windows.Forms.PictureBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
@@ -365,11 +296,8 @@ Partial Class FormSearchBar
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents VérifierLesMisesÀJourToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TéléchargerLaVersionXXXXToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents PictureBoxGoogle As PictureBox
-    Friend WithEvents PictureBoxBing As PictureBox
-    Friend WithEvents PictureBoxYahoo As PictureBox
-    Friend WithEvents PictureBoxDuckDuckGo As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents CentreDaideEnLigneToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EnvoyerVosCommentairesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PictureBoxSearchEngineLogo As PictureBox
 End Class

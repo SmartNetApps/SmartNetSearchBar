@@ -30,134 +30,99 @@ Public Class FormSearchBar
             TextBox1.BackColor = My.Settings.color
         Catch ex As exception
         End Try
-        If My.Settings.searchengine = "1" Then
-            PictureBoxGoogle.Visible = True
-            PictureBoxBing.Visible = False
-            PictureBoxYahoo.Visible = False
-            PictureBoxDuckDuckGo.Visible = False
-            PictureBoxQwant.Visible = False
-        End If
-        If My.Settings.searchengine = "2" Then
-            PictureBoxGoogle.Visible = False
-            PictureBoxBing.Visible = True
-            PictureBoxYahoo.Visible = False
-            PictureBoxDuckDuckGo.Visible = False
-            PictureBoxQwant.Visible = False
-        End If
-        If My.Settings.searchengine = "3" Then
-            PictureBoxGoogle.Visible = False
-            PictureBoxBing.Visible = False
-            PictureBoxYahoo.Visible = True
-            PictureBoxDuckDuckGo.Visible = False
-            PictureBoxQwant.Visible = False
-        End If
-        If My.Settings.searchengine = "4" Then
-            PictureBoxGoogle.Visible = False
-            PictureBoxBing.Visible = False
-            PictureBoxYahoo.Visible = False
-            PictureBoxDuckDuckGo.Visible = True
-            PictureBoxQwant.Visible = False
-        End If
-        If My.Settings.searchengine = "5" Then
-            PictureBoxGoogle.Visible = False
-            PictureBoxBing.Visible = False
-            PictureBoxYahoo.Visible = False
-            PictureBoxDuckDuckGo.Visible = False
-            PictureBoxQwant.Visible = True
-        End If
+        Select Case My.Settings.searchengine
+            Case 1
+                PictureBoxSearchEngineLogo.Image = My.Resources.google
+            Case 2
+                PictureBoxSearchEngineLogo.Image = My.Resources.bing
+            Case 3
+                PictureBoxSearchEngineLogo.Image = My.Resources.yahoo
+            Case 4
+                PictureBoxSearchEngineLogo.Image = My.Resources.duckduckgo
+            Case 5
+                PictureBoxSearchEngineLogo.Image = My.Resources.qwant
+        End Select
     End Sub
 
     Private Sub SearchButtonClick(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        If My.Settings.searchengine = "1" Then
-            My.Settings.searchengine = "2"
-            PictureBoxQwant.Visible = False
-            PictureBoxGoogle.Visible = True
-            PictureBoxBing.Visible = False
-            PictureBoxYahoo.Visible = False
-            PictureBoxDuckDuckGo.Visible = False
-            If My.Settings.OpenBuiltInBrowser = True Then
-                BrowserForm.GeckoWebBrowser1.Navigate("https://www.google.fr/search?q=" + TextBox1.Text)
-                BrowserForm.Show()
-            Else
-                Process.Start("https://www.google.fr/search?q=" + TextBox1.Text)
-            End If
-        End If
-        If My.Settings.searchengine = "2" Then
-            If My.Settings.OpenBuiltInBrowser = True Then
-                BrowserForm.GeckoWebBrowser1.Navigate("https://www.google.fr/search?q=" + TextBox1.Text)
-                BrowserForm.Show()
-            Else
-                Process.Start("https://www.google.fr/search?q=" + TextBox1.Text)
-            End If
-        End If
-        If My.Settings.searchengine = "3" Then
-            If My.Settings.OpenBuiltInBrowser = True Then
-                BrowserForm.GeckoWebBrowser1.Navigate("http://www.bing.com/search?q=" + TextBox1.Text)
-                BrowserForm.Show()
-            Else
-                Process.Start("http://www.bing.com/search?q=" + TextBox1.Text)
-            End If
-        End If
-        If My.Settings.searchengine = "4" Then
-            If My.Settings.OpenBuiltInBrowser = True Then
-                BrowserForm.GeckoWebBrowser1.Navigate("https://fr.search.yahoo.com/search?q=" + TextBox1.Text)
-                BrowserForm.Show()
-            Else
-                Process.Start("https://fr.search.yahoo.com/search?q=" + TextBox1.Text)
-            End If
-        End If
-        If My.Settings.searchengine = "5" Then
-            If My.Settings.OpenBuiltInBrowser = True Then
-                BrowserForm.GeckoWebBrowser1.Navigate("https://duckduckgo.com/?q=" + TextBox1.Text)
-                BrowserForm.Show()
-            Else
-                Process.Start("https://duckduckgo.com/?q=" + TextBox1.Text)
-            End If
-        End If
-    End Sub
-
-    Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            If My.Settings.searchengine = "1" Then
+        Select Case My.Settings.searchengine
+            Case 1
                 If My.Settings.OpenBuiltInBrowser = True Then
                     BrowserForm.GeckoWebBrowser1.Navigate("https://www.google.fr/search?q=" + TextBox1.Text)
                     BrowserForm.Show()
                 Else
                     Process.Start("https://www.google.fr/search?q=" + TextBox1.Text)
                 End If
-            End If
-            If My.Settings.searchengine = "2" Then
+            Case 2
                 If My.Settings.OpenBuiltInBrowser = True Then
                     BrowserForm.GeckoWebBrowser1.Navigate("http://www.bing.com/search?q=" + TextBox1.Text)
                     BrowserForm.Show()
                 Else
                     Process.Start("http://www.bing.com/search?q=" + TextBox1.Text)
                 End If
-            End If
-            If My.Settings.searchengine = "3" Then
+            Case 3
                 If My.Settings.OpenBuiltInBrowser = True Then
                     BrowserForm.GeckoWebBrowser1.Navigate("https://fr.search.yahoo.com/search?q=" + TextBox1.Text)
                     BrowserForm.Show()
                 Else
                     Process.Start("https://fr.search.yahoo.com/search?q=" + TextBox1.Text)
                 End If
-            End If
-            If My.Settings.searchengine = "4" Then
+            Case 4
                 If My.Settings.OpenBuiltInBrowser = True Then
                     BrowserForm.GeckoWebBrowser1.Navigate("https://duckduckgo.com/?q=" + TextBox1.Text)
                     BrowserForm.Show()
                 Else
                     Process.Start("https://duckduckgo.com/?q=" + TextBox1.Text)
                 End If
-            End If
-            If My.Settings.searchengine = "5" Then
+            Case 5
                 If My.Settings.OpenBuiltInBrowser = True Then
                     BrowserForm.GeckoWebBrowser1.Navigate("https://www.qwant.com/?q=" + TextBox1.Text)
                     BrowserForm.Show()
                 Else
                     Process.Start("https://www.qwant.com/?q=" + TextBox1.Text)
                 End If
-            End If
+        End Select
+    End Sub
+
+    Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Select Case My.Settings.searchengine
+                Case 1
+                    If My.Settings.OpenBuiltInBrowser = True Then
+                        BrowserForm.GeckoWebBrowser1.Navigate("https://www.google.fr/search?q=" + TextBox1.Text)
+                        BrowserForm.Show()
+                    Else
+                        Process.Start("https://www.google.fr/search?q=" + TextBox1.Text)
+                    End If
+                Case 2
+                    If My.Settings.OpenBuiltInBrowser = True Then
+                        BrowserForm.GeckoWebBrowser1.Navigate("http://www.bing.com/search?q=" + TextBox1.Text)
+                        BrowserForm.Show()
+                    Else
+                        Process.Start("http://www.bing.com/search?q=" + TextBox1.Text)
+                    End If
+                Case 3
+                    If My.Settings.OpenBuiltInBrowser = True Then
+                        BrowserForm.GeckoWebBrowser1.Navigate("https://fr.search.yahoo.com/search?q=" + TextBox1.Text)
+                        BrowserForm.Show()
+                    Else
+                        Process.Start("https://fr.search.yahoo.com/search?q=" + TextBox1.Text)
+                    End If
+                Case 4
+                    If My.Settings.OpenBuiltInBrowser = True Then
+                        BrowserForm.GeckoWebBrowser1.Navigate("https://duckduckgo.com/?q=" + TextBox1.Text)
+                        BrowserForm.Show()
+                    Else
+                        Process.Start("https://duckduckgo.com/?q=" + TextBox1.Text)
+                    End If
+                Case 5
+                    If My.Settings.OpenBuiltInBrowser = True Then
+                        BrowserForm.GeckoWebBrowser1.Navigate("https://www.qwant.com/?q=" + TextBox1.Text)
+                        BrowserForm.Show()
+                    Else
+                        Process.Start("https://www.qwant.com/?q=" + TextBox1.Text)
+                    End If
+            End Select
         End If
     End Sub
 
@@ -192,18 +157,18 @@ Public Class FormSearchBar
         End If
     End Sub
 
-    Private Sub StartDraggingForm(ByVal sender As Object, ByVal e As MouseEventArgs) Handles PictureBoxQwant.MouseDown, PictureBoxBing.MouseDown, PictureBoxDuckDuckGo.MouseDown, PictureBoxGoogle.MouseDown, PictureBoxYahoo.MouseDown
+    Private Sub StartDraggingForm(ByVal sender As Object, ByVal e As MouseEventArgs) Handles PictureBoxSearchEngineLogo.MouseDown
         If e.Button = MouseButtons.Left Then
             IsDraggingForm = True
             MousePos = e.Location
         End If
     End Sub
 
-    Private Sub StopDraggingForm(ByVal sender As Object, ByVal e As MouseEventArgs) Handles PictureBoxQwant.MouseUp, PictureBoxBing.MouseUp, PictureBoxDuckDuckGo.MouseUp, PictureBoxGoogle.MouseUp, PictureBoxYahoo.MouseUp
+    Private Sub StopDraggingForm(ByVal sender As Object, ByVal e As MouseEventArgs) Handles PictureBoxSearchEngineLogo.MouseUp
         If e.Button = MouseButtons.Left Then IsDraggingForm = False
     End Sub
 
-    Private Sub DraggingForm(ByVal sender As Object, ByVal e As MouseEventArgs) Handles PictureBoxQwant.MouseMove, PictureBoxBing.MouseMove, PictureBoxDuckDuckGo.MouseMove, PictureBoxGoogle.MouseMove, PictureBoxYahoo.MouseMove
+    Private Sub DraggingForm(ByVal sender As Object, ByVal e As MouseEventArgs) Handles PictureBoxSearchEngineLogo.MouseMove
         If IsDraggingForm Then
             Dim temp As Point = New Point(Me.Location + (e.Location - MousePos))
             Me.Location = temp
@@ -223,11 +188,11 @@ Public Class FormSearchBar
         Try
             Dim MiniNTVersionChecker As New WebClient
             Dim NTActualVersion As Version = Environment.OSVersion.Version
-            Dim MiniNTVersion As Version = New Version(MiniNTVersionChecker.DownloadString("http://quentinpugeat.pagesperso-orange.fr/downloads/smartnet-searchbar/MinimumNTVersion.txt"))
+            Dim MiniNTVersion As Version = New Version(MiniNTVersionChecker.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/MinimumNTVersion.txt"))
             Dim MAJ As New WebClient
             Dim VersionActuelle As Version = My.Application.Info.Version
-            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/downloads/smartnet-searchbar/smartnetsearchbar-version.txt"))
-            Dim SupportStatus As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/downloads/smartnet-searchbar/support-status.txt")
+            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/version.txt"))
+            Dim SupportStatus As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/support-status.txt")
             If VersionActuelle > DerniereVersion Then
                 MsgBox("Il semblerait que vous utilisez une version de SmartNet Search Bar non publique, réservée aux développeurs du logiciel. Cette utilisation n'est pas autorisée, veuillez retélécharger le logiciel sur SmartNet Apps. Veuillez nous contacter si vous pensez qu'il s'agit d'une erreur.", MsgBoxStyle.Exclamation, "Utilisation non autorisée")
             End If
@@ -282,6 +247,6 @@ StopVersionChecking:
     End Sub
 
     Private Sub CentreDaideEnLigneToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CentreDaideEnLigneToolStripMenuItem.Click
-        Process.Start("http://quentinpugeat.wixsite.com/apps/support-searchbar")
+        Process.Start("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/searchbar/support/")
     End Sub
 End Class

@@ -226,6 +226,19 @@
     <Content Include="Firefox\sandboxbroker.dll" />
     <Content Include="Firefox\softokn3.dll" />
     <Content Include="Firefox\xul.dll" />
+    <Content Include="Resources\icone notification\icone 16x16.png" />
+    <Content Include="Resources\icone notification\Icône de notification SmartNet Search Bar.ico" />
+    <Content Include="Resources\icones boutons\aide.png" />
+    <Content Include="Resources\icones boutons\Envoyer vos commentaires.png" />
+    <Content Include="Resources\icones boutons\menu.png" />
+    <Content Include="Resources\icones boutons\paramètres.png" />
+    <Content Include="Resources\icones boutons\rechercher.png" />
+    <Content Include="Resources\icones boutons\réduire.png" />
+    <Content Include="Resources\logos moteurs\bing.png" />
+    <Content Include="Resources\logos moteurs\duckduckgo.png" />
+    <Content Include="Resources\logos moteurs\google.png" />
+    <Content Include="Resources\logos moteurs\qwant.png" />
+    <Content Include="Resources\logos moteurs\yahoo.png" />
     <Content Include="SmartNet Search Bar.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
