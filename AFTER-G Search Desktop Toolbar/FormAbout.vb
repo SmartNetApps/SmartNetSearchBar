@@ -5,11 +5,7 @@
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Process.Start("http://quentinpugeat.wixsite.com/apps/search-bar")
-    End Sub
-
-    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
-        Process.Start("http://quentinpugeat.wixsite.com/lesiteofficiel/declaration-de-confidentialite")
+        Process.Start("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/searchbar/index.html")
     End Sub
 
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
