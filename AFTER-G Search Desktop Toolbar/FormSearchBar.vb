@@ -25,11 +25,8 @@ Public Class FormSearchBar
         If My.Settings.autoupdate = True Then
             CheckUpdates()
         End If
-        Try
-            Me.BackColor = My.Settings.color
-            TextBox1.BackColor = My.Settings.color
-        Catch ex As exception
-        End Try
+        Me.BackColor = My.Settings.color
+        TextBox1.BackColor = My.Settings.color
         Select Case My.Settings.searchengine
             Case 1
                 PictureBoxSearchEngineLogo.Image = My.Resources.google
@@ -207,7 +204,7 @@ Public Class FormSearchBar
                 If SupportStatus = "on" Then
                     If VersionActuelle < DerniereVersion Then
                         UpdateNotifyIcon.Visible = True
-                        UpdateNotifyIcon.ShowBalloonTip(1000)
+                        UpdateNotifyIcon.ShowBalloonTip(5000)
                         VérifierLesMisesÀJourToolStripMenuItem.Visible = True
                         TéléchargerLaVersionXXXXToolStripMenuItem.Text = "Télécharger la version " + DerniereVersion.ToString
                     Else

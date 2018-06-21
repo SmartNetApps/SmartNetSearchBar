@@ -6,6 +6,7 @@ Imports Gecko.Events
 Public Class BrowserForm
     Public Sub New()
         InitializeComponent()
+        Xpcom.Initialize("Firefox")
         Gecko.GeckoPreferences.User("intl.accept_languages") = "fr"
         Gecko.GeckoPreferences.User("general.useragent.locale") = "fr"
         If Environment.Is64BitOperatingSystem = True Then
@@ -17,10 +18,6 @@ Public Class BrowserForm
         Gecko.GeckoPreferences.Default("media.mediasource.enabled") = True
         Gecko.GeckoPreferences.Default("media.mediasource.ignore_codecs") = True
         Gecko.GeckoPreferences.Default("extensions.blocklist.enabled") = False
-    End Sub
-
-    Private Sub BrowserForm_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Xpcom.Initialize("Firefox")
     End Sub
 
     Private Sub PreviousButton_Click(sender As Object, e As EventArgs) Handles PreviousButton.Click
@@ -92,7 +89,5 @@ Public Class BrowserForm
 
     Private Sub BrowserForm_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         GeckoWebBrowser1.Navigate("about:blank")
-        Gecko.Xpcom.Shutdown()
-        GeckoWebBrowser1.Dispose()
     End Sub
 End Class

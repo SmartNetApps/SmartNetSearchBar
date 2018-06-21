@@ -147,9 +147,10 @@ Public Class FormSettings
                     If SupportStatus = "on" Then
                         If VersionActuelle < DerniereVersion Then
                             FormSearchBar.UpdateNotifyIcon.Visible = True
-                            FormSearchBar.UpdateNotifyIcon.ShowBalloonTip(1000)
+                            FormSearchBar.UpdateNotifyIcon.ShowBalloonTip(5000)
                             FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = True
                             FormSearchBar.TéléchargerLaVersionXXXXToolStripMenuItem.Text = "Télécharger la version " + DerniereVersion.ToString
+                            FormUpdater.Show()
                         Else
                             FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = False
                             GoTo StopVersionChecking
