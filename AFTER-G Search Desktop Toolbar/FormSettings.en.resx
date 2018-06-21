@@ -117,172 +117,87 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="FaviconPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="NextButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="FaviconPictureBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;FaviconPictureBox.Name" xml:space="preserve">
-    <value>FaviconPictureBox</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+  <data name="AutoLaunchCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 19</value>
   </data>
-  <data name="&gt;&gt;NextButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AutoLaunchCheckBox.Text" xml:space="preserve">
+    <value>Open the search bar when the computer starts</value>
   </data>
-  <data name="GeckoWebBrowser1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>938, 479</value>
+  <data name="GeneralSettingsGroupBox.Text" xml:space="preserve">
+    <value>General settings</value>
   </data>
-  <data name="&gt;&gt;URLTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="SearchBarColorGroupBox.Text" xml:space="preserve">
+    <value>Search bar color</value>
   </data>
-  <data name="&gt;&gt;GeckoWebBrowser1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="RestoreDefaultColorLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 15</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="RestoreDefaultColorLinkLabel.Text" xml:space="preserve">
+    <value>Restore the default color</value>
   </data>
-  <data name="URLTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="ChangeBarColorButton.Text" xml:space="preserve">
+    <value>Change the color of the search bar...</value>
   </data>
-  <data name="NextButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="ImportExportSettingsGroupBox.Text" xml:space="preserve">
+    <value>Import the settings</value>
   </data>
-  <data name="PreviousButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="ImportFromPreviousVersionButton.Text" xml:space="preserve">
+    <value>Import my settings from a previous version...</value>
   </data>
-  <data name="NextButton.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="SearchEngineGroupBox.Text" xml:space="preserve">
+    <value>Search engine</value>
   </data>
-  <data name="GeckoWebBrowser1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 25</value>
+  <data name="MainTabPage.Text" xml:space="preserve">
+    <value>Toolbar</value>
   </data>
-  <data name="&gt;&gt;GeckoWebBrowser1.Type" xml:space="preserve">
-    <value>Gecko.GeckoWebBrowser, Geckofx-Winforms, Version=45.0.1.0, Culture=neutral, PublicKeyToken=3209ac31600d1857</value>
+  <data name="UpdatesTabPage.Text" xml:space="preserve">
+    <value>Updates</value>
   </data>
-  <data name="&gt;&gt;FaviconPictureBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="UpdatesManagementGroupBox.Text" xml:space="preserve">
+    <value>Manage the updates</value>
   </data>
-  <data name="FaviconPictureBox.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC45bDN+TgAAAkxJREFUOE+NU91L
-        k2EU3yYzWBQUUWBRUGBFBJFQ3fVPdFFEBF1U1F0fd10WURfq3Dv37Tan0zWQKMq2NqdmpTk396nOr6VG
-        ETlo1Byt9uucd77vnDd18Xvf8/k75znPeRQao/FkXZs+oWgV/hDwnyirKEctmE8oVFoxuSbgdK8Xj8MR
-        PJtfxPOFRTRHJnHW21cTwxBzSShLhl0mm5iUKxZhSiRxPTiIa8EQhFgcXwsFBJeWsc/qqCWShJ1GK9Kr
-        OXhmZrHDYKkJUre140CHE5ZkCtl8Hg1We9UvCT0zGfTNzXNbos7/cy/6cX9sHLeGRmBPpUW7LZmGL7tU
-        S3DY2YWfpRL2mDtkh2tqGnfevEWjowsX+n3Ifs9jq96E7e1m5NaKOENzkgluD4+I1aXkUz1PoJuMyzrj
-        si+AS77XomylLh58CFd8/DHEE2KrUjBXvBoIyTrjiLMbARoiy3wkT2a24uOPQNUejk/IwQftnXg6twDl
-        us64GRpC8tsq9tscuEtHc09nqgQ3Bgbh/7hhMAQO8lKV8y99Yru8Czyjep0BvTTwe+9GqwR76VoKNMRG
-        GuZGEtYvvvKjye2RbQ0WO378KuFoZ3fFJjmaI1G8//wFGsEoB29GPe0Dd+pITVXtkrCFWuMhjRHJMZe7
-        GrCOQ3YXBpZXMEr+bXSdsk/RqpNXmUn4DfBxhlc+QRuNoYXOziu8VvoNPa0074KczFBqhViNgbDbbMMV
-        fxCPwhMiIV8pz2lzXJ1WH1do6EmqKiRyJ/9Ei66s1Oqjap3x+F/BeYVij6QwGQAAAABJRU5ErkJggg==
-</value>
+  <data name="CheckUpdatesNowButton.Text" xml:space="preserve">
+    <value>Check for updates now</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>938, 504</value>
+  <data name="CurrentVersionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 15</value>
   </data>
-  <data name="URLTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>859, 23</value>
+  <data name="CurrentVersionLabel.Text" xml:space="preserve">
+    <value>Current version: 0.0.0.0</value>
   </data>
-  <data name="&gt;&gt;FaviconPictureBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="AutomaticUpdatesGroupBox.Text" xml:space="preserve">
+    <value>Automatic checking</value>
   </data>
-  <data name="URLTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="AutoUpdatesCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 19</value>
   </data>
-  <data name="FaviconPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 4</value>
+  <data name="AutoUpdatesCheckBox.Text" xml:space="preserve">
+    <value>Check automatically for updates (recommended)</value>
   </data>
-  <data name="&gt;&gt;URLTextBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="BrowserTabPage.Text" xml:space="preserve">
+    <value>Web browser</value>
   </data>
-  <data name="&gt;&gt;URLTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="BrowserDataGroupBox.Text" xml:space="preserve">
+    <value>Browsing data managing</value>
   </data>
-  <data name="NextButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 0</value>
+  <data name="DeleteCookiesButton.Text" xml:space="preserve">
+    <value>Delete the cookies</value>
   </data>
-  <data name="PreviousButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 25</value>
+  <data name="DeleteCache.Text" xml:space="preserve">
+    <value>Delete the cache</value>
   </data>
-  <data name="&gt;&gt;PreviousButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="DeleteHistoryButton.Text" xml:space="preserve">
+    <value>Delete the session history</value>
   </data>
-  <data name="NextButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 25</value>
+  <data name="BuiltInBrowserCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 19</value>
   </data>
-  <data name="FaviconPictureBox.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC45bDN+TgAAAkxJREFUOE+NU91L
-        k2EU3yYzWBQUUWBRUGBFBJFQ3fVPdFFEBF1U1F0fd10WURfq3Dv37Tan0zWQKMq2NqdmpTk396nOr6VG
-        ETlo1Byt9uucd77vnDd18Xvf8/k75znPeRQao/FkXZs+oWgV/hDwnyirKEctmE8oVFoxuSbgdK8Xj8MR
-        PJtfxPOFRTRHJnHW21cTwxBzSShLhl0mm5iUKxZhSiRxPTiIa8EQhFgcXwsFBJeWsc/qqCWShJ1GK9Kr
-        OXhmZrHDYKkJUre140CHE5ZkCtl8Hg1We9UvCT0zGfTNzXNbos7/cy/6cX9sHLeGRmBPpUW7LZmGL7tU
-        S3DY2YWfpRL2mDtkh2tqGnfevEWjowsX+n3Ifs9jq96E7e1m5NaKOENzkgluD4+I1aXkUz1PoJuMyzrj
-        si+AS77XomylLh58CFd8/DHEE2KrUjBXvBoIyTrjiLMbARoiy3wkT2a24uOPQNUejk/IwQftnXg6twDl
-        us64GRpC8tsq9tscuEtHc09nqgQ3Bgbh/7hhMAQO8lKV8y99Yru8Czyjep0BvTTwe+9GqwR76VoKNMRG
-        GuZGEtYvvvKjye2RbQ0WO378KuFoZ3fFJjmaI1G8//wFGsEoB29GPe0Dd+pITVXtkrCFWuMhjRHJMZe7
-        GrCOQ3YXBpZXMEr+bXSdsk/RqpNXmUn4DfBxhlc+QRuNoYXOziu8VvoNPa0074KczFBqhViNgbDbbMMV
-        fxCPwhMiIV8pz2lzXJ1WH1do6EmqKiRyJ/9Ei66s1Oqjap3x+F/BeYVij6QwGQAAAABJRU5ErkJggg==
-</value>
+  <data name="BuiltInBrowserCheckBox.Text" xml:space="preserve">
+    <value>Open the results in the integrated web browser</value>
   </data>
-  <data name="&gt;&gt;PreviousButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PreviousButton.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="PreviousButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;PreviousButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;FaviconPictureBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PreviousButton.Name" xml:space="preserve">
-    <value>PreviousButton</value>
-  </data>
-  <data name="URLTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 1</value>
-  </data>
-  <data name="GeckoWebBrowser1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;NextButton.Name" xml:space="preserve">
-    <value>NextButton</value>
-  </data>
-  <data name="&gt;&gt;GeckoWebBrowser1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="PreviousButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="FaviconPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 16</value>
-  </data>
-  <data name="&gt;&gt;GeckoWebBrowser1.Name" xml:space="preserve">
-    <value>GeckoWebBrowser1</value>
-  </data>
-  <data name="&gt;&gt;URLTextBox.Name" xml:space="preserve">
-    <value>URLTextBox</value>
-  </data>
-  <data name="&gt;&gt;NextButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="GeckoWebBrowser1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="AdvancedSettingsTabPage.Text" xml:space="preserve">
+    <value>Advanced settings</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4550,19 +4465,7 @@
         wAMAAOAHAAA=
 </value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Navigateur SmartNet Search Bar</value>
+    <value>Settings of SmartNet Search Bar</value>
   </data>
-  <data name="&gt;&gt;NextButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>BrowserForm</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

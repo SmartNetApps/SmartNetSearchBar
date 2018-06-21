@@ -130,8 +130,14 @@
   <data name="google" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\searchenginelogo\google.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GPLv3Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\other\gplv3logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\buttonimages\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo1024" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logo\logo1024.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MenuWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\buttonimages\menuwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,8 +145,20 @@
   <data name="MinimizeWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\buttonimages\minimizewhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MozillaFoundationLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\other\mozillafoundationlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Netscape_gecko_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\other\netscape-gecko-logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NextBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\buttonimages\nextblack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="notif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\notificationicon\notif.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PreviousBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\buttonimages\previousblack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="qwant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\searchenginelogo\qwant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -156,6 +174,12 @@
   </data>
   <data name="SmartNet_Search_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\smartnet search bar.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wordmark_black_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logo\wordmark_black_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wordmark_white_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logo\wordmark_white_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="yahoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\searchenginelogo\yahoo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

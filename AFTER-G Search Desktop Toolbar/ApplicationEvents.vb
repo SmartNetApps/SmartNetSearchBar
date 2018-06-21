@@ -13,18 +13,6 @@ Namespace My
                 My.Settings.Upgrade()
                 My.Settings.firststart = False
             End If
-            Gecko.Xpcom.Initialize("Firefox")
-            Gecko.GeckoPreferences.User("intl.accept_languages") = "fr"
-            Gecko.GeckoPreferences.User("general.useragent.locale") = "fr"
-            If Environment.Is64BitOperatingSystem = True Then
-                Gecko.GeckoPreferences.User("general.useragent.override") = "Mozilla/5.0 (Windows NT " + Environment.OSVersion.Version.Major.ToString + "." + Environment.OSVersion.Version.Minor.ToString + "; Win64; x64; rv:45.0) Gecko/20100101 Firefox/45.0  SmartNetSearchBar/" + My.Application.Info.Version.ToString
-            Else
-                Gecko.GeckoPreferences.User("general.useragent.override") = "Mozilla/5.0 (Windows NT " + Environment.OSVersion.Version.Major.ToString + "." + Environment.OSVersion.Version.Minor.ToString + "; rv45.0) Gecko/20100101 Firefox/45.0  SmartNetSearchBar/" + My.Application.Info.Version.ToString
-            End If
-            Gecko.GeckoPreferences.Default("media.fragmented-mp4.ffmpeg.enabled") = True
-            Gecko.GeckoPreferences.Default("media.mediasource.enabled") = True
-            Gecko.GeckoPreferences.Default("media.mediasource.ignore_codecs") = True
-            Gecko.GeckoPreferences.Default("extensions.blocklist.enabled") = False
         End Sub
     End Class
 End Namespace

@@ -152,14 +152,44 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BrowserForm.en.resx">
+      <DependentUpon>BrowserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowserForm.fr.resx">
+      <DependentUpon>BrowserForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BrowserForm.resx">
       <DependentUpon>BrowserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.en.resx">
+      <DependentUpon>FormAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.fr.resx">
+      <DependentUpon>FormAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchBar.en.resx">
+      <DependentUpon>FormSearchBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchBar.fr.resx">
+      <DependentUpon>FormSearchBar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSearchBar.resx">
       <DependentUpon>FormSearchBar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSettings.en.resx">
+      <DependentUpon>FormSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSettings.fr.resx">
+      <DependentUpon>FormSettings.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSettings.resx">
       <DependentUpon>FormSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdater.en.resx">
+      <DependentUpon>FormUpdater.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdater.fr.resx">
+      <DependentUpon>FormUpdater.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUpdater.resx">
       <DependentUpon>FormUpdater.vb</DependentUpon>
@@ -227,10 +257,18 @@
     <Content Include="Resources\ButtonImages\Help.png" />
     <Content Include="Resources\ButtonImages\MenuWhite.png" />
     <Content Include="Resources\ButtonImages\MinimizeWhite.png" />
+    <Content Include="Resources\ButtonImages\NextBlack.png" />
+    <Content Include="Resources\ButtonImages\PreviousBlack.png" />
     <Content Include="Resources\ButtonImages\Search.png" />
     <Content Include="Resources\ButtonImages\SendFeedback.png" />
     <Content Include="Resources\ButtonImages\Settings.png" />
+    <Content Include="Resources\Logo\logo1024.png" />
+    <Content Include="Resources\Logo\wordmark_black_36.png" />
+    <Content Include="Resources\Logo\wordmark_white_36.png" />
     <Content Include="Resources\NotificationIcon\notif.ico" />
+    <Content Include="Resources\Other\GPLv3Logo.png" />
+    <Content Include="Resources\Other\MozillaFoundationLogo.png" />
+    <Content Include="Resources\Other\Netscape-gecko-logo.jpg" />
     <Content Include="Resources\SearchEngineLogo\bing.png" />
     <Content Include="Resources\SearchEngineLogo\duckduckgo.png" />
     <Content Include="Resources\SearchEngineLogo\google.png" />
