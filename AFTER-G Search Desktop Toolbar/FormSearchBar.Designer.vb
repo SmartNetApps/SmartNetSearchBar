@@ -70,7 +70,7 @@ Partial Class FormSearchBar
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AffichermasquerToolStripMenuItem, Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(252, 48)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(252, 70)
         '
         'AffichermasquerToolStripMenuItem
         '
@@ -80,7 +80,7 @@ Partial Class FormSearchBar
         '
         'FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem
         '
-        Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Image = CType(resources.GetObject("FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.Close
         Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Name = "FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem"
         Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Size = New System.Drawing.Size(251, 22)
         Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Text = "Quitter"
@@ -93,7 +93,7 @@ Partial Class FormSearchBar
         '
         'ParamètresToolStripMenuItem
         '
-        Me.ParamètresToolStripMenuItem.Image = CType(resources.GetObject("ParamètresToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.ParamètresToolStripMenuItem.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.Settings
         Me.ParamètresToolStripMenuItem.Name = "ParamètresToolStripMenuItem"
         Me.ParamètresToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
         Me.ParamètresToolStripMenuItem.Text = "Paramètres..."
@@ -101,7 +101,7 @@ Partial Class FormSearchBar
         'SupportSurAFTERGAppsToolStripMenuItem
         '
         Me.SupportSurAFTERGAppsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CentreDaideEnLigneToolStripMenuItem, Me.ContacterLéquipeToolStripMenuItem, Me.ToolStripSeparator2, Me.AProposDeAFTERGDesktopToolbarToolStripMenuItem, Me.EnvoyerVosCommentairesToolStripMenuItem})
-        Me.SupportSurAFTERGAppsToolStripMenuItem.Image = CType(resources.GetObject("SupportSurAFTERGAppsToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.SupportSurAFTERGAppsToolStripMenuItem.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.Help
         Me.SupportSurAFTERGAppsToolStripMenuItem.Name = "SupportSurAFTERGAppsToolStripMenuItem"
         Me.SupportSurAFTERGAppsToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
         Me.SupportSurAFTERGAppsToolStripMenuItem.Text = "Support sur SmartNet Apps"
@@ -127,11 +127,11 @@ Partial Class FormSearchBar
         '
         Me.AProposDeAFTERGDesktopToolbarToolStripMenuItem.Name = "AProposDeAFTERGDesktopToolbarToolStripMenuItem"
         Me.AProposDeAFTERGDesktopToolbarToolStripMenuItem.Size = New System.Drawing.Size(258, 22)
-        Me.AProposDeAFTERGDesktopToolbarToolStripMenuItem.Text = "A propos de SmartNet Search Bar..."
+        Me.AProposDeAFTERGDesktopToolbarToolStripMenuItem.Text = "À propos de SmartNet Search Bar..."
         '
         'EnvoyerVosCommentairesToolStripMenuItem
         '
-        Me.EnvoyerVosCommentairesToolStripMenuItem.Image = CType(resources.GetObject("EnvoyerVosCommentairesToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.EnvoyerVosCommentairesToolStripMenuItem.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.SendFeedback
         Me.EnvoyerVosCommentairesToolStripMenuItem.Name = "EnvoyerVosCommentairesToolStripMenuItem"
         Me.EnvoyerVosCommentairesToolStripMenuItem.Size = New System.Drawing.Size(258, 22)
         Me.EnvoyerVosCommentairesToolStripMenuItem.Text = "Envoyer vos commentaires..."
@@ -158,7 +158,7 @@ Partial Class FormSearchBar
         '
         'QuitterToolStripMenuItem
         '
-        Me.QuitterToolStripMenuItem.Image = CType(resources.GetObject("QuitterToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.QuitterToolStripMenuItem.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.Close
         Me.QuitterToolStripMenuItem.Name = "QuitterToolStripMenuItem"
         Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
         Me.QuitterToolStripMenuItem.Text = "Quitter"
@@ -203,9 +203,9 @@ Partial Class FormSearchBar
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox4.ContextMenuStrip = Me.ContextMenuStrip2
-        Me.PictureBox4.ErrorImage = CType(resources.GetObject("PictureBox4.ErrorImage"), System.Drawing.Image)
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.InitialImage = CType(resources.GetObject("PictureBox4.InitialImage"), System.Drawing.Image)
+        Me.PictureBox4.ErrorImage = Global.SmartNet_Search_Bar.My.Resources.Resources.MenuWhite
+        Me.PictureBox4.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.MenuWhite
+        Me.PictureBox4.InitialImage = Global.SmartNet_Search_Bar.My.Resources.Resources.MenuWhite
         Me.PictureBox4.Location = New System.Drawing.Point(334, 16)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(16, 16)
@@ -216,8 +216,8 @@ Partial Class FormSearchBar
         'UpdateNotifyIcon
         '
         Me.UpdateNotifyIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
-        Me.UpdateNotifyIcon.BalloonTipText = "AFTER-G Apps Updater"
-        Me.UpdateNotifyIcon.BalloonTipTitle = "Une mise à jour est disponible pour SmartNet Search Bar"
+        Me.UpdateNotifyIcon.BalloonTipText = "Une mise à jour est disponible pour SmartNet Search Bar"
+        Me.UpdateNotifyIcon.BalloonTipTitle = "SmartNet Apps Updater"
         Me.UpdateNotifyIcon.Icon = CType(resources.GetObject("UpdateNotifyIcon.Icon"), System.Drawing.Icon)
         Me.UpdateNotifyIcon.Text = "Mise à jour disponible"
         '

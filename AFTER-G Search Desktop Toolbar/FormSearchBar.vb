@@ -194,7 +194,7 @@ Public Class FormSearchBar
             Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/version.txt"))
             Dim SupportStatus As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/support-status.txt")
             If VersionActuelle > DerniereVersion Then
-                MsgBox("Il semblerait que vous utilisez une version de SmartNet Search Bar non publique, réservée aux développeurs du logiciel. Cette utilisation n'est pas autorisée, veuillez retélécharger le logiciel sur SmartNet Apps. Veuillez nous contacter si vous pensez qu'il s'agit d'une erreur.", MsgBoxStyle.Exclamation, "Utilisation non autorisée")
+                MsgBox("Vous utilisez une version de SmartNet Search Bar qui n'a pas encore été publiée. Par conséquent, elle peut contenir des incohérences et des beugs. Merci de ne pas les signaler tant que cette version n'aura pas été publiée.", MsgBoxStyle.Exclamation, "Version non publiée")
             End If
             If My.Settings.autoupdate = True Then
                 If NTActualVersion < MiniNTVersion Then
