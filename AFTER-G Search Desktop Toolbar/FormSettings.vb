@@ -78,11 +78,7 @@ Public Class FormSettings
             End If
         Catch ex As Exception
         End Try
-        If CInt(My.Application.Info.Version.Revision.ToString) > 0 Then
-            CurrentVersionLabel.Text = "Version actuelle : " + My.Application.Info.Version.Major.ToString + "." + My.Application.Info.Version.Minor.ToString + "." + My.Application.Info.Version.Build.ToString + " avec correctif " + My.Application.Info.Version.Revision.ToString
-        Else
-            CurrentVersionLabel.Text = "Version actuelle : " + My.Application.Info.Version.Major.ToString + "." + My.Application.Info.Version.Minor.ToString + "." + My.Application.Info.Version.Build.ToString
-        End If
+        CurrentVersionLabel.Text = "Version actuelle : " + My.Application.Info.Version.Major.ToString + "." + My.Application.Info.Version.Minor.ToString + "." + My.Application.Info.Version.Build.ToString
         If My.Settings.autoupdate = True Then
             AutoUpdatesCheckBox.Checked = True
         Else
