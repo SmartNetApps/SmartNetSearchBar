@@ -4,6 +4,9 @@ Imports System.Net
 
 Public Class FormSettings
 
+    ''' <summary>
+    ''' Ajoute le raccourci de démarrage automatique à l'ordinateur de l'utilisateur.
+    ''' </summary>
     Sub AddStartup()
         Dim Shell = New WshShell
         Dim StartupDir As String = Environment.GetFolderPath(Environment.SpecialFolder.Startup)
@@ -13,6 +16,9 @@ Public Class FormSettings
         objShortcut.Save()
     End Sub
 
+    ''' <summary>
+    ''' Supprime le raccourci de démarrage automatique de l'ordinateur de l'utilisateur.
+    ''' </summary>
     Sub RemoveStartup()
         Dim PathStartup As String = Environment.GetFolderPath(Environment.SpecialFolder.Startup)
         System.IO.File.Delete(PathStartup & "\SmartNet Search Bar.lnk")
