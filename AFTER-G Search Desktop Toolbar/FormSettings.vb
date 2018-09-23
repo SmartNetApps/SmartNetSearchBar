@@ -135,10 +135,10 @@ Public Class FormSettings
             Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/version.txt"))
             Dim SupportStatus As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/support-status.txt")
             If VersionActuelle > DerniereVersion Then
-                MsgBox("Il semblerait que vous utilisez une version de SmartNet Search Bar non publique, réservée aux développeurs du logiciel. Cette utilisation n'est pas autorisée, veuillez retélécharger le logiciel sur SmartNet Apps. Veuillez nous contacter si vous pensez qu'il s'agit d'une erreur.", MsgBoxStyle.Exclamation, "Utilisation non autorisée")
+                MsgBox("Il semblerait que vous utilisez une version de SmartNet Search Bar qui n'a pas été publiée. Vous pourriez rencontrer des bugs ou incohérences, merci de ne pas les signaler tant que le logiciel n'est pas mis à jour pour le public. Veuillez nous contacter si vous pensez qu'il s'agit d'une erreur.", MsgBoxStyle.Exclamation, "Version préliminaire")
             Else
                 If NTActualVersion < MiniNTVersion Then
-                    MsgBox("Votre système d'exploitation n'est plus pris en charge par SmartNet Apps. Visitez le site SmartNet Apps pour en savoir plus à ce sujet. La recherche automatique de mises à jour à été désactivée.", MsgBoxStyle.Exclamation, "Avertissement")
+                    MsgBox("Votre système d'exploitation n'est plus pris en charge. Visitez le site SmartNet Apps pour en savoir plus à ce sujet. La recherche automatique de mises à jour à été désactivée.", MsgBoxStyle.Exclamation, "Avertissement")
                     My.Settings.autoupdate = False
                     My.Settings.Save()
                     FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = False
@@ -152,6 +152,7 @@ Public Class FormSettings
                             FormSearchBar.TéléchargerLaVersionXXXXToolStripMenuItem.Text = "Télécharger la version " + DerniereVersion.ToString
                             FormUpdater.Show()
                         Else
+                            MsgBox("Vous utilisez déjà la dernière version de SmartNet Search Bar.", MsgBoxStyle.Information, "SmartNet Apps Updater")
                             FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = False
                             GoTo StopVersionChecking
                         End If
@@ -174,7 +175,7 @@ StopVersionChecking:
         End If
         If AutoUpdatesCheckBox.Checked = False Then
             My.Settings.autoupdate = False
-            MsgBox("Avertissement : Les mises à jour permettent de corriger les beugs du logiciel et de lui apporter des nouvelles fonctionnalités. Si vous désactivez les mises à jour automatiques, ceci ne pourra être fait dès que possible. Ceci n'est pas recommandé.", MsgBoxStyle.Exclamation, "Désactiver SmartNet Apps Updater")
+            MsgBox("Avertissement : Les mises à jour permettent de corriger les beugs du logiciel et de lui apporter des nouvelles fonctionnalités. Si vous désactivez les mises à jour automatiques, ceci ne pourra pas être fait. Ceci n'est pas recommandé.", MsgBoxStyle.Exclamation, "Désactiver SmartNet Apps Updater")
         End If
     End Sub
 
