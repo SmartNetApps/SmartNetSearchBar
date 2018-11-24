@@ -2,10 +2,22 @@
 
 Public Class FormUpdater
     Dim agent As UpdateAgent
+    Dim client As WebClient
+    Dim NewVersion As String
+    Dim DownloadLink As String
+    Dim ReleaseNotes As String
 
     Public Sub New()
         InitializeComponent()
         agent = New UpdateAgent()
+        client = New WebClient()
+
+        NewVersion = agent.LastVersionNumberAvailable()
+        DownloadLink = agent.DownloadLink()
+        ReleaseNotes = agent.ReleaseNotes()
+
+        AddHandler client.DownloadProgressChanged, AddressOf MAJ2_ProgressChanged
+        AddHandler client.DownloadFileCompleted, AddressOf MAJ2_DownloadCompleted
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -18,14 +30,14 @@ Public Class FormUpdater
             Button2.Enabled = False
             ProgressBar1.Visible = True
             'Dim MAJ As New WebClient
-            Dim MAJ2 As New WebClient
-            AddHandler MAJ2.DownloadProgressChanged, AddressOf MAJ2_ProgressChanged
-            AddHandler MAJ2.DownloadFileCompleted, AddressOf MAJ2_DownloadCompleted
-            Dim DownloadLink As String = agent.DownloadLink()
+            'Dim MAJ2 As New WebClient
+            'AddHandler client.DownloadProgressChanged, AddressOf MAJ2_ProgressChanged
+            'AddHandler client.DownloadFileCompleted, AddressOf MAJ2_DownloadCompleted
+            'Dim DownloadLink As String = agent.DownloadLink()
             'Dim DownloadLink As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/download.txt")
-            Dim DerniereVersion As String = agent.LastVersionNumberAvailable()
+            'Dim DerniereVersion As String = agent.LastVersionNumberAvailable()
             'Dim DerniereVersion As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/version.txt")
-            MAJ2.DownloadFileAsync(New Uri(DownloadLink), My.Computer.FileSystem.SpecialDirectories.Temp + "\smartnetsearchbar-update-" + DerniereVersion + ".exe")
+            client.DownloadFileAsync(New Uri(DownloadLink), My.Computer.FileSystem.SpecialDirectories.Temp + "\smartnetsearchbar-update-" + NewVersion + ".exe")
         Catch ex As Exception
             MsgBox("Téléchargement impossible : " + ex.Message, MsgBoxStyle.Critical, "Téléchargement de la mise à jour")
         End Try
@@ -39,18 +51,18 @@ Public Class FormUpdater
     End Sub
 
     Private Sub MAJ2_DownloadCompleted(ByVal sender As Object, ByVal e As System.ComponentModel.AsyncCompletedEventArgs)
-        Dim MAJ As New WebClient
-        Dim DerniereVersion As String = agent.LastVersionNumberAvailable()
+        'Dim MAJ As New WebClient
+        'Dim DerniereVersion As String = agent.LastVersionNumberAvailable()
         'Dim DerniereVersion As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/version.txt")
-        Process.Start(My.Computer.FileSystem.SpecialDirectories.Temp + "\smartnetsearchbar-update-" + DerniereVersion + ".exe", "/SILENT /NOCANCEL /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS")
+        Process.Start(My.Computer.FileSystem.SpecialDirectories.Temp + "\smartnetsearchbar-update-" + NewVersion + ".exe", "/SILENT /NOCANCEL /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS")
         Me.Close()
         Application.Exit()
     End Sub
 
     Private Sub FormUpdater_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim MAJ As New WebClient
-        Dim Nouveautes = agent.ReleaseNotes()
+        'Dim MAJ As New WebClient
+        'Dim Nouveautes = agent.ReleaseNotes()
         'Dim Nouveautes As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/releasenotes.txt")
-        RichTextBox1.Text = Nouveautes
+        RichTextBox1.Text = ReleaseNotes
     End Sub
 End Class

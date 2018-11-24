@@ -79,6 +79,13 @@ Public Class FormSettings
         Catch ex As Exception
         End Try
         CurrentVersionLabel.Text = "Version actuelle : " + My.Application.Info.Version.ToString()
+        If (New UpdateAgent().IsUpdateAvailable(False)) Then
+            CheckUpdatesNowButton.Enabled = True
+            CheckUpdatesNowButton.Text = "Nouvelle mise à jour disponible !"
+        Else
+            CheckUpdatesNowButton.Enabled = False
+            CheckUpdatesNowButton.Text = "SmartNet Square Note est à jour."
+        End If
         If My.Settings.autoupdate = True Then
             AutoUpdatesCheckBox.Checked = True
         Else
@@ -128,47 +135,50 @@ Public Class FormSettings
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles CheckUpdatesNowButton.Click
-        Try
-            Dim MiniNTVersionChecker As New WebClient
-            Dim NTActualVersion As Version = Environment.OSVersion.Version
-            Dim MiniNTVersion As Version = New Version(MiniNTVersionChecker.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/MinimumNTVersion.txt"))
-            Dim MAJ As New WebClient
-            Dim VersionActuelle As Version = My.Application.Info.Version
-            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/version.txt"))
-            Dim SupportStatus As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/support-status.txt")
-            If VersionActuelle > DerniereVersion Then
-                MsgBox("Il semblerait que vous utilisez une version de SmartNet Search Bar qui n'a pas été publiée. Vous pourriez rencontrer des bugs ou incohérences, merci de ne pas les signaler tant que le logiciel n'est pas mis à jour pour le public. Veuillez nous contacter si vous pensez qu'il s'agit d'une erreur.", MsgBoxStyle.Exclamation, "Version préliminaire")
-            Else
-                If NTActualVersion < MiniNTVersion Then
-                    MsgBox("Votre système d'exploitation n'est plus pris en charge. Visitez le site SmartNet Apps pour en savoir plus à ce sujet. La recherche automatique de mises à jour à été désactivée.", MsgBoxStyle.Exclamation, "Avertissement")
-                    My.Settings.autoupdate = False
-                    My.Settings.Save()
-                    FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = False
-                    GoTo StopVersionChecking
-                Else
-                    If SupportStatus = "on" Then
-                        If VersionActuelle < DerniereVersion Then
-                            FormSearchBar.UpdateNotifyIcon.Visible = True
-                            FormSearchBar.UpdateNotifyIcon.ShowBalloonTip(5000)
-                            FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = True
-                            FormSearchBar.TéléchargerLaVersionXXXXToolStripMenuItem.Text = "Télécharger la version " + DerniereVersion.ToString
-                            FormUpdater.Show()
-                        Else
-                            MsgBox("Vous utilisez déjà la dernière version de SmartNet Search Bar.", MsgBoxStyle.Information, "SmartNet Apps Updater")
-                            FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = False
-                            GoTo StopVersionChecking
-                        End If
-                    Else
-                        FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = False
-                        MsgBox("Le support et le développement de ce produit ont été interrompus. Visitez le site SmartNet Apps pour en savoir plus.", MsgBoxStyle.Critical, "Service interrompu")
-                        GoTo StopVersionChecking
-                    End If
-                End If
-            End If
-StopVersionChecking:
-        Catch ex As Exception
-            MsgBox("La connexion à SmartNet Apps Updater a échoué : " + ex.Message, MsgBoxStyle.Critical, "SmartNet Apps Updater")
-        End Try
+        '        Try
+        '            Dim MiniNTVersionChecker As New WebClient
+        '            Dim NTActualVersion As Version = Environment.OSVersion.Version
+        '            Dim MiniNTVersion As Version = New Version(MiniNTVersionChecker.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/MinimumNTVersion.txt"))
+        '            Dim MAJ As New WebClient
+        '            Dim VersionActuelle As Version = My.Application.Info.Version
+        '            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/version.txt"))
+        '            Dim SupportStatus As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/support-status.txt")
+        '            If VersionActuelle > DerniereVersion Then
+        '                MsgBox("Il semblerait que vous utilisez une version de SmartNet Search Bar qui n'a pas été publiée. Vous pourriez rencontrer des bugs ou incohérences, merci de ne pas les signaler tant que le logiciel n'est pas mis à jour pour le public. Veuillez nous contacter si vous pensez qu'il s'agit d'une erreur.", MsgBoxStyle.Exclamation, "Version préliminaire")
+        '            Else
+        '                If NTActualVersion < MiniNTVersion Then
+        '                    MsgBox("Votre système d'exploitation n'est plus pris en charge. Visitez le site SmartNet Apps pour en savoir plus à ce sujet. La recherche automatique de mises à jour à été désactivée.", MsgBoxStyle.Exclamation, "Avertissement")
+        '                    My.Settings.autoupdate = False
+        '                    My.Settings.Save()
+        '                    FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = False
+        '                    GoTo StopVersionChecking
+        '                Else
+        '                    If SupportStatus = "on" Then
+        '                        If VersionActuelle < DerniereVersion Then
+        '                            FormSearchBar.UpdateNotifyIcon.Visible = True
+        '                            FormSearchBar.UpdateNotifyIcon.ShowBalloonTip(5000)
+        '                            FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = True
+        '                            FormSearchBar.TéléchargerLaVersionXXXXToolStripMenuItem.Text = "Télécharger la version " + DerniereVersion.ToString
+        '                            FormUpdater.Show()
+        '                        Else
+        '                            MsgBox("Vous utilisez déjà la dernière version de SmartNet Search Bar.", MsgBoxStyle.Information, "SmartNet Apps Updater")
+        '                            FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = False
+        '                            GoTo StopVersionChecking
+        '                        End If
+        '                    Else
+        '                        FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = False
+        '                        MsgBox("Le support et le développement de ce produit ont été interrompus. Visitez le site SmartNet Apps pour en savoir plus.", MsgBoxStyle.Critical, "Service interrompu")
+        '                        GoTo StopVersionChecking
+        '                    End If
+        '                End If
+        '            End If
+        'StopVersionChecking:
+        '        Catch ex As Exception
+        '            MsgBox("La connexion à SmartNet Apps Updater a échoué : " + ex.Message, MsgBoxStyle.Critical, "SmartNet Apps Updater")
+        '        End Try
+
+        Dim agent As New UpdateAgent()
+        agent.IsUpdateAvailable(True)
     End Sub
 
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles AutoUpdatesCheckBox.CheckedChanged

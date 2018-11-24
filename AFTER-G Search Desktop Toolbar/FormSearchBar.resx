@@ -117,89 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PictureBoxSearchEngineLogo.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <metadata name="NotifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="NotifyIcon1.BalloonTipText" xml:space="preserve">
+    <value>Double-cliquez sur l'icône SmartNet Search Bar pour afficher la barre d'outils.</value>
   </data>
-  <data name="&gt;&gt;PictureBoxSearchEngineLogo.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="NotifyIcon1.BalloonTipTitle" xml:space="preserve">
+    <value>La barre d'outils est opérationnelle.</value>
   </data>
-  <data name="&gt;&gt;VérifierLesMisesÀJourToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
+  <metadata name="ContextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>130, 22</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ContextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 48</value>
-  </data>
   <data name="AffichermasquerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>251, 22</value>
   </data>
-  <data name="PictureBox3.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABZ0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMDvo9WkAAAAgSURBVDhPYxgFo2AU
-        YIL/RAKockwAlScIoMoHBWBgAAC6pE+xcRdrqAAAAABJRU5ErkJggg==
-</value>
+  <data name="AffichermasquerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Afficher/masquer la barre d'outils</value>
   </data>
-  <data name="PictureBoxSearchEngineLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 2</value>
+  <data name="AffichermasquerToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Permet d'afficher ou de masquer la barre d'outils de votre Bureau.</value>
   </data>
-  <data name="&gt;&gt;PictureBoxSearchEngineLogo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AProposDeAFTERGDesktopToolbarToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UpdateNotifyIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ParamètresToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>Ouvrir les paramètres de SmartNet Search Bar.</value>
+  <data name="FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 22</value>
   </data>
   <data name="FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Text" xml:space="preserve">
     <value>Quitter</value>
   </data>
-  <data name="&gt;&gt;TextBox1.Name" xml:space="preserve">
-    <value>TextBox1</value>
+  <data name="FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Fermer la barre d'outils.</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>350, 36</value>
+  <data name="ContextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 48</value>
   </data>
-  <data name="&gt;&gt;FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ContextMenuStrip1.Name" xml:space="preserve">
+    <value>ContextMenuStrip1</value>
   </data>
-  <data name="QuitterToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>Fermer SmartNet Search Bar.</value>
-  </data>
-  <data name="ToolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 6</value>
-  </data>
-  <data name="QuitterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 22</value>
-  </data>
-  <data name="&gt;&gt;QuitterToolStripMenuItem.Name" xml:space="preserve">
-    <value>QuitterToolStripMenuItem</value>
-  </data>
-  <data name="VérifierLesMisesÀJourToolStripMenuItem.Text" xml:space="preserve">
-    <value>Mise à jour disponible</value>
-  </data>
-  <data name="&gt;&gt;EnvoyerVosCommentairesToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TéléchargerLaVersionXXXXToolStripMenuItem.Name" xml:space="preserve">
-    <value>TéléchargerLaVersionXXXXToolStripMenuItem</value>
-  </data>
-  <data name="UpdateNotifyIcon.BalloonTipText" xml:space="preserve">
-    <value>Une mise à jour est disponible pour SmartNet Search Bar</value>
-  </data>
-  <data name="&gt;&gt;CentreDaideEnLigneToolStripMenuItem.Name" xml:space="preserve">
-    <value>CentreDaideEnLigneToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;PictureBox2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="TéléchargerLaVersionXXXXToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
+  <data name="&gt;&gt;ContextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="NotifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4467,227 +4423,63 @@
         wAMAAOAHAAA=
 </value>
   </data>
-  <data name="&gt;&gt;ContextMenuStrip1.Name" xml:space="preserve">
-    <value>ContextMenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;PictureBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="PictureBox2.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC42/Ixj3wAAAeZJREFUSEul1b9L
-        lVEcx/EsTTOhEsHIVaHl4qC1NDS2uDj4F7gkDQUOToLQKkhrQ7roIEI/xKgUFEoQhNK/QBCHolDESCr1
-        6f158Fy+zznfe7HrB16H59HvOYd7z497IcsyTxue4B22cYCv+ISn6ILXzxX/oQGj+IlqOcYUWhGPkbAv
-        17CM/8kWbsOOkwgP+gQr8PIX+qoO87c0O7iFwsBWeBhDnA304wpUcwn38AZx3qM8aExNO37BZgaXkXQ4
-        NYw4D+DV5pOMwOYzqk0QPIfNS3h1+STxWvQhKXToG/iDEO3IeiS1an4gRIt7lk8RfISNe37UaM+HaEsm
-        RVVo7WzuIqlTYw/eHuqQFFbwFjYlJHVqNmHTjaTQ0YhdhBzhKpJaNc9gM42k0PEINmvw6vJJehBnEEmx
-        cQe6NG2G4NXmk8hr2GgzjOM6bAddPw8RT7CPZtjasvDQgW+Io5vgA17gFb6jUiahq6cwgdiXXtgzU0u0
-        pZMDWXhBJ7SAZ4luZy9zKBxoO0FwEQNYgr02lBPobnuMm1iFl3loi+djxhPEtJg6N/ehHXUD9v8tqPQ7
-        pOs/3wy2Q6000CK86Je2xetUiyYswMus16FWWmxt8zi/veLz0GGdhc0Xr/C8dE4moDO3nmVZ6R8O1zcp
-        c+xsaAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="TextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 5</value>
-  </data>
-  <data name="PictureBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 16</value>
-  </data>
-  <data name="AProposDeAFTERGDesktopToolbarToolStripMenuItem.Text" xml:space="preserve">
-    <value>À propos de SmartNet Search Bar...</value>
-  </data>
-  <data name="ContextMenuStrip2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 98</value>
-  </data>
-  <data name="PictureBox3.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABZ0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMDvo9WkAAAAgSURBVDhPYxgFo2AU
-        YIL/RAKockwAlScIoMoHBWBgAAC6pE+xcRdrqAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;ContextMenuStrip2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="AffichermasquerToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>Permet d'afficher ou de masquer la barre d'outils de votre Bureau.</value>
-  </data>
-  <data name="&gt;&gt;EnvoyerVosCommentairesToolStripMenuItem.Name" xml:space="preserve">
-    <value>EnvoyerVosCommentairesToolStripMenuItem</value>
-  </data>
-  <data name="SupportSurAFTERGAppsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Support sur SmartNet Apps</value>
-  </data>
-  <data name="PictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 16</value>
-  </data>
-  <data name="&gt;&gt;PictureBox3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Name" xml:space="preserve">
-    <value>FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem</value>
-  </data>
-  <data name="NotifyIcon1.BalloonTipText" xml:space="preserve">
-    <value>Double-cliquez sur l'icône SmartNet Search Bar pour afficher la barre d'outils.</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
-  </data>
-  <data name="&gt;&gt;AffichermasquerToolStripMenuItem.Name" xml:space="preserve">
-    <value>AffichermasquerToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;SupportSurAFTERGAppsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="NotifyIcon1.Text" xml:space="preserve">
     <value>SmartNet Search Bar</value>
   </data>
-  <data name="TextBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14pt</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="NotifyIcon1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;ParamètresToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <metadata name="ContextMenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>287, 22</value>
+  </metadata>
+  <data name="ParamètresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 22</value>
   </data>
-  <data name="PictureBox1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ParamètresToolStripMenuItem.Text" xml:space="preserve">
+    <value>Paramètres...</value>
   </data>
-  <data name="&gt;&gt;TextBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="ParamètresToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Ouvrir les paramètres de SmartNet Search Bar.</value>
   </data>
-  <data name="TéléchargerLaVersionXXXXToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>Télécharger la dernière version de SmartNet Search Bar via SmartNet Apps Updater.</value>
+  <data name="CentreDaideEnLigneToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 22</value>
   </data>
-  <data name="PictureBoxSearchEngineLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="&gt;&gt;NotifyIcon1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PictureBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="EnvoyerVosCommentairesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Envoyer vos commentaires...</value>
+  <data name="CentreDaideEnLigneToolStripMenuItem.Text" xml:space="preserve">
+    <value>Aide en ligne...</value>
   </data>
   <data name="ContacterLéquipeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>258, 22</value>
   </data>
-  <data name="SupportSurAFTERGAppsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 22</value>
+  <data name="ContacterLéquipeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Contacter l'équipe</value>
   </data>
-  <data name="NotifyIcon1.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;TextBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ToolStripSeparator1.Name" xml:space="preserve">
-    <value>ToolStripSeparator1</value>
-  </data>
-  <data name="PictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC42/Ixj3wAAAeZJREFUSEul1b9L
-        lVEcx/EsTTOhEsHIVaHl4qC1NDS2uDj4F7gkDQUOToLQKkhrQ7roIEI/xKgUFEoQhNK/QBCHolDESCr1
-        6f158Fy+zznfe7HrB16H59HvOYd7z497IcsyTxue4B22cYCv+ISn6ILXzxX/oQGj+IlqOcYUWhGPkbAv
-        17CM/8kWbsOOkwgP+gQr8PIX+qoO87c0O7iFwsBWeBhDnA304wpUcwn38AZx3qM8aExNO37BZgaXkXQ4
-        NYw4D+DV5pOMwOYzqk0QPIfNS3h1+STxWvQhKXToG/iDEO3IeiS1an4gRIt7lk8RfISNe37UaM+HaEsm
-        RVVo7WzuIqlTYw/eHuqQFFbwFjYlJHVqNmHTjaTQ0YhdhBzhKpJaNc9gM42k0PEINmvw6vJJehBnEEmx
-        cQe6NG2G4NXmk8hr2GgzjOM6bAddPw8RT7CPZtjasvDQgW+Io5vgA17gFb6jUiahq6cwgdiXXtgzU0u0
-        pZMDWXhBJ7SAZ4luZy9zKBxoO0FwEQNYgr02lBPobnuMm1iFl3loi+djxhPEtJg6N/ehHXUD9v8tqPQ7
-        pOs/3wy2Q6000CK86Je2xetUiyYswMus16FWWmxt8zi/veLz0GGdhc0Xr/C8dE4moDO3nmVZ6R8O1zcp
-        c+xsaAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;UpdateNotifyIcon.Name" xml:space="preserve">
-    <value>UpdateNotifyIcon</value>
-  </data>
-  <data name="&gt;&gt;AffichermasquerToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 22</value>
-  </data>
-  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 1</value>
-  </data>
-  <data name="&gt;&gt;ContacterLéquipeToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PictureBox1.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;PictureBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NotifyIcon1.Name" xml:space="preserve">
-    <value>NotifyIcon1</value>
-  </data>
-  <data name="PictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABZ0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMDvo9WkAAAAgSURBVDhPYxgFo2AU
-        YIL/RAKockwAlScIoMoHBWBgAAC6pE+xcRdrqAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ToolStripSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ToolStripSeparator2.Name" xml:space="preserve">
-    <value>ToolStripSeparator2</value>
-  </data>
-  <data name="PictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
-  </data>
-  <data name="PictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 0</value>
-  </data>
-  <data name="QuitterToolStripMenuItem.Text" xml:space="preserve">
-    <value>Quitter</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
-    <value>PictureBox1</value>
-  </data>
-  <data name="UpdateNotifyIcon.Text" xml:space="preserve">
-    <value>Mise à jour disponible</value>
+  <data name="ToolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 6</value>
   </data>
   <data name="AProposDeAFTERGDesktopToolbarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>258, 22</value>
   </data>
+  <data name="AProposDeAFTERGDesktopToolbarToolStripMenuItem.Text" xml:space="preserve">
+    <value>À propos de SmartNet Search Bar...</value>
+  </data>
   <data name="EnvoyerVosCommentairesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>258, 22</value>
   </data>
-  <data name="&gt;&gt;ParamètresToolStripMenuItem.Name" xml:space="preserve">
-    <value>ParamètresToolStripMenuItem</value>
+  <data name="EnvoyerVosCommentairesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Envoyer vos commentaires...</value>
   </data>
-  <data name="TéléchargerLaVersionXXXXToolStripMenuItem.Text" xml:space="preserve">
-    <value>Télécharger la version X.X.X.X</value>
-  </data>
-  <data name="&gt;&gt;SupportSurAFTERGAppsToolStripMenuItem.Name" xml:space="preserve">
-    <value>SupportSurAFTERGAppsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;PictureBox2.Name" xml:space="preserve">
-    <value>PictureBox2</value>
-  </data>
-  <data name="UpdateNotifyIcon.BalloonTipTitle" xml:space="preserve">
-    <value>SmartNet Apps Updater</value>
-  </data>
-  <data name="&gt;&gt;CentreDaideEnLigneToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="VérifierLesMisesÀJourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SupportSurAFTERGAppsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>218, 22</value>
+  </data>
+  <data name="SupportSurAFTERGAppsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Support sur SmartNet Apps</value>
+  </data>
+  <data name="SupportSurAFTERGAppsToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Aide</value>
+  </data>
+  <data name="ToolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 6</value>
   </data>
   <data name="TéléchargerLaVersionXXXXToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4705,14 +4497,314 @@
         OTHsbbc/ayGOk95chugPqPxeDNvC7/wAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="PictureBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="TéléchargerLaVersionXXXXToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 22</value>
+  </data>
+  <data name="TéléchargerLaVersionXXXXToolStripMenuItem.Text" xml:space="preserve">
+    <value>Télécharger la version X.X.X.X</value>
+  </data>
+  <data name="TéléchargerLaVersionXXXXToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Télécharger la dernière version de SmartNet Search Bar via SmartNet Apps Updater.</value>
+  </data>
+  <data name="VérifierLesMisesÀJourToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC42/Ixj3wAAAZxJREFUOE9joAlQ
+        vCulxvZTfhLDP8UbDP8UfgLxJyD7OJAuYfivxQNVhhUwRi4VrbA+JPFD8qncCqCmEKAmfSBtBsTZDH9U
+        LjF8M3rM8NHFAqoeFUzM5m0oaxd8HbZC1BoqhAr+hzIzvHGpY3gS8YnhTqYxVBQCThuzmG3y4fw+NZPP
+        FCqEG9zMb2e4VHeVYX89C1SEgeG5KNO6qxqsk6Bc/GB/PQfDselPGQ4sCQLz/zMwsPxlYPj6i4WBsO0w
+        sH1zH8OWPQvA7H8MDPJAQ/4DMQdYgBiw6nwiw/Krx8BsoAHKIAOA9EwgbgMLEgLzXiUxzHl3BKQ5Eog/
+        QV0AMsQfqgQ/mPK3n2Hyv/lgNlBTIRD/AuIvQMwJFsQHev9xMkz59wxoQCBUBGyILRBPhnLxAuYJv3uB
+        BlxgWPWfGSpEHLCv388i0/ygjafn0weg7bpQYexgu7qL31LjyLgu5xLL3JCJ9qEJK0tsCw7cUK+9fkek
+        /RlqKsQGtmi61yw0jb7c5Vz8qTCw93VU/JIDTrl7si0KjxEOI+IBAwMAJ5acLkxAMoUAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="VérifierLesMisesÀJourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 22</value>
+  </data>
+  <data name="VérifierLesMisesÀJourToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mise à jour disponible</value>
+  </data>
+  <data name="VérifierLesMisesÀJourToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Une mise à jour est disponible !</value>
+  </data>
+  <data name="VérifierLesMisesÀJourToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="QuitterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 22</value>
+  </data>
+  <data name="QuitterToolStripMenuItem.Text" xml:space="preserve">
+    <value>Quitter</value>
+  </data>
+  <data name="QuitterToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Fermer SmartNet Search Bar.</value>
+  </data>
+  <data name="ContextMenuStrip2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 120</value>
+  </data>
+  <data name="&gt;&gt;ContextMenuStrip2.Name" xml:space="preserve">
+    <value>ContextMenuStrip2</value>
+  </data>
+  <data name="&gt;&gt;ContextMenuStrip2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14pt</value>
+  </data>
+  <data name="TextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 5</value>
+  </data>
+  <data name="TextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 25</value>
+  </data>
+  <data name="TextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TextBox1.Name" xml:space="preserve">
+    <value>TextBox1</value>
+  </data>
+  <data name="&gt;&gt;TextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TextBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PictureBox2.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC42/Ixj3wAAAeZJREFUSEul1b9L
+        lVEcx/EsTTOhEsHIVaHl4qC1NDS2uDj4F7gkDQUOToLQKkhrQ7roIEI/xKgUFEoQhNK/QBCHolDESCr1
+        6f158Fy+zznfe7HrB16H59HvOYd7z497IcsyTxue4B22cYCv+ISn6ILXzxX/oQGj+IlqOcYUWhGPkbAv
+        17CM/8kWbsOOkwgP+gQr8PIX+qoO87c0O7iFwsBWeBhDnA304wpUcwn38AZx3qM8aExNO37BZgaXkXQ4
+        NYw4D+DV5pOMwOYzqk0QPIfNS3h1+STxWvQhKXToG/iDEO3IeiS1an4gRIt7lk8RfISNe37UaM+HaEsm
+        RVVo7WzuIqlTYw/eHuqQFFbwFjYlJHVqNmHTjaTQ0YhdhBzhKpJaNc9gM42k0PEINmvw6vJJehBnEEmx
+        cQe6NG2G4NXmk8hr2GgzjOM6bAddPw8RT7CPZtjasvDQgW+Io5vgA17gFb6jUiahq6cwgdiXXtgzU0u0
+        pZMDWXhBJ7SAZ4luZy9zKBxoO0FwEQNYgr02lBPobnuMm1iFl3loi+djxhPEtJg6N/ehHXUD9v8tqPQ7
+        pOs/3wy2Q6000CK86Je2xetUiyYswMus16FWWmxt8zi/veLz0GGdhc0Xr/C8dE4moDO3nmVZ6R8O1zcp
+        c+xsaAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="PictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC42/Ixj3wAAAeZJREFUSEul1b9L
+        lVEcx/EsTTOhEsHIVaHl4qC1NDS2uDj4F7gkDQUOToLQKkhrQ7roIEI/xKgUFEoQhNK/QBCHolDESCr1
+        6f158Fy+zznfe7HrB16H59HvOYd7z497IcsyTxue4B22cYCv+ISn6ILXzxX/oQGj+IlqOcYUWhGPkbAv
+        17CM/8kWbsOOkwgP+gQr8PIX+qoO87c0O7iFwsBWeBhDnA304wpUcwn38AZx3qM8aExNO37BZgaXkXQ4
+        NYw4D+DV5pOMwOYzqk0QPIfNS3h1+STxWvQhKXToG/iDEO3IeiS1an4gRIt7lk8RfISNe37UaM+HaEsm
+        RVVo7WzuIqlTYw/eHuqQFFbwFjYlJHVqNmHTjaTQ0YhdhBzhKpJaNc9gM42k0PEINmvw6vJJehBnEEmx
+        cQe6NG2G4NXmk8hr2GgzjOM6bAddPw8RT7CPZtjasvDQgW+Io5vgA17gFb6jUiahq6cwgdiXXtgzU0u0
+        pZMDWXhBJ7SAZ4luZy9zKBxoO0FwEQNYgr02lBPobnuMm1iFl3loi+djxhPEtJg6N/ehHXUD9v8tqPQ7
+        pOs/3wy2Q6000CK86Je2xetUiyYswMus16FWWmxt8zi/veLz0GGdhc0Xr/C8dE4moDO3nmVZ6R8O1zcp
+        c+xsaAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="PictureBox2.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC42/Ixj3wAAAeZJREFUSEul1b9L
+        lVEcx/EsTTOhEsHIVaHl4qC1NDS2uDj4F7gkDQUOToLQKkhrQ7roIEI/xKgUFEoQhNK/QBCHolDESCr1
+        6f158Fy+zznfe7HrB16H59HvOYd7z497IcsyTxue4B22cYCv+ISn6ILXzxX/oQGj+IlqOcYUWhGPkbAv
+        17CM/8kWbsOOkwgP+gQr8PIX+qoO87c0O7iFwsBWeBhDnA304wpUcwn38AZx3qM8aExNO37BZgaXkXQ4
+        NYw4D+DV5pOMwOYzqk0QPIfNS3h1+STxWvQhKXToG/iDEO3IeiS1an4gRIt7lk8RfISNe37UaM+HaEsm
+        RVVo7WzuIqlTYw/eHuqQFFbwFjYlJHVqNmHTjaTQ0YhdhBzhKpJaNc9gM42k0PEINmvw6vJJehBnEEmx
+        cQe6NG2G4NXmk8hr2GgzjOM6bAddPw8RT7CPZtjasvDQgW+Io5vgA17gFb6jUiahq6cwgdiXXtgzU0u0
+        pZMDWXhBJ7SAZ4luZy9zKBxoO0FwEQNYgr02lBPobnuMm1iFl3loi+djxhPEtJg6N/ehHXUD9v8tqPQ7
+        pOs/3wy2Q6000CK86Je2xetUiyYswMus16FWWmxt8zi/veLz0GGdhc0Xr/C8dE4moDO3nmVZ6R8O1zcp
+        c+xsaAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="PictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 6</value>
+  </data>
+  <data name="PictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="PictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PictureBox2.Name" xml:space="preserve">
+    <value>PictureBox2</value>
+  </data>
+  <data name="&gt;&gt;PictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PictureBox2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;PictureBox2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PictureBox3.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAABZ0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMDvo9WkAAAAgSURBVDhPYxgFo2AU
+        YIL/RAKockwAlScIoMoHBWBgAAC6pE+xcRdrqAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="PictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAABZ0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMDvo9WkAAAAgSURBVDhPYxgFo2AU
+        YIL/RAKockwAlScIoMoHBWBgAAC6pE+xcRdrqAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="PictureBox3.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAABZ0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMDvo9WkAAAAgSURBVDhPYxgFo2AU
+        YIL/RAKockwAlScIoMoHBWBgAAC6pE+xcRdrqAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="PictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 0</value>
+  </data>
+  <data name="PictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="PictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="PictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PictureBox3.Name" xml:space="preserve">
+    <value>PictureBox3</value>
+  </data>
+  <data name="&gt;&gt;PictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PictureBox3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="PictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 16</value>
+  </data>
+  <data name="PictureBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="PictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="PictureBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;PictureBox4.Name" xml:space="preserve">
+    <value>PictureBox4</value>
+  </data>
+  <data name="&gt;&gt;PictureBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PictureBox4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="UpdateNotifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>554, 22</value>
+  </metadata>
+  <data name="UpdateNotifyIcon.BalloonTipText" xml:space="preserve">
+    <value>Une mise à jour est disponible pour SmartNet Search Bar</value>
+  </data>
+  <data name="UpdateNotifyIcon.BalloonTipTitle" xml:space="preserve">
+    <value>SmartNet Apps Updater</value>
+  </data>
+  <data name="UpdateNotifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA/v7+Mf39/Zf8/Pza/Pz8+vz8/Pn8/PzZ/f39l/7+/jEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD+/v4J/f39mvz8/P7////////////////////////////////8/Pz+/f39mv7+
+        /gkAAAAAAAAAAAAAAAD+/v4J/Pz8wf//////////////////////////////////////////////////
+        ///8/PzB/v7+CQAAAAAAAAAA/f39mv////////////////////+ypd7/lHOy/62CmP/XsaX/+vLr////
+        //////////////39/ZoAAAAA/v7+Mfz8/P7/////////////////////5N/0//Hu9v/28fP/5szA/+GY
+        UP/74L/////////////8/Pz+/v7+Mf39/Zj//////////97e//+zs///////////////////////////
+        ///99u3//ag2///05f////////////39/Zf8/Pza/////7S0//8REf//QED/////////////////////
+        ///////////////drf//x3n////////////8/Pza/Pz8+v/////W1v//Jyf//zg4///s7P//////////
+        ////////////////////+vP/9bRB/////////////Pz8+vj4+Pr//////////0FB///y8v//////////
+        /////////////////////////Pz1/9u/Pv////////////f39/n8/Pza//////////93fPn/srr2////
+        /////////////////////////////+Htsv/Q23X////////////8/PzZ/f39l///////////4eb5/z15
+        uv/x+Pf///////////////////////b98f+Q4Db/8Pnf/////////////f39l/7+/jH8/Pz+////////
+        //+32df/R791/773vv/5//j/+f/4/8D/tv9j9TX/yvex/////////////Pz8/v7+/jEAAAAA/f39mv//
+        /////////////+L55P+E+3b/VP87/1T/O/+B/2//4f/c//////////////////39/ZoAAAAAAAAAAP7+
+        /gn8/PzB//////////////////////////////////////////////////////z8/MH+/v4JAAAAAAAA
+        AAAAAAAA/v7+Cf39/Zr8/Pz+/////////////////////////////////Pz8/v39/Zr+/v4JAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA/v7+Mf39/Zj8/Pza/Pz8+vz8/Pr8/Pza/f39l/7+/jEAAAAAAAAAAAAA
+        AAAAAAAA8A8AAMADAACAAQAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAIAB
+        AADAAwAA8A8AAA==
+</value>
+  </data>
+  <data name="UpdateNotifyIcon.Text" xml:space="preserve">
+    <value>Mise à jour disponible</value>
+  </data>
+  <data name="PictureBox1.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PictureBox1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>41, 31</value>
+  </data>
+  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 1</value>
+  </data>
+  <data name="PictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
+    <value>PictureBox1</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PictureBoxSearchEngineLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 2</value>
+  </data>
+  <data name="PictureBoxSearchEngineLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="PictureBoxSearchEngineLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSearchEngineLogo.Name" xml:space="preserve">
+    <value>PictureBoxSearchEngineLogo</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSearchEngineLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSearchEngineLogo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSearchEngineLogo.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>350, 36</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -8980,192 +9072,103 @@
         wAMAAOAHAAA=
 </value>
   </data>
-  <data name="&gt;&gt;VérifierLesMisesÀJourToolStripMenuItem.Name" xml:space="preserve">
-    <value>VérifierLesMisesÀJourToolStripMenuItem</value>
-  </data>
-  <data name="PictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="CentreDaideEnLigneToolStripMenuItem.Text" xml:space="preserve">
-    <value>Aide en ligne...</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="AffichermasquerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Afficher/masquer la barre d'outils</value>
-  </data>
-  <data name="&gt;&gt;ContextMenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ToolStripSeparator2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="UpdateNotifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAA/v7+Mf39/Zf8/Pza/Pz8+vz8/Pn8/PzZ/f39l/7+/jEAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAD+/v4J/f39mvz8/P7////////////////////////////////8/Pz+/f39mv7+
-        /gkAAAAAAAAAAAAAAAD+/v4J/Pz8wf//////////////////////////////////////////////////
-        ///8/PzB/v7+CQAAAAAAAAAA/f39mv////////////////////+ypd7/lHOy/62CmP/XsaX/+vLr////
-        //////////////39/ZoAAAAA/v7+Mfz8/P7/////////////////////5N/0//Hu9v/28fP/5szA/+GY
-        UP/74L/////////////8/Pz+/v7+Mf39/Zj//////////97e//+zs///////////////////////////
-        ///99u3//ag2///05f////////////39/Zf8/Pza/////7S0//8REf//QED/////////////////////
-        ///////////////drf//x3n////////////8/Pza/Pz8+v/////W1v//Jyf//zg4///s7P//////////
-        ////////////////////+vP/9bRB/////////////Pz8+vj4+Pr//////////0FB///y8v//////////
-        /////////////////////////Pz1/9u/Pv////////////f39/n8/Pza//////////93fPn/srr2////
-        /////////////////////////////+Htsv/Q23X////////////8/PzZ/f39l///////////4eb5/z15
-        uv/x+Pf///////////////////////b98f+Q4Db/8Pnf/////////////f39l/7+/jH8/Pz+////////
-        //+32df/R791/773vv/5//j/+f/4/8D/tv9j9TX/yvex/////////////Pz8/v7+/jEAAAAA/f39mv//
-        /////////////+L55P+E+3b/VP87/1T/O/+B/2//4f/c//////////////////39/ZoAAAAAAAAAAP7+
-        /gn8/PzB//////////////////////////////////////////////////////z8/MH+/v4JAAAAAAAA
-        AAAAAAAA/v7+Cf39/Zr8/Pz+/////////////////////////////////Pz8/v39/Zr+/v4JAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAA/v7+Mf39/Zj8/Pza/Pz8+vz8/Pr8/Pza/f39l/7+/jEAAAAAAAAAAAAA
-        AAAAAAAA8A8AAMADAACAAQAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAIAB
-        AADAAwAA8A8AAA==
-</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>SmartNet Search Bar</value>
   </data>
-  <data name="SupportSurAFTERGAppsToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>Aide</value>
+  <data name="&gt;&gt;NotifyIcon1.Name" xml:space="preserve">
+    <value>NotifyIcon1</value>
   </data>
-  <data name="&gt;&gt;PictureBox3.Name" xml:space="preserve">
-    <value>PictureBox3</value>
+  <data name="&gt;&gt;NotifyIcon1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AffichermasquerToolStripMenuItem.Name" xml:space="preserve">
+    <value>AffichermasquerToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;AffichermasquerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Name" xml:space="preserve">
+    <value>FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ParamètresToolStripMenuItem.Name" xml:space="preserve">
+    <value>ParamètresToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ParamètresToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SupportSurAFTERGAppsToolStripMenuItem.Name" xml:space="preserve">
+    <value>SupportSurAFTERGAppsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;SupportSurAFTERGAppsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CentreDaideEnLigneToolStripMenuItem.Name" xml:space="preserve">
+    <value>CentreDaideEnLigneToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;CentreDaideEnLigneToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ContacterLéquipeToolStripMenuItem.Name" xml:space="preserve">
     <value>ContacterLéquipeToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;PictureBox3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PictureBoxSearchEngineLogo.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="PictureBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="ToolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 6</value>
-  </data>
-  <data name="&gt;&gt;QuitterToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;ContacterLéquipeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;ToolStripSeparator2.Name" xml:space="preserve">
+    <value>ToolStripSeparator2</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;AProposDeAFTERGDesktopToolbarToolStripMenuItem.Name" xml:space="preserve">
     <value>AProposDeAFTERGDesktopToolbarToolStripMenuItem</value>
   </data>
-  <data name="VérifierLesMisesÀJourToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>Une mise à jour est disponible !</value>
+  <data name="&gt;&gt;AProposDeAFTERGDesktopToolbarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 16</value>
+  <data name="&gt;&gt;EnvoyerVosCommentairesToolStripMenuItem.Name" xml:space="preserve">
+    <value>EnvoyerVosCommentairesToolStripMenuItem</value>
   </data>
-  <data name="VérifierLesMisesÀJourToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC42/Ixj3wAAAZxJREFUOE9joAlQ
-        vCulxvZTfhLDP8UbDP8UfgLxJyD7OJAuYfivxQNVhhUwRi4VrbA+JPFD8qncCqCmEKAmfSBtBsTZDH9U
-        LjF8M3rM8NHFAqoeFUzM5m0oaxd8HbZC1BoqhAr+hzIzvHGpY3gS8YnhTqYxVBQCThuzmG3y4fw+NZPP
-        FCqEG9zMb2e4VHeVYX89C1SEgeG5KNO6qxqsk6Bc/GB/PQfDselPGQ4sCQLz/zMwsPxlYPj6i4WBsO0w
-        sH1zH8OWPQvA7H8MDPJAQ/4DMQdYgBiw6nwiw/Krx8BsoAHKIAOA9EwgbgMLEgLzXiUxzHl3BKQ5Eog/
-        QV0AMsQfqgQ/mPK3n2Hyv/lgNlBTIRD/AuIvQMwJFsQHev9xMkz59wxoQCBUBGyILRBPhnLxAuYJv3uB
-        BlxgWPWfGSpEHLCv388i0/ygjafn0weg7bpQYexgu7qL31LjyLgu5xLL3JCJ9qEJK0tsCw7cUK+9fkek
-        /RlqKsQGtmi61yw0jb7c5Vz8qTCw93VU/JIDTrl7si0KjxEOI+IBAwMAJ5acLkxAMoUAAAAASUVORK5C
-        YII=
-</value>
+  <data name="&gt;&gt;EnvoyerVosCommentairesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="NotifyIcon1.BalloonTipTitle" xml:space="preserve">
-    <value>La barre d'outils est opérationnelle.</value>
+  <data name="&gt;&gt;ToolStripSeparator1.Name" xml:space="preserve">
+    <value>ToolStripSeparator1</value>
   </data>
-  <data name="ParamètresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 22</value>
+  <data name="&gt;&gt;ToolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ContacterLéquipeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Contacter l'équipe</value>
+  <data name="&gt;&gt;VérifierLesMisesÀJourToolStripMenuItem.Name" xml:space="preserve">
+    <value>VérifierLesMisesÀJourToolStripMenuItem</value>
   </data>
-  <data name="PictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>AutoSize</value>
+  <data name="&gt;&gt;VérifierLesMisesÀJourToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="TextBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ContextMenuStrip2.Name" xml:space="preserve">
-    <value>ContextMenuStrip2</value>
-  </data>
-  <data name="FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>Fermer la barre d'outils.</value>
-  </data>
-  <data name="&gt;&gt;PictureBoxSearchEngineLogo.Name" xml:space="preserve">
-    <value>PictureBoxSearchEngineLogo</value>
-  </data>
-  <data name="PictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="ParamètresToolStripMenuItem.Text" xml:space="preserve">
-    <value>Paramètres...</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormSearchBar</value>
-  </data>
-  <data name="TextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>259, 25</value>
+  <data name="&gt;&gt;TéléchargerLaVersionXXXXToolStripMenuItem.Name" xml:space="preserve">
+    <value>TéléchargerLaVersionXXXXToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;TéléchargerLaVersionXXXXToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="CentreDaideEnLigneToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 22</value>
+  <data name="&gt;&gt;QuitterToolStripMenuItem.Name" xml:space="preserve">
+    <value>QuitterToolStripMenuItem</value>
   </data>
-  <data name="PictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;QuitterToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PictureBox4.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;UpdateNotifyIcon.Name" xml:space="preserve">
+    <value>UpdateNotifyIcon</value>
   </data>
-  <data name="&gt;&gt;TextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;UpdateNotifyIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PictureBox2.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC42/Ixj3wAAAeZJREFUSEul1b9L
-        lVEcx/EsTTOhEsHIVaHl4qC1NDS2uDj4F7gkDQUOToLQKkhrQ7roIEI/xKgUFEoQhNK/QBCHolDESCr1
-        6f158Fy+zznfe7HrB16H59HvOYd7z497IcsyTxue4B22cYCv+ISn6ILXzxX/oQGj+IlqOcYUWhGPkbAv
-        17CM/8kWbsOOkwgP+gQr8PIX+qoO87c0O7iFwsBWeBhDnA304wpUcwn38AZx3qM8aExNO37BZgaXkXQ4
-        NYw4D+DV5pOMwOYzqk0QPIfNS3h1+STxWvQhKXToG/iDEO3IeiS1an4gRIt7lk8RfISNe37UaM+HaEsm
-        RVVo7WzuIqlTYw/eHuqQFFbwFjYlJHVqNmHTjaTQ0YhdhBzhKpJaNc9gM42k0PEINmvw6vJJehBnEEmx
-        cQe6NG2G4NXmk8hr2GgzjOM6bAddPw8RT7CPZtjasvDQgW+Io5vgA17gFb6jUiahq6cwgdiXXtgzU0u0
-        pZMDWXhBJ7SAZ4luZy9zKBxoO0FwEQNYgr02lBPobnuMm1iFl3loi+djxhPEtJg6N/ehHXUD9v8tqPQ7
-        pOs/3wy2Q6000CK86Je2xetUiyYswMus16FWWmxt8zi/veLz0GGdhc0Xr/C8dE4moDO3nmVZ6R8O1zcp
-        c+xsaAAAAABJRU5ErkJggg==
-</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormSearchBar</value>
   </data>
-  <data name="&gt;&gt;PictureBox4.Name" xml:space="preserve">
-    <value>PictureBox4</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PictureBox4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="PictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 6</value>
-  </data>
-  <metadata name="UpdateNotifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>554, 22</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="NotifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="ContextMenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>287, 22</value>
-  </metadata>
-  <metadata name="ContextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>130, 22</value>
-  </metadata>
 </root>
