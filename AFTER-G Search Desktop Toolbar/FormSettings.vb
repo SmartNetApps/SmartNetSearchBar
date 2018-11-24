@@ -8,7 +8,7 @@ Public Class FormSettings
     ''' Ajoute le raccourci de démarrage automatique à l'ordinateur de l'utilisateur.
     ''' </summary>
     Sub AddStartup()
-        Dim Shell = New WshShell
+        'Dim Shell = New WshShell
         Dim StartupDir As String = Environment.GetFolderPath(Environment.SpecialFolder.Startup)
         Dim objShell = New WshShell
         Dim objShortcut = objShell.CreateShortcut(StartupDir + "\SmartNet Search Bar.lnk")
