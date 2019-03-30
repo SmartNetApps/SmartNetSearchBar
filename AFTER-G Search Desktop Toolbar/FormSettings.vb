@@ -147,12 +147,25 @@ Public Class FormSettings
 
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles AutoUpdatesCheckBox.CheckedChanged
         If AutoUpdatesCheckBox.Checked = True Then
-            My.Settings.autoupdate = True
+            Select Case UpdateAgent.IsUpdateAvailable()
+                Case UpdateAgent.UpdateStatus.OSNotSupported
+                    MessageBox.Show("Votre système d'exploitation n'est plus supporté. Consulter le site d'assistance SmartNet Apps pour en apprendre plus.", "SmartNet Apps Updater", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                    My.Settings.autoupdate = False
+                    AutoUpdatesCheckBox.Checked = False
+                Case UpdateAgent.UpdateStatus.SupportStatusOff
+                    MessageBox.Show("Ce logiciel a été abandonné. Consulter le site d'assistance SmartNet Apps pour en apprendre plus.", "SmartNet Apps Updater", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                    My.Settings.autoupdate = False
+                    AutoUpdatesCheckBox.Checked = False
+                Case Else
+                    My.Settings.autoupdate = True
+            End Select
         Else
-            If MessageBox.Show("Les mises à jour permettent de corriger les beugs du logiciel et de lui apporter des nouvelles fonctionnalités. Si vous désactivez les mises à jour automatiques, ceci ne pourra pas être fait. Êtes-vous sûr.e de vouloir les désactiver ?", "SmartNet Apps Updater", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-                My.Settings.autoupdate = False
-            Else
-                AutoUpdatesCheckBox.Checked = True
+            If My.Settings.autoupdate = True Then
+                If MessageBox.Show("Les mises à jour permettent de corriger les anomalies de fonctionnement du logiciel et de lui apporter des nouvelles fonctionnalités. Si vous désactivez les mises à jour automatiques, ceci ne pourra pas être fait. Êtes-vous sûr.e de vouloir les désactiver ?", "SmartNet Apps Updater", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+                    My.Settings.autoupdate = False
+                Else
+                    AutoUpdatesCheckBox.Checked = True
+                End If
             End If
         End If
     End Sub
