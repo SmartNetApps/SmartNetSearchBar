@@ -51,7 +51,6 @@ Partial Class FormSettings
         Me.BrowserDataGroupBox = New System.Windows.Forms.GroupBox()
         Me.DeleteCookiesButton = New System.Windows.Forms.Button()
         Me.DeleteCache = New System.Windows.Forms.Button()
-        Me.DeleteHistoryButton = New System.Windows.Forms.Button()
         Me.BuiltInBrowserCheckBox = New System.Windows.Forms.CheckBox()
         Me.AdvancedSettingsTabPage = New System.Windows.Forms.TabPage()
         Me.GeneralSettingsGroupBox.SuspendLayout()
@@ -76,23 +75,23 @@ Partial Class FormSettings
         '
         'GeneralSettingsGroupBox
         '
-        resources.ApplyResources(Me.GeneralSettingsGroupBox, "GeneralSettingsGroupBox")
         Me.GeneralSettingsGroupBox.Controls.Add(Me.AutoLaunchCheckBox)
+        resources.ApplyResources(Me.GeneralSettingsGroupBox, "GeneralSettingsGroupBox")
         Me.GeneralSettingsGroupBox.Name = "GeneralSettingsGroupBox"
         Me.GeneralSettingsGroupBox.TabStop = False
         '
         'SearchBarColorGroupBox
         '
-        resources.ApplyResources(Me.SearchBarColorGroupBox, "SearchBarColorGroupBox")
         Me.SearchBarColorGroupBox.Controls.Add(Me.RestoreDefaultColorLinkLabel)
         Me.SearchBarColorGroupBox.Controls.Add(Me.ChangeBarColorButton)
+        resources.ApplyResources(Me.SearchBarColorGroupBox, "SearchBarColorGroupBox")
         Me.SearchBarColorGroupBox.Name = "SearchBarColorGroupBox"
         Me.SearchBarColorGroupBox.TabStop = False
         '
         'RestoreDefaultColorLinkLabel
         '
-        resources.ApplyResources(Me.RestoreDefaultColorLinkLabel, "RestoreDefaultColorLinkLabel")
         Me.RestoreDefaultColorLinkLabel.ActiveLinkColor = System.Drawing.SystemColors.HotTrack
+        resources.ApplyResources(Me.RestoreDefaultColorLinkLabel, "RestoreDefaultColorLinkLabel")
         Me.RestoreDefaultColorLinkLabel.LinkColor = System.Drawing.SystemColors.HotTrack
         Me.RestoreDefaultColorLinkLabel.Name = "RestoreDefaultColorLinkLabel"
         Me.RestoreDefaultColorLinkLabel.TabStop = True
@@ -112,8 +111,8 @@ Partial Class FormSettings
         '
         'ImportExportSettingsGroupBox
         '
-        resources.ApplyResources(Me.ImportExportSettingsGroupBox, "ImportExportSettingsGroupBox")
         Me.ImportExportSettingsGroupBox.Controls.Add(Me.ImportFromPreviousVersionButton)
+        resources.ApplyResources(Me.ImportExportSettingsGroupBox, "ImportExportSettingsGroupBox")
         Me.ImportExportSettingsGroupBox.Name = "ImportExportSettingsGroupBox"
         Me.ImportExportSettingsGroupBox.TabStop = False
         '
@@ -126,7 +125,6 @@ Partial Class FormSettings
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        resources.ApplyResources(Me.OpenFileDialog1, "OpenFileDialog1")
         '
         'FolderBrowserDialog1
         '
@@ -134,12 +132,12 @@ Partial Class FormSettings
         '
         'SearchEngineGroupBox
         '
-        resources.ApplyResources(Me.SearchEngineGroupBox, "SearchEngineGroupBox")
         Me.SearchEngineGroupBox.Controls.Add(Me.RadioButtonQwant)
         Me.SearchEngineGroupBox.Controls.Add(Me.RadioButtonDuckDuckGo)
         Me.SearchEngineGroupBox.Controls.Add(Me.RadioButtonYahoo)
         Me.SearchEngineGroupBox.Controls.Add(Me.RadioButtonBing)
         Me.SearchEngineGroupBox.Controls.Add(Me.RadioButtonGoogle)
+        resources.ApplyResources(Me.SearchEngineGroupBox, "SearchEngineGroupBox")
         Me.SearchEngineGroupBox.Name = "SearchEngineGroupBox"
         Me.SearchEngineGroupBox.TabStop = False
         '
@@ -180,36 +178,36 @@ Partial Class FormSettings
         '
         'SettingsTabControl
         '
-        resources.ApplyResources(Me.SettingsTabControl, "SettingsTabControl")
         Me.SettingsTabControl.Controls.Add(Me.MainTabPage)
         Me.SettingsTabControl.Controls.Add(Me.UpdatesTabPage)
         Me.SettingsTabControl.Controls.Add(Me.BrowserTabPage)
         Me.SettingsTabControl.Controls.Add(Me.AdvancedSettingsTabPage)
+        resources.ApplyResources(Me.SettingsTabControl, "SettingsTabControl")
         Me.SettingsTabControl.Name = "SettingsTabControl"
         Me.SettingsTabControl.SelectedIndex = 0
         '
         'MainTabPage
         '
-        resources.ApplyResources(Me.MainTabPage, "MainTabPage")
         Me.MainTabPage.Controls.Add(Me.SearchEngineGroupBox)
         Me.MainTabPage.Controls.Add(Me.GeneralSettingsGroupBox)
         Me.MainTabPage.Controls.Add(Me.SearchBarColorGroupBox)
+        resources.ApplyResources(Me.MainTabPage, "MainTabPage")
         Me.MainTabPage.Name = "MainTabPage"
         Me.MainTabPage.UseVisualStyleBackColor = True
         '
         'UpdatesTabPage
         '
-        resources.ApplyResources(Me.UpdatesTabPage, "UpdatesTabPage")
         Me.UpdatesTabPage.Controls.Add(Me.UpdatesManagementGroupBox)
         Me.UpdatesTabPage.Controls.Add(Me.AutomaticUpdatesGroupBox)
+        resources.ApplyResources(Me.UpdatesTabPage, "UpdatesTabPage")
         Me.UpdatesTabPage.Name = "UpdatesTabPage"
         Me.UpdatesTabPage.UseVisualStyleBackColor = True
         '
         'UpdatesManagementGroupBox
         '
-        resources.ApplyResources(Me.UpdatesManagementGroupBox, "UpdatesManagementGroupBox")
         Me.UpdatesManagementGroupBox.Controls.Add(Me.CheckUpdatesNowButton)
         Me.UpdatesManagementGroupBox.Controls.Add(Me.CurrentVersionLabel)
+        resources.ApplyResources(Me.UpdatesManagementGroupBox, "UpdatesManagementGroupBox")
         Me.UpdatesManagementGroupBox.Name = "UpdatesManagementGroupBox"
         Me.UpdatesManagementGroupBox.TabStop = False
         '
@@ -226,8 +224,8 @@ Partial Class FormSettings
         '
         'AutomaticUpdatesGroupBox
         '
-        resources.ApplyResources(Me.AutomaticUpdatesGroupBox, "AutomaticUpdatesGroupBox")
         Me.AutomaticUpdatesGroupBox.Controls.Add(Me.AutoUpdatesCheckBox)
+        resources.ApplyResources(Me.AutomaticUpdatesGroupBox, "AutomaticUpdatesGroupBox")
         Me.AutomaticUpdatesGroupBox.Name = "AutomaticUpdatesGroupBox"
         Me.AutomaticUpdatesGroupBox.TabStop = False
         '
@@ -239,18 +237,17 @@ Partial Class FormSettings
         '
         'BrowserTabPage
         '
-        resources.ApplyResources(Me.BrowserTabPage, "BrowserTabPage")
         Me.BrowserTabPage.Controls.Add(Me.BrowserDataGroupBox)
         Me.BrowserTabPage.Controls.Add(Me.BuiltInBrowserCheckBox)
+        resources.ApplyResources(Me.BrowserTabPage, "BrowserTabPage")
         Me.BrowserTabPage.Name = "BrowserTabPage"
         Me.BrowserTabPage.UseVisualStyleBackColor = True
         '
         'BrowserDataGroupBox
         '
-        resources.ApplyResources(Me.BrowserDataGroupBox, "BrowserDataGroupBox")
         Me.BrowserDataGroupBox.Controls.Add(Me.DeleteCookiesButton)
         Me.BrowserDataGroupBox.Controls.Add(Me.DeleteCache)
-        Me.BrowserDataGroupBox.Controls.Add(Me.DeleteHistoryButton)
+        resources.ApplyResources(Me.BrowserDataGroupBox, "BrowserDataGroupBox")
         Me.BrowserDataGroupBox.Name = "BrowserDataGroupBox"
         Me.BrowserDataGroupBox.TabStop = False
         '
@@ -266,12 +263,6 @@ Partial Class FormSettings
         Me.DeleteCache.Name = "DeleteCache"
         Me.DeleteCache.UseVisualStyleBackColor = True
         '
-        'DeleteHistoryButton
-        '
-        resources.ApplyResources(Me.DeleteHistoryButton, "DeleteHistoryButton")
-        Me.DeleteHistoryButton.Name = "DeleteHistoryButton"
-        Me.DeleteHistoryButton.UseVisualStyleBackColor = True
-        '
         'BuiltInBrowserCheckBox
         '
         resources.ApplyResources(Me.BuiltInBrowserCheckBox, "BuiltInBrowserCheckBox")
@@ -280,8 +271,8 @@ Partial Class FormSettings
         '
         'AdvancedSettingsTabPage
         '
-        resources.ApplyResources(Me.AdvancedSettingsTabPage, "AdvancedSettingsTabPage")
         Me.AdvancedSettingsTabPage.Controls.Add(Me.ImportExportSettingsGroupBox)
+        resources.ApplyResources(Me.AdvancedSettingsTabPage, "AdvancedSettingsTabPage")
         Me.AdvancedSettingsTabPage.Name = "AdvancedSettingsTabPage"
         Me.AdvancedSettingsTabPage.UseVisualStyleBackColor = True
         '
@@ -346,6 +337,5 @@ Partial Class FormSettings
     Friend WithEvents BrowserDataGroupBox As GroupBox
     Friend WithEvents DeleteCookiesButton As Button
     Friend WithEvents DeleteCache As Button
-    Friend WithEvents DeleteHistoryButton As Button
     Friend WithEvents RestoreDefaultColorLinkLabel As LinkLabel
 End Class

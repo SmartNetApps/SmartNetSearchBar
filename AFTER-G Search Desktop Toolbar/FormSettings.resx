@@ -117,155 +117,755 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AutoLaunchCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="AutomaticUpdatesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+  <data name="AutoLaunchCheckBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
-  <data name="&gt;&gt;CheckUpdatesNowButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AutoLaunchCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 20</value>
   </data>
-  <data name="AutoUpdatesCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 19</value>
+  <data name="AutoLaunchCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 19</value>
   </data>
-  <data name="OKButton.Text" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="ChangeBarColorButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 22</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonDuckDuckGo.Name" xml:space="preserve">
-    <value>RadioButtonDuckDuckGo</value>
-  </data>
-  <data name="&gt;&gt;AutoUpdatesCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MainTabPage.ZOrder" xml:space="preserve">
+  <data name="AutoLaunchCheckBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;ChangeBarColorButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="AutoLaunchCheckBox.Text" xml:space="preserve">
+    <value>Lancer la barre de recherche au démarrage de l'ordinateur</value>
   </data>
-  <data name="RadioButtonYahoo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 71</value>
+  <data name="&gt;&gt;AutoLaunchCheckBox.Name" xml:space="preserve">
+    <value>AutoLaunchCheckBox</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="UpdatesTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="&gt;&gt;AutoLaunchCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ImportExportSettingsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;AutoLaunchCheckBox.Parent" xml:space="preserve">
+    <value>GeneralSettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;AutoLaunchCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GeneralSettingsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="GeneralSettingsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 6</value>
   </data>
-  <data name="RadioButtonQwant.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 19</value>
+  <data name="GeneralSettingsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 49</value>
   </data>
-  <data name="&gt;&gt;GeneralSettingsGroupBox.Parent" xml:space="preserve">
-    <value>MainTabPage</value>
-  </data>
-  <data name="ChangeBarColorButton.Text" xml:space="preserve">
-    <value>Changer la couleur de la barre de recherche...</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BrowserDataGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="GeneralSettingsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="GeneralSettingsGroupBox.Text" xml:space="preserve">
     <value>Paramètres généraux</value>
   </data>
+  <data name="&gt;&gt;GeneralSettingsGroupBox.Name" xml:space="preserve">
+    <value>GeneralSettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;GeneralSettingsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GeneralSettingsGroupBox.Parent" xml:space="preserve">
+    <value>MainTabPage</value>
+  </data>
+  <data name="&gt;&gt;GeneralSettingsGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RestoreDefaultColorLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RestoreDefaultColorLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 48</value>
+  </data>
+  <data name="RestoreDefaultColorLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 15</value>
+  </data>
+  <data name="RestoreDefaultColorLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="RestoreDefaultColorLinkLabel.Text" xml:space="preserve">
+    <value>Restaurer la couleur par défaut</value>
+  </data>
+  <data name="&gt;&gt;RestoreDefaultColorLinkLabel.Name" xml:space="preserve">
+    <value>RestoreDefaultColorLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;RestoreDefaultColorLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RestoreDefaultColorLinkLabel.Parent" xml:space="preserve">
+    <value>SearchBarColorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;RestoreDefaultColorLinkLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ChangeBarColorButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 22</value>
+  </data>
+  <data name="ChangeBarColorButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 23</value>
+  </data>
+  <data name="ChangeBarColorButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ChangeBarColorButton.Text" xml:space="preserve">
+    <value>Changer la couleur de la barre de recherche...</value>
+  </data>
+  <data name="&gt;&gt;ChangeBarColorButton.Name" xml:space="preserve">
+    <value>ChangeBarColorButton</value>
+  </data>
+  <data name="&gt;&gt;ChangeBarColorButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChangeBarColorButton.Parent" xml:space="preserve">
+    <value>SearchBarColorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ChangeBarColorButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="SearchBarColorGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="SearchBarColorGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 61</value>
+  </data>
+  <data name="SearchBarColorGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 71</value>
+  </data>
+  <data name="SearchBarColorGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="SearchBarColorGroupBox.Text" xml:space="preserve">
+    <value>Couleur de la barre de recherche</value>
+  </data>
+  <data name="&gt;&gt;SearchBarColorGroupBox.Name" xml:space="preserve">
+    <value>SearchBarColorGroupBox</value>
+  </data>
   <data name="&gt;&gt;SearchBarColorGroupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="AutoUpdatesCheckBox.AutoSize" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;SearchBarColorGroupBox.Parent" xml:space="preserve">
+    <value>MainTabPage</value>
+  </data>
+  <data name="&gt;&gt;SearchBarColorGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="OKButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="OKButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 284</value>
+  </data>
+  <data name="OKButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="OKButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="OKButton.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;OKButton.Name" xml:space="preserve">
+    <value>OKButton</value>
+  </data>
+  <data name="&gt;&gt;OKButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OKButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;OKButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ImportFromPreviousVersionButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 22</value>
+  </data>
+  <data name="ImportFromPreviousVersionButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 23</value>
+  </data>
+  <data name="ImportFromPreviousVersionButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ImportFromPreviousVersionButton.Text" xml:space="preserve">
+    <value>Importer mes paramètres depuis une ancienne version...</value>
+  </data>
+  <data name="&gt;&gt;ImportFromPreviousVersionButton.Name" xml:space="preserve">
+    <value>ImportFromPreviousVersionButton</value>
+  </data>
+  <data name="&gt;&gt;ImportFromPreviousVersionButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ImportFromPreviousVersionButton.Parent" xml:space="preserve">
+    <value>ImportExportSettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ImportFromPreviousVersionButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ImportExportSettingsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="ImportExportSettingsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="ImportExportSettingsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 50</value>
+  </data>
+  <data name="ImportExportSettingsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ImportExportSettingsGroupBox.Text" xml:space="preserve">
+    <value>Importer/Exporter les paramètres</value>
+  </data>
+  <data name="&gt;&gt;ImportExportSettingsGroupBox.Name" xml:space="preserve">
+    <value>ImportExportSettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ImportExportSettingsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ImportExportSettingsGroupBox.Parent" xml:space="preserve">
+    <value>AdvancedSettingsTabPage</value>
+  </data>
+  <data name="&gt;&gt;ImportExportSettingsGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="OpenFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="FolderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>159, 17</value>
+  </metadata>
+  <data name="FolderBrowserDialog1.Description" xml:space="preserve">
+    <value>Veuillez sélectionner le dossier où vous souhaitez enregistrer les fichiers. Le fichier se nommera "AFTER-G Search Desktop Toolbar.exe.config".</value>
+  </data>
+  <data name="RadioButtonQwant.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;DeleteCache.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="RadioButtonQwant.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 46</value>
   </data>
-  <data name="&gt;&gt;CurrentVersionLabel.Name" xml:space="preserve">
-    <value>CurrentVersionLabel</value>
+  <data name="RadioButtonQwant.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 19</value>
   </data>
   <data name="RadioButtonQwant.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="OKButton.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="RadioButtonQwant.Text" xml:space="preserve">
+    <value>Qwant</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonQwant.Name" xml:space="preserve">
+    <value>RadioButtonQwant</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonQwant.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonQwant.Parent" xml:space="preserve">
+    <value>SearchEngineGroupBox</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonQwant.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadioButtonDuckDuckGo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RadioButtonDuckDuckGo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 23</value>
+  </data>
+  <data name="RadioButtonDuckDuckGo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 19</value>
+  </data>
+  <data name="RadioButtonDuckDuckGo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="RadioButtonDuckDuckGo.Text" xml:space="preserve">
+    <value>DuckDuckGo</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonDuckDuckGo.Name" xml:space="preserve">
+    <value>RadioButtonDuckDuckGo</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonDuckDuckGo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonDuckDuckGo.Parent" xml:space="preserve">
+    <value>SearchEngineGroupBox</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonDuckDuckGo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadioButtonYahoo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RadioButtonYahoo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 71</value>
+  </data>
+  <data name="RadioButtonYahoo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 19</value>
+  </data>
+  <data name="RadioButtonYahoo.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="RadioButtonYahoo.Text" xml:space="preserve">
+    <value>Yahoo!</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonYahoo.Name" xml:space="preserve">
+    <value>RadioButtonYahoo</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonYahoo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonYahoo.Parent" xml:space="preserve">
+    <value>SearchEngineGroupBox</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonYahoo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadioButtonBing.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RadioButtonBing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 46</value>
+  </data>
+  <data name="RadioButtonBing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 19</value>
+  </data>
+  <data name="RadioButtonBing.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="RadioButtonBing.Text" xml:space="preserve">
+    <value>Bing</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonBing.Name" xml:space="preserve">
+    <value>RadioButtonBing</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonBing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonBing.Parent" xml:space="preserve">
+    <value>SearchEngineGroupBox</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonBing.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RadioButtonGoogle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RadioButtonGoogle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 23</value>
+  </data>
+  <data name="RadioButtonGoogle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 19</value>
+  </data>
+  <data name="RadioButtonGoogle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="RadioButtonGoogle.Text" xml:space="preserve">
+    <value>Google</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonGoogle.Name" xml:space="preserve">
+    <value>RadioButtonGoogle</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonGoogle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonGoogle.Parent" xml:space="preserve">
+    <value>SearchEngineGroupBox</value>
+  </data>
+  <data name="&gt;&gt;RadioButtonGoogle.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="SearchEngineGroupBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="SearchEngineGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 138</value>
   </data>
-  <data name="&gt;&gt;RadioButtonYahoo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ImportExportSettingsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 50</value>
-  </data>
-  <data name="CheckUpdatesNowButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 23</value>
-  </data>
-  <data name="RadioButtonDuckDuckGo.Text" xml:space="preserve">
-    <value>DuckDuckGo</value>
-  </data>
-  <data name="&gt;&gt;AutoLaunchCheckBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RadioButtonQwant.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 46</value>
-  </data>
   <data name="SearchEngineGroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>391, 103</value>
   </data>
-  <data name="&gt;&gt;SearchBarColorGroupBox.Name" xml:space="preserve">
-    <value>SearchBarColorGroupBox</value>
+  <data name="SearchEngineGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="CurrentVersionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 15</value>
+  <data name="SearchEngineGroupBox.Text" xml:space="preserve">
+    <value>Moteur de recherche</value>
   </data>
-  <data name="&gt;&gt;AdvancedSettingsTabPage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;SearchEngineGroupBox.Name" xml:space="preserve">
+    <value>SearchEngineGroupBox</value>
+  </data>
+  <data name="&gt;&gt;SearchEngineGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SearchEngineGroupBox.Parent" xml:space="preserve">
+    <value>MainTabPage</value>
+  </data>
+  <data name="&gt;&gt;SearchEngineGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MainTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MainTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="MainTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>403, 247</value>
+  </data>
+  <data name="MainTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="MainTabPage.Text" xml:space="preserve">
+    <value>Barre d'outils</value>
+  </data>
+  <data name="&gt;&gt;MainTabPage.Name" xml:space="preserve">
+    <value>MainTabPage</value>
+  </data>
+  <data name="&gt;&gt;MainTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainTabPage.Parent" xml:space="preserve">
     <value>SettingsTabControl</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Paramètres de SmartNet Search Bar</value>
-  </data>
-  <data name="&gt;&gt;UpdatesTabPage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="BuiltInBrowserCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;ImportFromPreviousVersionButton.Name" xml:space="preserve">
-    <value>ImportFromPreviousVersionButton</value>
-  </data>
-  <data name="&gt;&gt;RestoreDefaultColorLinkLabel.Name" xml:space="preserve">
-    <value>RestoreDefaultColorLinkLabel</value>
-  </data>
-  <data name="AutoUpdatesCheckBox.Text" xml:space="preserve">
-    <value>Vérifier automatiquement les mises à jour (recommandé)</value>
+  <data name="&gt;&gt;MainTabPage.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="CheckUpdatesNowButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 40</value>
   </data>
-  <data name="OKButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="CheckUpdatesNowButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 23</value>
+  </data>
+  <data name="CheckUpdatesNowButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="CheckUpdatesNowButton.Text" xml:space="preserve">
     <value>Vérifier les mises à jour maintenant</value>
   </data>
+  <data name="&gt;&gt;CheckUpdatesNowButton.Name" xml:space="preserve">
+    <value>CheckUpdatesNowButton</value>
+  </data>
+  <data name="&gt;&gt;CheckUpdatesNowButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckUpdatesNowButton.Parent" xml:space="preserve">
+    <value>UpdatesManagementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;CheckUpdatesNowButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CurrentVersionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CurrentVersionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 22</value>
+  </data>
+  <data name="CurrentVersionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 15</value>
+  </data>
+  <data name="CurrentVersionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CurrentVersionLabel.Text" xml:space="preserve">
+    <value>Version actuelle : 0.0.0.0</value>
+  </data>
+  <data name="&gt;&gt;CurrentVersionLabel.Name" xml:space="preserve">
+    <value>CurrentVersionLabel</value>
+  </data>
+  <data name="&gt;&gt;CurrentVersionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CurrentVersionLabel.Parent" xml:space="preserve">
+    <value>UpdatesManagementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;CurrentVersionLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="UpdatesManagementGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 59</value>
+  </data>
+  <data name="UpdatesManagementGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 71</value>
+  </data>
+  <data name="UpdatesManagementGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="UpdatesManagementGroupBox.Text" xml:space="preserve">
+    <value>Gérer les mises à jour</value>
+  </data>
+  <data name="&gt;&gt;UpdatesManagementGroupBox.Name" xml:space="preserve">
+    <value>UpdatesManagementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;UpdatesManagementGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UpdatesManagementGroupBox.Parent" xml:space="preserve">
+    <value>UpdatesTabPage</value>
+  </data>
+  <data name="&gt;&gt;UpdatesManagementGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="AutoUpdatesCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AutoUpdatesCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 20</value>
+  </data>
+  <data name="AutoUpdatesCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 19</value>
+  </data>
+  <data name="AutoUpdatesCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="AutoUpdatesCheckBox.Text" xml:space="preserve">
+    <value>Vérifier automatiquement les mises à jour (recommandé)</value>
+  </data>
+  <data name="&gt;&gt;AutoUpdatesCheckBox.Name" xml:space="preserve">
+    <value>AutoUpdatesCheckBox</value>
+  </data>
+  <data name="&gt;&gt;AutoUpdatesCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AutoUpdatesCheckBox.Parent" xml:space="preserve">
+    <value>AutomaticUpdatesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;AutoUpdatesCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="AutomaticUpdatesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="AutomaticUpdatesGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 47</value>
+  </data>
+  <data name="AutomaticUpdatesGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="AutomaticUpdatesGroupBox.Text" xml:space="preserve">
+    <value>Vérification automatique</value>
+  </data>
+  <data name="&gt;&gt;AutomaticUpdatesGroupBox.Name" xml:space="preserve">
+    <value>AutomaticUpdatesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;AutomaticUpdatesGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AutomaticUpdatesGroupBox.Parent" xml:space="preserve">
+    <value>UpdatesTabPage</value>
+  </data>
+  <data name="&gt;&gt;AutomaticUpdatesGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="UpdatesTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="UpdatesTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="UpdatesTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>403, 247</value>
+  </data>
+  <data name="UpdatesTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="UpdatesTabPage.Text" xml:space="preserve">
+    <value>Mises à jour</value>
+  </data>
+  <data name="&gt;&gt;UpdatesTabPage.Name" xml:space="preserve">
+    <value>UpdatesTabPage</value>
+  </data>
   <data name="&gt;&gt;UpdatesTabPage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;RadioButtonQwant.Name" xml:space="preserve">
-    <value>RadioButtonQwant</value>
+  <data name="&gt;&gt;UpdatesTabPage.Parent" xml:space="preserve">
+    <value>SettingsTabControl</value>
   </data>
-  <data name="&gt;&gt;FolderBrowserDialog1.Name" xml:space="preserve">
-    <value>FolderBrowserDialog1</value>
+  <data name="&gt;&gt;UpdatesTabPage.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;BuiltInBrowserCheckBox.ZOrder" xml:space="preserve">
+  <data name="DeleteCookiesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="DeleteCookiesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 23</value>
+  </data>
+  <data name="DeleteCookiesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="DeleteCookiesButton.Text" xml:space="preserve">
+    <value>Supprimer les cookies</value>
+  </data>
+  <data name="&gt;&gt;DeleteCookiesButton.Name" xml:space="preserve">
+    <value>DeleteCookiesButton</value>
+  </data>
+  <data name="&gt;&gt;DeleteCookiesButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DeleteCookiesButton.Parent" xml:space="preserve">
+    <value>BrowserDataGroupBox</value>
+  </data>
+  <data name="&gt;&gt;DeleteCookiesButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DeleteCache.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 46</value>
+  </data>
+  <data name="DeleteCache.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 23</value>
+  </data>
+  <data name="DeleteCache.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="DeleteCache.Text" xml:space="preserve">
+    <value>Supprimer le cache</value>
+  </data>
+  <data name="&gt;&gt;DeleteCache.Name" xml:space="preserve">
+    <value>DeleteCache</value>
+  </data>
+  <data name="&gt;&gt;DeleteCache.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DeleteCache.Parent" xml:space="preserve">
+    <value>BrowserDataGroupBox</value>
+  </data>
+  <data name="&gt;&gt;DeleteCache.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="BrowserDataGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 31</value>
   </data>
+  <data name="BrowserDataGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 76</value>
+  </data>
+  <data name="BrowserDataGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="BrowserDataGroupBox.Text" xml:space="preserve">
+    <value>Gestion des données de navigation</value>
+  </data>
+  <data name="&gt;&gt;BrowserDataGroupBox.Name" xml:space="preserve">
+    <value>BrowserDataGroupBox</value>
+  </data>
+  <data name="&gt;&gt;BrowserDataGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BrowserDataGroupBox.Parent" xml:space="preserve">
+    <value>BrowserTabPage</value>
+  </data>
+  <data name="&gt;&gt;BrowserDataGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BuiltInBrowserCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BuiltInBrowserCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="BuiltInBrowserCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 19</value>
+  </data>
+  <data name="BuiltInBrowserCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="BuiltInBrowserCheckBox.Text" xml:space="preserve">
+    <value>Ouvrir les résultats dans le navigateur intégré</value>
+  </data>
+  <data name="&gt;&gt;BuiltInBrowserCheckBox.Name" xml:space="preserve">
+    <value>BuiltInBrowserCheckBox</value>
+  </data>
+  <data name="&gt;&gt;BuiltInBrowserCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BuiltInBrowserCheckBox.Parent" xml:space="preserve">
+    <value>BrowserTabPage</value>
+  </data>
+  <data name="&gt;&gt;BuiltInBrowserCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BrowserTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="BrowserTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="BrowserTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>403, 247</value>
+  </data>
+  <data name="BrowserTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="BrowserTabPage.Text" xml:space="preserve">
+    <value>Navigateur</value>
+  </data>
+  <data name="&gt;&gt;BrowserTabPage.Name" xml:space="preserve">
+    <value>BrowserTabPage</value>
+  </data>
+  <data name="&gt;&gt;BrowserTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BrowserTabPage.Parent" xml:space="preserve">
+    <value>SettingsTabControl</value>
+  </data>
+  <data name="&gt;&gt;BrowserTabPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="AdvancedSettingsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="AdvancedSettingsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>403, 247</value>
+  </data>
+  <data name="AdvancedSettingsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="AdvancedSettingsTabPage.Text" xml:space="preserve">
+    <value>Paramètres avancés</value>
+  </data>
+  <data name="&gt;&gt;AdvancedSettingsTabPage.Name" xml:space="preserve">
+    <value>AdvancedSettingsTabPage</value>
+  </data>
+  <data name="&gt;&gt;AdvancedSettingsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AdvancedSettingsTabPage.Parent" xml:space="preserve">
+    <value>SettingsTabControl</value>
+  </data>
+  <data name="&gt;&gt;AdvancedSettingsTabPage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SettingsTabControl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="SettingsTabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="SettingsTabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>411, 275</value>
+  </data>
+  <data name="SettingsTabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;SettingsTabControl.Name" xml:space="preserve">
+    <value>SettingsTabControl</value>
+  </data>
+  <data name="&gt;&gt;SettingsTabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SettingsTabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SettingsTabControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>427, 310</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4533,649 +5133,25 @@
         wAMAAOAHAAA=
 </value>
   </data>
-  <data name="RestoreDefaultColorLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 48</value>
-  </data>
-  <data name="RadioButtonYahoo.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;SearchEngineGroupBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;OpenFileDialog1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonQwant.Parent" xml:space="preserve">
-    <value>SearchEngineGroupBox</value>
-  </data>
-  <data name="&gt;&gt;AutomaticUpdatesGroupBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonBing.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonYahoo.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="GeneralSettingsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 49</value>
-  </data>
-  <data name="&gt;&gt;OKButton.Name" xml:space="preserve">
-    <value>OKButton</value>
-  </data>
-  <data name="&gt;&gt;BrowserDataGroupBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;AutomaticUpdatesGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonYahoo.Parent" xml:space="preserve">
-    <value>SearchEngineGroupBox</value>
-  </data>
-  <data name="SearchBarColorGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="AdvancedSettingsTabPage.Text" xml:space="preserve">
-    <value>Paramètres avancés</value>
-  </data>
-  <data name="&gt;&gt;ChangeBarColorButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckUpdatesNowButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonGoogle.Parent" xml:space="preserve">
-    <value>SearchEngineGroupBox</value>
-  </data>
-  <data name="&gt;&gt;DeleteHistoryButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="RadioButtonBing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 46</value>
-  </data>
-  <data name="UpdatesTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 247</value>
-  </data>
-  <data name="&gt;&gt;CheckUpdatesNowButton.Name" xml:space="preserve">
-    <value>CheckUpdatesNowButton</value>
-  </data>
-  <data name="&gt;&gt;CurrentVersionLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;AutoUpdatesCheckBox.Name" xml:space="preserve">
-    <value>AutoUpdatesCheckBox</value>
-  </data>
-  <data name="&gt;&gt;DeleteHistoryButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonDuckDuckGo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SettingsTabControl.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="RestoreDefaultColorLinkLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="AdvancedSettingsTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 247</value>
-  </data>
-  <data name="CurrentVersionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 22</value>
-  </data>
-  <data name="&gt;&gt;MainTabPage.Name" xml:space="preserve">
-    <value>MainTabPage</value>
-  </data>
-  <data name="GeneralSettingsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonYahoo.Name" xml:space="preserve">
-    <value>RadioButtonYahoo</value>
-  </data>
-  <data name="&gt;&gt;SearchEngineGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AutomaticUpdatesGroupBox.Parent" xml:space="preserve">
-    <value>UpdatesTabPage</value>
-  </data>
-  <data name="&gt;&gt;BuiltInBrowserCheckBox.Name" xml:space="preserve">
-    <value>BuiltInBrowserCheckBox</value>
-  </data>
-  <data name="DeleteCookiesButton.Text" xml:space="preserve">
-    <value>Supprimer les cookies</value>
-  </data>
-  <data name="&gt;&gt;DeleteCookiesButton.Parent" xml:space="preserve">
-    <value>BrowserDataGroupBox</value>
-  </data>
-  <data name="SearchBarColorGroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;OKButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;RestoreDefaultColorLinkLabel.Parent" xml:space="preserve">
-    <value>SearchBarColorGroupBox</value>
-  </data>
-  <data name="&gt;&gt;BrowserDataGroupBox.Parent" xml:space="preserve">
-    <value>BrowserTabPage</value>
-  </data>
-  <data name="RadioButtonDuckDuckGo.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;DeleteHistoryButton.Name" xml:space="preserve">
-    <value>DeleteHistoryButton</value>
-  </data>
-  <data name="SearchBarColorGroupBox.Text" xml:space="preserve">
-    <value>Couleur de la barre de recherche</value>
-  </data>
-  <data name="RadioButtonGoogle.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="RestoreDefaultColorLinkLabel.Text" xml:space="preserve">
-    <value>Restaurer la couleur par défaut</value>
-  </data>
-  <data name="AutoUpdatesCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;DeleteCookiesButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SearchBarColorGroupBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonBing.Parent" xml:space="preserve">
-    <value>SearchEngineGroupBox</value>
-  </data>
-  <data name="ImportFromPreviousVersionButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="RadioButtonGoogle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;GeneralSettingsGroupBox.Name" xml:space="preserve">
-    <value>GeneralSettingsGroupBox</value>
-  </data>
-  <data name="MainTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 247</value>
-  </data>
-  <data name="&gt;&gt;SettingsTabControl.Name" xml:space="preserve">
-    <value>SettingsTabControl</value>
-  </data>
-  <data name="GeneralSettingsGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="SearchEngineGroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;OKButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="RestoreDefaultColorLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 15</value>
-  </data>
-  <data name="&gt;&gt;UpdatesManagementGroupBox.Name" xml:space="preserve">
-    <value>UpdatesManagementGroupBox</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Paramètres de SmartNet Search Bar</value>
   </data>
   <data name="&gt;&gt;OpenFileDialog1.Name" xml:space="preserve">
     <value>OpenFileDialog1</value>
   </data>
-  <data name="ImportExportSettingsGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;OpenFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;AutoLaunchCheckBox.Parent" xml:space="preserve">
-    <value>GeneralSettingsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;CurrentVersionLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BrowserTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="MainTabPage.Text" xml:space="preserve">
-    <value>Barre d'outils</value>
-  </data>
-  <data name="RadioButtonGoogle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 19</value>
-  </data>
-  <data name="AdvancedSettingsTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;OKButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="UpdatesTabPage.Text" xml:space="preserve">
-    <value>Mises à jour</value>
-  </data>
-  <data name="BrowserDataGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 106</value>
-  </data>
-  <data name="RadioButtonDuckDuckGo.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonQwant.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BrowserDataGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AutoUpdatesCheckBox.Parent" xml:space="preserve">
-    <value>AutomaticUpdatesGroupBox</value>
-  </data>
-  <data name="MainTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="RadioButtonBing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 19</value>
-  </data>
-  <data name="DeleteCache.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 23</value>
-  </data>
-  <data name="&gt;&gt;ImportFromPreviousVersionButton.Parent" xml:space="preserve">
-    <value>ImportExportSettingsGroupBox</value>
-  </data>
-  <data name="GeneralSettingsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="&gt;&gt;UpdatesTabPage.Parent" xml:space="preserve">
-    <value>SettingsTabControl</value>
-  </data>
-  <data name="&gt;&gt;AdvancedSettingsTabPage.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;ImportFromPreviousVersionButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="BrowserDataGroupBox.Text" xml:space="preserve">
-    <value>Gestion des données de navigation</value>
-  </data>
-  <data name="UpdatesManagementGroupBox.Text" xml:space="preserve">
-    <value>Gérer les mises à jour</value>
-  </data>
-  <data name="&gt;&gt;DeleteCookiesButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;BuiltInBrowserCheckBox.Parent" xml:space="preserve">
-    <value>BrowserTabPage</value>
+  <data name="&gt;&gt;FolderBrowserDialog1.Name" xml:space="preserve">
+    <value>FolderBrowserDialog1</value>
   </data>
   <data name="&gt;&gt;FolderBrowserDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="UpdatesTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="RadioButtonGoogle.Text" xml:space="preserve">
-    <value>Google</value>
-  </data>
-  <data name="AutoLaunchCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>330, 19</value>
-  </data>
-  <data name="RadioButtonYahoo.Text" xml:space="preserve">
-    <value>Yahoo!</value>
-  </data>
-  <data name="RestoreDefaultColorLinkLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;BrowserTabPage.Parent" xml:space="preserve">
-    <value>SettingsTabControl</value>
-  </data>
-  <data name="SearchEngineGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="SettingsTabControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 8</value>
-  </data>
-  <data name="OKButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 284</value>
-  </data>
-  <data name="ImportFromPreviousVersionButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 22</value>
-  </data>
-  <data name="DeleteCookiesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 46</value>
-  </data>
-  <data name="RadioButtonGoogle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 23</value>
-  </data>
-  <data name="&gt;&gt;AutoLaunchCheckBox.Name" xml:space="preserve">
-    <value>AutoLaunchCheckBox</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonGoogle.Name" xml:space="preserve">
-    <value>RadioButtonGoogle</value>
-  </data>
-  <data name="AutoLaunchCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 20</value>
-  </data>
-  <data name="RadioButtonDuckDuckGo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 19</value>
-  </data>
-  <data name="ImportExportSettingsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;DeleteCache.Parent" xml:space="preserve">
-    <value>BrowserDataGroupBox</value>
-  </data>
-  <data name="SearchEngineGroupBox.Text" xml:space="preserve">
-    <value>Moteur de recherche</value>
-  </data>
-  <data name="&gt;&gt;DeleteCookiesButton.Name" xml:space="preserve">
-    <value>DeleteCookiesButton</value>
-  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormSettings</value>
-  </data>
-  <data name="RadioButtonQwant.Text" xml:space="preserve">
-    <value>Qwant</value>
-  </data>
-  <data name="AdvancedSettingsTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="&gt;&gt;GeneralSettingsGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="AutoLaunchCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;AdvancedSettingsTabPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BuiltInBrowserCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="MainTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="DeleteHistoryButton.Text" xml:space="preserve">
-    <value>Supprimer l'historique de la session</value>
-  </data>
-  <data name="UpdatesManagementGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;GeneralSettingsGroupBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="DeleteCache.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;UpdatesManagementGroupBox.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="DeleteHistoryButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 23</value>
-  </data>
-  <data name="UpdatesManagementGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 59</value>
-  </data>
-  <data name="RadioButtonBing.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ImportFromPreviousVersionButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 23</value>
-  </data>
-  <data name="AutoLaunchCheckBox.Text" xml:space="preserve">
-    <value>Lancer la barre de recherche au démarrage de l'ordinateur</value>
-  </data>
-  <data name="&gt;&gt;ImportFromPreviousVersionButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BrowserTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 247</value>
-  </data>
-  <data name="CheckUpdatesNowButton.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="SearchBarColorGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 61</value>
-  </data>
-  <data name="AutomaticUpdatesGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 47</value>
-  </data>
-  <data name="BrowserTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="RadioButtonBing.Text" xml:space="preserve">
-    <value>Bing</value>
-  </data>
-  <data name="&gt;&gt;RestoreDefaultColorLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SettingsTabControl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;UpdatesManagementGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SettingsTabControl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="UpdatesManagementGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 71</value>
-  </data>
-  <data name="SettingsTabControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>411, 275</value>
-  </data>
-  <data name="&gt;&gt;BrowserTabPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DeleteCache.Name" xml:space="preserve">
-    <value>DeleteCache</value>
-  </data>
-  <data name="&gt;&gt;AutomaticUpdatesGroupBox.Name" xml:space="preserve">
-    <value>AutomaticUpdatesGroupBox</value>
-  </data>
-  <data name="AutomaticUpdatesGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ChangeBarColorButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;SearchEngineGroupBox.Parent" xml:space="preserve">
-    <value>MainTabPage</value>
-  </data>
-  <data name="RadioButtonQwant.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="FolderBrowserDialog1.Description" xml:space="preserve">
-    <value>Veuillez sélectionner le dossier où vous souhaitez enregistrer les fichiers. Le fichier se nommera "AFTER-G Search Desktop Toolbar.exe.config".</value>
-  </data>
-  <data name="CurrentVersionLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="DeleteCookiesButton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="SearchBarColorGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 71</value>
-  </data>
-  <data name="&gt;&gt;SettingsTabControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MainTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="DeleteCookiesButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 23</value>
-  </data>
-  <data name="AutomaticUpdatesGroupBox.Text" xml:space="preserve">
-    <value>Vérification automatique</value>
-  </data>
-  <data name="AutoLaunchCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;ImportExportSettingsGroupBox.Name" xml:space="preserve">
-    <value>ImportExportSettingsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;ImportExportSettingsGroupBox.Parent" xml:space="preserve">
-    <value>AdvancedSettingsTabPage</value>
-  </data>
-  <data name="ImportFromPreviousVersionButton.Text" xml:space="preserve">
-    <value>Importer mes paramètres depuis une ancienne version...</value>
-  </data>
-  <data name="DeleteCache.Text" xml:space="preserve">
-    <value>Supprimer le cache</value>
-  </data>
-  <data name="&gt;&gt;MainTabPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonBing.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonDuckDuckGo.Parent" xml:space="preserve">
-    <value>SearchEngineGroupBox</value>
-  </data>
-  <data name="RadioButtonBing.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="DeleteCache.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 70</value>
-  </data>
-  <data name="OKButton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="BrowserTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="BuiltInBrowserCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 19</value>
-  </data>
-  <data name="&gt;&gt;AutoUpdatesCheckBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="CurrentVersionLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ImportExportSettingsGroupBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;BrowserDataGroupBox.Name" xml:space="preserve">
-    <value>BrowserDataGroupBox</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>427, 310</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonDuckDuckGo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;RestoreDefaultColorLinkLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="AutoUpdatesCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 20</value>
-  </data>
-  <data name="&gt;&gt;AdvancedSettingsTabPage.Name" xml:space="preserve">
-    <value>AdvancedSettingsTabPage</value>
-  </data>
-  <data name="&gt;&gt;CheckUpdatesNowButton.Parent" xml:space="preserve">
-    <value>UpdatesManagementGroupBox</value>
-  </data>
-  <data name="&gt;&gt;SearchEngineGroupBox.Name" xml:space="preserve">
-    <value>SearchEngineGroupBox</value>
-  </data>
-  <data name="&gt;&gt;SettingsTabControl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="AutoLaunchCheckBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="DeleteHistoryButton.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;DeleteHistoryButton.Parent" xml:space="preserve">
-    <value>BrowserDataGroupBox</value>
-  </data>
-  <data name="RadioButtonDuckDuckGo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 23</value>
-  </data>
-  <data name="&gt;&gt;ImportExportSettingsGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonQwant.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ChangeBarColorButton.Name" xml:space="preserve">
-    <value>ChangeBarColorButton</value>
-  </data>
-  <data name="BuiltInBrowserCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="&gt;&gt;AutoLaunchCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonBing.Name" xml:space="preserve">
-    <value>RadioButtonBing</value>
-  </data>
-  <data name="ImportExportSettingsGroupBox.Text" xml:space="preserve">
-    <value>Importer/Exporter les paramètres</value>
-  </data>
-  <data name="&gt;&gt;UpdatesTabPage.Name" xml:space="preserve">
-    <value>UpdatesTabPage</value>
-  </data>
-  <data name="DeleteHistoryButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 22</value>
-  </data>
-  <data name="&gt;&gt;CurrentVersionLabel.Parent" xml:space="preserve">
-    <value>UpdatesManagementGroupBox</value>
-  </data>
-  <data name="ChangeBarColorButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 23</value>
-  </data>
-  <data name="&gt;&gt;ChangeBarColorButton.Parent" xml:space="preserve">
-    <value>SearchBarColorGroupBox</value>
-  </data>
-  <data name="&gt;&gt;UpdatesManagementGroupBox.Parent" xml:space="preserve">
-    <value>UpdatesTabPage</value>
-  </data>
-  <data name="&gt;&gt;DeleteCache.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="RadioButtonYahoo.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;MainTabPage.Parent" xml:space="preserve">
-    <value>SettingsTabControl</value>
-  </data>
-  <data name="UpdatesTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;SearchBarColorGroupBox.Parent" xml:space="preserve">
-    <value>MainTabPage</value>
-  </data>
-  <data name="BuiltInBrowserCheckBox.Text" xml:space="preserve">
-    <value>Ouvrir les résultats dans le navigateur intégré</value>
-  </data>
-  <data name="&gt;&gt;BrowserTabPage.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonGoogle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CurrentVersionLabel.Text" xml:space="preserve">
-    <value>Version actuelle : 0.0.0.0</value>
-  </data>
-  <data name="&gt;&gt;BrowserTabPage.Name" xml:space="preserve">
-    <value>BrowserTabPage</value>
-  </data>
-  <data name="RadioButtonYahoo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 19</value>
-  </data>
-  <data name="&gt;&gt;RadioButtonGoogle.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="BrowserTabPage.Text" xml:space="preserve">
-    <value>Navigateur</value>
-  </data>
-  <data name="&gt;&gt;BuiltInBrowserCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="FolderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>159, 17</value>
-  </metadata>
-  <metadata name="OpenFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>

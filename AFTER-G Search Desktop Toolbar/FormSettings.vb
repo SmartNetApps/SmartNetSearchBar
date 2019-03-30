@@ -187,17 +187,6 @@ Public Class FormSettings
         End If
     End Sub
 
-    Private Sub DeleteHistoryButton_Click(sender As Object, e As EventArgs) Handles DeleteHistoryButton.Click
-ClearHistory:
-        Try
-            BrowserForm.GeckoWebBrowser1.History.Clear()
-        Catch ex As Exception
-            If MessageBox.Show(ex.Message, "SmartNet Search Bar", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) = DialogResult.Retry Then
-                GoTo ClearHistory
-            End If
-        End Try
-    End Sub
-
     Private Sub DeleteCookiesButton_Click(sender As Object, e As EventArgs) Handles DeleteCookiesButton.Click
 ClearCookies:
         Try
