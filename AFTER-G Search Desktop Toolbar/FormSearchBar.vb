@@ -1,23 +1,14 @@
 ﻿Imports System.Net
+Imports System.Drawing
 
 Public Class FormSearchBar
-    Dim IsDraggingForm As Boolean = False
-    Private MousePos As New System.Drawing.Point(0, 0)
+    Dim IsDraggingForm As Boolean
+    Private MousePos As Point
 
-    Private Sub FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Click
-        Me.Close()
-    End Sub
-
-    Private Sub AffichermasquerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AffichermasquerToolStripMenuItem.Click
-        If Me.Visible = True Then
-            Me.Visible = False
-            If My.Settings.balloontip = "0" Then
-                NotifyIcon1.ShowBalloonTip(1000)
-                My.Settings.balloontip = "1"
-            End If
-        Else
-            Me.Visible = True
-        End If
+    Public Sub New()
+        InitializeComponent()
+        IsDraggingForm = False
+        MousePos = New Point(0, 0)
     End Sub
 
     Private Sub FormSearchBar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -46,6 +37,23 @@ Public Class FormSearchBar
                 PictureBoxSearchEngineLogo.Image = My.Resources.qwant
         End Select
     End Sub
+
+    Private Sub FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub AffichermasquerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AffichermasquerToolStripMenuItem.Click
+        If Me.Visible = True Then
+            Me.Visible = False
+            If My.Settings.balloontip = "0" Then
+                NotifyIcon1.ShowBalloonTip(1000)
+                My.Settings.balloontip = "1"
+            End If
+        Else
+            Me.Visible = True
+        End If
+    End Sub
+
 
     Private Sub SearchButtonClick(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Dim url As String
