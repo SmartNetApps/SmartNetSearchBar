@@ -35,23 +35,6 @@ Public Class BrowserForm
         End If
     End Sub
 
-    Private Sub GeckoWebBrowser1_Navigating(sender As Object, e As GeckoNavigatingEventArgs) Handles GeckoWebBrowser1.Navigating
-        Try
-            Dim url As Uri = New Uri(e.Uri.ToString)
-            If url.HostNameType = UriHostNameType.Dns Then
-                Dim iconURL = "http://" & url.Host & "/favicon.ico"
-                Dim request As System.Net.WebRequest = System.Net.HttpWebRequest.Create(iconURL)
-                Dim response As System.Net.HttpWebResponse = CType(request.GetResponse(), HttpWebResponse)
-                Dim stream As System.IO.Stream = response.GetResponseStream()
-                Dim favicon = Image.FromStream(stream)
-                FaviconPictureBox.Image = favicon
-            End If
-        Catch ex As Exception
-            FaviconPictureBox.Image = FaviconPictureBox.ErrorImage
-        End Try
-        URLTextBox.Text = e.Uri.ToString
-    End Sub
-
     Private Sub URLTextBox_KeyDown(sender As Object, e As KeyEventArgs) Handles URLTextBox.KeyDown
         If e.KeyCode = Keys.Enter Then
             GeckoWebBrowser1.Navigate(URLTextBox.Text)
@@ -66,28 +49,58 @@ Public Class BrowserForm
         PreviousButton.Enabled = GeckoWebBrowser1.CanGoBack
     End Sub
 
-    Private Sub GeckoWebBrowser1_Navigated(sender As Object, e As GeckoNavigatedEventArgs) Handles GeckoWebBrowser1.Navigated
-        Try
-            Dim url As Uri = New Uri(e.Uri.ToString)
-            If url.HostNameType = UriHostNameType.Dns Then
-                Dim iconURL = "http://" & url.Host & "/favicon.ico"
-                Dim request As System.Net.WebRequest = System.Net.HttpWebRequest.Create(iconURL)
-                Dim response As System.Net.HttpWebResponse = CType(request.GetResponse(), HttpWebResponse)
-                Dim stream As System.IO.Stream = response.GetResponseStream()
-                Dim favicon = Image.FromStream(stream)
-                FaviconPictureBox.Image = favicon
-            End If
-        Catch ex As Exception
-            FaviconPictureBox.Image = FaviconPictureBox.ErrorImage
-        End Try
-        URLTextBox.Text = e.Uri.ToString
-    End Sub
-
     Private Sub GeckoWebBrowser1_DocumentTitleChanged(sender As Object, e As EventArgs) Handles GeckoWebBrowser1.DocumentTitleChanged
         Me.Text = GeckoWebBrowser1.DocumentTitle & " - Navigateur SmartNet Search Bar"
     End Sub
 
     Private Sub BrowserForm_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        GeckoWebBrowser1.Navigate("about:blank")
+        GeckoWebBrowser1.Dispose()
+    End Sub
+
+    Private Sub GeckoWebBrowser1_Navigating(sender As Object, e As GeckoNavigatingEventArgs) Handles GeckoWebBrowser1.Navigating
+        URLTextBox.Text = e.Uri.ToString()
+        FaviconPictureBox.Image = My.Resources.ErrorFavicon
+    End Sub
+
+    Private Sub GeckoWebBrowser1_DOMContentLoaded(sender As Object, e As DomEventArgs) Handles GeckoWebBrowser1.DOMContentLoaded
+        Console.WriteLine("favicon")
+        Dim faviconPath As String
+        Try
+            Try
+                Dim metaLinks As GeckoElementCollection = GeckoWebBrowser1.DomDocument.GetElementsByTagName("LINK")
+                For Each element In metaLinks
+                    If element.GetAttribute("REL").ToUpper() = "ICON" Then
+                        faviconPath = element.GetAttribute("HREF")
+                        If faviconPath.Contains("://") = False Then
+                            If GeckoWebBrowser1.Url.Host.Contains("/") Or faviconPath.Substring(0, 1) = "/" Then
+                                faviconPath = "http://" + GeckoWebBrowser1.Url.Host + faviconPath
+                            Else
+                                faviconPath = "http://" + GeckoWebBrowser1.Url.Host + "/" + faviconPath
+                            End If
+                        End If
+                        GoTo FaviconFound
+                    End If
+                Next
+            Catch ex As Exception
+                GoTo FaviconNotFound
+            End Try
+FaviconNotFound:
+            If GeckoWebBrowser1.Url.HostNameType = UriHostNameType.Dns Then
+                faviconPath = "http://" & GeckoWebBrowser1.Url.Host & "/favicon.ico"
+            Else
+                FaviconPictureBox.Image = My.Resources.ErrorFavicon
+                Exit Sub
+            End If
+FaviconFound:
+            Dim request As System.Net.WebRequest = System.Net.HttpWebRequest.Create(faviconPath)
+            Dim response As System.Net.HttpWebResponse = CType(request.GetResponse(), HttpWebResponse)
+            Dim stream As System.IO.Stream = response.GetResponseStream()
+            Dim favicon = Image.FromStream(stream)
+            FaviconPictureBox.Image = favicon
+
+        Catch ex As Exception
+            FaviconPictureBox.Image = My.Resources.ErrorFavicon
+            Exit Sub
+        End Try
     End Sub
 End Class

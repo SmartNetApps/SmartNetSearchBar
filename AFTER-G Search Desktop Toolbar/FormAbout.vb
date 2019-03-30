@@ -1,4 +1,7 @@
 ﻿Public Class FormAbout
+    Public Sub New()
+        InitializeComponent()
+    End Sub
 
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles Me.Load
         Label3.Text = "Version " + My.Application.Info.Version.ToString

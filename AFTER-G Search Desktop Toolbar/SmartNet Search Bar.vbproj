@@ -274,6 +274,7 @@
     <Content Include="Resources\Logo\wordmark_black_36.png" />
     <Content Include="Resources\Logo\wordmark_white_36.png" />
     <Content Include="Resources\NotificationIcon\notif.ico" />
+    <Content Include="Resources\Other\ErrorFavicon.png" />
     <Content Include="Resources\Other\GPLv3Logo.png" />
     <Content Include="Resources\Other\MozillaFoundationLogo.png" />
     <Content Include="Resources\Other\Netscape-gecko-logo.jpg" />
