@@ -23,7 +23,12 @@ Public Class FormSearchBar
 
     Private Sub FormSearchBar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If My.Settings.autoupdate = True Then
-            CheckUpdates()
+            If UpdateAgent.IsUpdateAvailable() = UpdateAgent.UpdateStatus.UpdateAvailable Then
+                UpdateNotifyIcon.Visible = True
+                UpdateNotifyIcon.ShowBalloonTip(10000)
+                VérifierLesMisesÀJourToolStripMenuItem.Visible = True
+                TéléchargerLaVersionXXXXToolStripMenuItem.Text = "Mettre à jour vers la version " + UpdateAgent.LastVersionNumberAvailable()
+            End If
         End If
         Me.BackColor = My.Settings.color
         TextBox1.BackColor = My.Settings.color
@@ -179,50 +184,6 @@ Public Class FormSearchBar
 
     Private Sub ShowMenu(sender As Object, e As EventArgs) Handles PictureBox4.Click
         ContextMenuStrip2.Show(Me, PointToClient(New Point(MousePosition.X, MousePosition.Y)))
-    End Sub
-
-    Sub CheckUpdates()
-        '        Try
-        '            Dim MiniNTVersionChecker As New WebClient
-        '            Dim NTActualVersion As Version = Environment.OSVersion.Version
-        '            Dim MiniNTVersion As Version = New Version(MiniNTVersionChecker.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/MinimumNTVersion.txt"))
-        '            Dim MAJ As New WebClient
-        '            Dim VersionActuelle As Version = My.Application.Info.Version
-        '            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/version.txt"))
-        '            Dim SupportStatus As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/support-status.txt")
-        '            If VersionActuelle > DerniereVersion Then
-        '                MsgBox("Vous utilisez une version de SmartNet Search Bar qui n'a pas encore été publiée. Par conséquent, elle peut contenir des incohérences et des beugs. Merci de ne pas les signaler tant que cette version n'aura pas été publiée.", MsgBoxStyle.Exclamation, "Version non publiée")
-        '            End If
-        '            If My.Settings.autoupdate = True Then
-        '                If NTActualVersion < MiniNTVersion Then
-        '                    MsgBox("Votre système d'exploitation n'est plus pris en charge par SmartNet Apps. Visitez le site SmartNet Apps pour en savoir plus à ce sujet. La recherche automatique de mises à jour à été désactivée.", MsgBoxStyle.Exclamation, "Avertissement")
-        '                    My.Settings.autoupdate = False
-        '                    My.Settings.Save()
-        '                    VérifierLesMisesÀJourToolStripMenuItem.Visible = False
-        '                    GoTo StopVersionChecking
-        '                End If
-        '                If SupportStatus = "on" Then
-        '                    If VersionActuelle < DerniereVersion Then
-        '                        UpdateNotifyIcon.Visible = True
-        '                        UpdateNotifyIcon.ShowBalloonTip(5000)
-        '                        VérifierLesMisesÀJourToolStripMenuItem.Visible = True
-        '                        TéléchargerLaVersionXXXXToolStripMenuItem.Text = "Télécharger la version " + DerniereVersion.ToString
-        '                    Else
-        '                        VérifierLesMisesÀJourToolStripMenuItem.Visible = False
-        '                        GoTo StopVersionChecking
-        '                    End If
-        '                Else
-        '                    VérifierLesMisesÀJourToolStripMenuItem.Visible = False
-        '                    MsgBox("Le support et le développement de ce produit ont été interrompus. Visitez le site SmartNet Apps pour en savoir plus.", MsgBoxStyle.Critical, "Service interrompu")
-        '                    GoTo StopVersionChecking
-        '                End If
-        '            End If
-        'StopVersionChecking:
-        '        Catch ex As Exception
-        '            MsgBox("La connexion à SmartNet Apps Updater a échoué : " + ex.Message, MsgBoxStyle.Critical, "SmartNet Apps Updater")
-        '        End Try
-        Dim agent As New UpdateAgent()
-        agent.IsUpdateAvailable(False)
     End Sub
 
     Private Sub AProposDeAFTERGDesktopToolbarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AProposDeAFTERGDesktopToolbarToolStripMenuItem.Click

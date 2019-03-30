@@ -1,59 +1,66 @@
 ﻿Imports System.Net
 
+''' <summary>
+''' Représente un agent de mise à jour basé sur SmartNet Apps Updater.
+''' </summary>
 Public Class UpdateAgent
-    Dim MAJ As WebClient
-    Dim VersionActuelle As Version
-    Dim NTActualVersion As Version
-
-    Public Sub New()
-        MAJ = New WebClient()
-        VersionActuelle = My.Application.Info.Version
-        NTActualVersion = Environment.OSVersion.Version
-    End Sub
 
     ''' <summary>
-    ''' Vérifie si une mise à jour du logiciel est disponible et retourne vrai le cas échéant.
+    ''' Représente les états possibles renvoyés par SmartNet Apps Updater.
     ''' </summary>
-    ''' <param name="displayMessageBox">Vrai s'il faut afficher un message à l'utilisateur, faux pour vérifier discrètement.</param>
-    ''' <returns>Vrai si une mise à jour est disponible, faux sinon.</returns>
-    Public Function IsUpdateAvailable(displayMessageBox As Boolean) As Boolean
+    Public Enum UpdateStatus
+        ''' <summary>
+        ''' Le logiciel est à jour.
+        ''' </summary>
+        UpToDate
+        ''' <summary>
+        ''' Une mise à jour est disponible.
+        ''' </summary>
+        UpdateAvailable
+        ''' <summary>
+        ''' Le système d'exploitation n'est plus supporté.
+        ''' </summary>
+        OSNotSupported
+        ''' <summary>
+        ''' Le service Apps Updater a été interrompu pour ce logiciel.
+        ''' </summary>
+        SupportStatusOff
+    End Enum
+
+    ''' <summary>
+    ''' Vérifie si une mise à jour du logiciel est disponible et retourne la réponse de SmartNet Apps Updater.
+    ''' </summary>
+    ''' <returns>La réponse de SmartNet Apps Updater.</returns>
+    Public Shared Function IsUpdateAvailable() As UpdateStatus
         Try
-            Dim MiniNTVersion As Version = New Version(MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/MinimumNTVersion.txt"))
-            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/version.txt"))
-            Dim SupportStatus As String = MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/support-status.txt")
+            Dim MAJ As New WebClient()
+
+            Dim NTActualVersion As Version = Environment.OSVersion.Version
+            Dim MiniNTVersion As Version = New Version(MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/MinimumNTVersion.txt"))
+
+            Dim VersionActuelle As Version = My.Application.Info.Version
+            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/version.txt"))
+
+            Dim SupportStatus As String = MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/support-status.txt")
 
             If VersionActuelle > DerniereVersion Then
-                If displayMessageBox = True Then MsgBox("Vous utilisez une version préliminaire de SmartNet Search Bar. Vous pourriez trouver des beugs ou incohérences, merci de ne pas les signaler tant que cette version n'est pas publiée. Veuillez me contacter si vous pensez qu'il s'agit d'une erreur.", MsgBoxStyle.Exclamation, "Version préliminaire")
-                Return False
+                Return UpdateStatus.UpToDate
             End If
             If NTActualVersion < MiniNTVersion Then
-                If displayMessageBox = True Then MsgBox("Votre système d'exploitation n'est plus pris en charge par SmartNet Apps. Visitez le site SmartNet Apps pour en savoir plus à ce sujet. La recherche automatique de mises à jour à été désactivée.", MsgBoxStyle.Exclamation, "Avertissement")
-                My.Settings.autoupdate = False
-                My.Settings.Save()
-                FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = False
-                Return False
+                Return UpdateStatus.OSNotSupported
             End If
             If SupportStatus = "on" Then
                 If VersionActuelle < DerniereVersion Then
-                    FormSearchBar.UpdateNotifyIcon.Visible = True
-                    FormSearchBar.UpdateNotifyIcon.ShowBalloonTip(1000)
-                    FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = True
-                    FormSearchBar.TéléchargerLaVersionXXXXToolStripMenuItem.Text = "Télécharger la version " + DerniereVersion.ToString
-                    If displayMessageBox = True Then FormUpdater.ShowDialog()
-                    Return True
+                    Return UpdateStatus.UpdateAvailable
                 Else
-                    FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = False
-                    If displayMessageBox = True Then MsgBox("Vous utilisez dejà la dernière version de SmartNet Search Bar.", MsgBoxStyle.Information, "SmartNet Apps Updater")
-                    Return False
+                    Return UpdateStatus.UpToDate
                 End If
             Else
-                FormSearchBar.VérifierLesMisesÀJourToolStripMenuItem.Visible = False
-                If displayMessageBox = True Then MsgBox("Le support et le développement de ce produit ont été interrompus. Visitez le site SmartNet Apps pour en savoir plus.", MsgBoxStyle.Critical, "Service interrompu")
-                Return False
+                Return UpdateStatus.SupportStatusOff
             End If
         Catch ex As Exception
-            If displayMessageBox = True Then MsgBox("La connexion à SmartNet Apps Updater a échoué : " + ex.Message, MsgBoxStyle.Critical, "SmartNet Apps Updater")
-            Return False
+            Throw New Exception("La connexion à SmartNet Apps Updater a échoué.", ex)
+            Return UpdateStatus.UpToDate
         End Try
     End Function
 
@@ -61,11 +68,13 @@ Public Class UpdateAgent
     ''' Demande le dernier numéro de version à SmartNet Apps Updater et le retourne.
     ''' </summary>
     ''' <returns>Le dernier numéro de version disponible.</returns>
-    Public Function LastVersionAvailable() As Version
+    Public Shared Function LastVersionAvailable() As Version
         Try
-            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/version.txt"))
+            Dim MAJ As New WebClient()
+            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/version.txt"))
             Return DerniereVersion
         Catch ex As Exception
+            Throw New Exception("La connexion à SmartNet Apps Updater a échoué.", ex)
             Return Nothing
         End Try
     End Function
@@ -74,10 +83,12 @@ Public Class UpdateAgent
     ''' Demande le dernier numéro de version à SmartNet Apps Updater et le retourne.
     ''' </summary>
     ''' <returns>Le dernier numéro de version disponible.</returns>
-    Public Function LastVersionNumberAvailable() As String
+    Public Shared Function LastVersionNumberAvailable() As String
         Try
-            Return MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/version.txt")
+            Dim MAJ As New WebClient()
+            Return MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/version.txt")
         Catch ex As Exception
+            Throw New Exception("La connexion à SmartNet Apps Updater a échoué.", ex)
             Return Nothing
         End Try
     End Function
@@ -86,10 +97,12 @@ Public Class UpdateAgent
     ''' Retrouve et retourne le lien vers l'exécutable de la mise à jour.
     ''' </summary>
     ''' <returns></returns>
-    Public Function DownloadLink() As String
+    Public Shared Function DownloadLink() As String
         Try
-            Return MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/download.txt")
+            Dim MAJ As New WebClient()
+            Return MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/download.txt")
         Catch ex As Exception
+            Throw New Exception("La connexion à SmartNet Apps Updater a échoué.", ex)
             Return Nothing
         End Try
     End Function
@@ -98,10 +111,12 @@ Public Class UpdateAgent
     ''' Télécharge et retourne les dernières notes de version.
     ''' </summary>
     ''' <returns></returns>
-    Public Function ReleaseNotes() As String
+    Public Shared Function ReleaseNotes() As String
         Try
-            Return MAJ.DownloadString("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/updater/searchbar/windows/releasenotes.txt")
+            Dim MAJ As New WebClient
+            Return MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/releasenotes.txt")
         Catch ex As Exception
+            Throw New Exception("La connexion à SmartNet Apps Updater a échoué.", ex)
             Return Nothing
         End Try
     End Function

@@ -51,7 +51,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>SmartNet Search Bar.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\2019_SmartNetSearchBar_Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -260,6 +260,7 @@
     <Content Include="README.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\2019_SmartNetSearchBar_Icon.ico" />
     <Content Include="Resources\ButtonImages\Close.png" />
     <Content Include="Resources\ButtonImages\Help.png" />
     <Content Include="Resources\ButtonImages\MenuWhite.png" />
@@ -281,7 +282,6 @@
     <Content Include="Resources\SearchEngineLogo\google.png" />
     <Content Include="Resources\SearchEngineLogo\qwant.png" />
     <Content Include="Resources\SearchEngineLogo\yahoo.png" />
-    <Content Include="SmartNet Search Bar.ico" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

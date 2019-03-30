@@ -61,6 +61,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+        '''</summary>
+        Friend ReadOnly Property _2019_SmartNetSearchBar_Icon() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("_2019_SmartNetSearchBar_Icon", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property bing() As System.Drawing.Bitmap
@@ -237,16 +247,6 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("Settings", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
-        '''</summary>
-        Friend ReadOnly Property SmartNet_Search_Bar() As System.Drawing.Icon
-            Get
-                Dim obj As Object = ResourceManager.GetObject("SmartNet_Search_Bar", resourceCulture)
-                Return CType(obj,System.Drawing.Icon)
             End Get
         End Property
         
