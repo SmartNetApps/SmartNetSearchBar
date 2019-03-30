@@ -1,8 +1,8 @@
 Vous trouverez de l'aide pour SmartNet Search Bar sur le site internet SmartNet Apps, à l'adresse
-http://quentinpugeat.pagesperso-orange.fr/smartnetapps/searchbar/support/index.html
+https://smartnetapps.quentinpugeat.fr/searchbar/support/index.html
 
-Copyright 2015-2018 Quentin Pugeat
-SmartNet Apps by Quentin Pugeat
+Copyright 2015-2019 Quentin Pugeat
+SmartNet Apps
 
 SmartNet Search Bar est un logiciel libre ; vous pouvez le redistribuer ou le modifier suivant les termes de la GNU General Public License telle que publiée par la Free Software Foundation ; soit la version 3 de la licence, soit (à votre gré) toute version ultérieure.
 
