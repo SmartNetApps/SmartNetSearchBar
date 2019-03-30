@@ -48,43 +48,29 @@ Public Class FormSearchBar
     End Sub
 
     Private Sub SearchButtonClick(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Dim url As String
         Select Case My.Settings.searchengine
             Case 1
-                If My.Settings.OpenBuiltInBrowser = True Then
-                    BrowserForm.GeckoWebBrowser1.Navigate("https://www.google.fr/search?q=" + TextBox1.Text)
-                    BrowserForm.Show()
-                Else
-                    Process.Start("https://www.google.fr/search?q=" + TextBox1.Text)
-                End If
+                url = "https://www.google.fr/search?q=" + TextBox1.Text
             Case 2
-                If My.Settings.OpenBuiltInBrowser = True Then
-                    BrowserForm.GeckoWebBrowser1.Navigate("http://www.bing.com/search?q=" + TextBox1.Text)
-                    BrowserForm.Show()
-                Else
-                    Process.Start("http://www.bing.com/search?q=" + TextBox1.Text)
-                End If
+                url = "http://www.bing.com/search?q=" + TextBox1.Text
             Case 3
-                If My.Settings.OpenBuiltInBrowser = True Then
-                    BrowserForm.GeckoWebBrowser1.Navigate("https://fr.search.yahoo.com/search?q=" + TextBox1.Text)
-                    BrowserForm.Show()
-                Else
-                    Process.Start("https://fr.search.yahoo.com/search?q=" + TextBox1.Text)
-                End If
+                url = "https://fr.search.yahoo.com/search?q=" + TextBox1.Text
             Case 4
-                If My.Settings.OpenBuiltInBrowser = True Then
-                    BrowserForm.GeckoWebBrowser1.Navigate("https://duckduckgo.com/?q=" + TextBox1.Text)
-                    BrowserForm.Show()
-                Else
-                    Process.Start("https://duckduckgo.com/?q=" + TextBox1.Text)
-                End If
+                url = "https://duckduckgo.com/?q=" + TextBox1.Text
             Case 5
-                If My.Settings.OpenBuiltInBrowser = True Then
-                    BrowserForm.GeckoWebBrowser1.Navigate("https://www.qwant.com/?q=" + TextBox1.Text)
-                    BrowserForm.Show()
-                Else
-                    Process.Start("https://www.qwant.com/?q=" + TextBox1.Text)
-                End If
+                url = "https://www.qwant.com/?q=" + TextBox1.Text
+            Case Else
+                My.Settings.searchengine = 5
+                url = "https://www.qwant.com/?q=" + TextBox1.Text
         End Select
+
+        If My.Settings.OpenBuiltInBrowser = True Then
+            BrowserForm.GeckoWebBrowser1.Navigate(url)
+            BrowserForm.Show()
+        Else
+            Process.Start(url)
+        End If
     End Sub
 
     Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
