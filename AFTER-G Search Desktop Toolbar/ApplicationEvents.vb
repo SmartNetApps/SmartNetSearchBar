@@ -13,6 +13,17 @@ Namespace My
                 My.Settings.Upgrade()
                 My.Settings.firststart = False
             End If
+
+            If My.Settings.autoupdate = True Then
+                Select Case UpdateAgent.IsUpdateAvailable()
+                    Case UpdateAgent.UpdateStatus.OSNotSupported
+                        MessageBox.Show("Votre système d'exploitation n'étant plus pris en charge, les futures mises à jour ne vous seront pas proposées sur cette machine. Consultez le site d'assistance SmartNet Apps pour en savoir plus.", "SmartNet Apps Updater", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+                        My.Settings.autoupdate = False
+                    Case UpdateAgent.UpdateStatus.SupportStatusOff
+                        MessageBox.Show("Ce logiciel a été abandonné et ne sera plus mis à jour. Consultez le site d'assistance SmartNet Apps pour en savoir plus.", "SmartNet Apps Updater", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+                        My.Settings.autoupdate = False
+                End Select
+            End If
         End Sub
     End Class
 End Namespace

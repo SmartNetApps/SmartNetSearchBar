@@ -3,9 +3,8 @@
 Public Class FormSearchBar
     Dim IsDraggingForm As Boolean = False
     Private MousePos As New System.Drawing.Point(0, 0)
-    Dim VersionActuelle As String = My.Application.Info.Version.ToString
 
-    Private Sub QuitSearchBar(sender As Object, e As EventArgs) Handles FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Click
+    Private Sub FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Click
         Me.Close()
     End Sub
 
@@ -22,14 +21,16 @@ Public Class FormSearchBar
     End Sub
 
     Private Sub FormSearchBar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If My.Settings.autoupdate = True Then
-            If UpdateAgent.IsUpdateAvailable() = UpdateAgent.UpdateStatus.UpdateAvailable Then
-                UpdateNotifyIcon.Visible = True
-                UpdateNotifyIcon.ShowBalloonTip(10000)
-                VérifierLesMisesÀJourToolStripMenuItem.Visible = True
-                TéléchargerLaVersionXXXXToolStripMenuItem.Text = "Mettre à jour vers la version " + UpdateAgent.LastVersionNumberAvailable()
-            End If
+        If My.Settings.autoupdate = True And UpdateAgent.IsUpdateAvailable() = UpdateAgent.UpdateStatus.UpdateAvailable Then
+            UpdateNotifyIcon.Visible = True
+            UpdateNotifyIcon.ShowBalloonTip(10000)
+            VérifierLesMisesÀJourToolStripMenuItem.Visible = True
+            TéléchargerLaVersionXXXXToolStripMenuItem.Text = "Mettre à jour vers la version " + UpdateAgent.LastVersionNumberAvailable()
+        Else
+            UpdateNotifyIcon.Visible = False
+            VérifierLesMisesÀJourToolStripMenuItem.Visible = False
         End If
+
         Me.BackColor = My.Settings.color
         TextBox1.BackColor = My.Settings.color
         Select Case My.Settings.searchengine
@@ -191,7 +192,7 @@ Public Class FormSearchBar
     End Sub
 
     Private Sub ContacterLéquipeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ContacterLéquipeToolStripMenuItem.Click
-        Process.Start("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/contact.html")
+        Process.Start("https://smartnetapps.quentinpugeat.fr/contact.html")
     End Sub
 
     Private Sub QuitterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuitterToolStripMenuItem.Click
@@ -207,6 +208,6 @@ Public Class FormSearchBar
     End Sub
 
     Private Sub CentreDaideEnLigneToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CentreDaideEnLigneToolStripMenuItem.Click
-        Process.Start("http://quentinpugeat.pagesperso-orange.fr/smartnetapps/searchbar/support/")
+        Process.Start("https://smartnetapps.quentinpugeat.fr/searchbar/support/")
     End Sub
 End Class
