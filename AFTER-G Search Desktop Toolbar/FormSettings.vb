@@ -148,10 +148,12 @@ Public Class FormSettings
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles AutoUpdatesCheckBox.CheckedChanged
         If AutoUpdatesCheckBox.Checked = True Then
             My.Settings.autoupdate = True
-        End If
-        If AutoUpdatesCheckBox.Checked = False Then
-            My.Settings.autoupdate = False
-            MsgBox("Avertissement : Les mises à jour permettent de corriger les beugs du logiciel et de lui apporter des nouvelles fonctionnalités. Si vous désactivez les mises à jour automatiques, ceci ne pourra pas être fait. Ceci n'est pas recommandé.", MsgBoxStyle.Exclamation, "Désactiver SmartNet Apps Updater")
+        Else
+            If MessageBox.Show("Les mises à jour permettent de corriger les beugs du logiciel et de lui apporter des nouvelles fonctionnalités. Si vous désactivez les mises à jour automatiques, ceci ne pourra pas être fait. Êtes-vous sûr.e de vouloir les désactiver ?", "SmartNet Apps Updater", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+                My.Settings.autoupdate = False
+            Else
+                AutoUpdatesCheckBox.Checked = True
+            End If
         End If
     End Sub
 
@@ -173,26 +175,35 @@ Public Class FormSettings
     End Sub
 
     Private Sub DeleteHistoryButton_Click(sender As Object, e As EventArgs) Handles DeleteHistoryButton.Click
+ClearHistory:
         Try
             BrowserForm.GeckoWebBrowser1.History.Clear()
         Catch ex As Exception
-            MsgBox("Erreur : " + ex.Message, MsgBoxStyle.Critical, "SmartNet Search Bar")
+            If MessageBox.Show(ex.Message, "SmartNet Search Bar", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) = DialogResult.Retry Then
+                GoTo ClearHistory
+            End If
         End Try
     End Sub
 
     Private Sub DeleteCookiesButton_Click(sender As Object, e As EventArgs) Handles DeleteCookiesButton.Click
+ClearCookies:
         Try
             Gecko.CookieManager.RemoveAll()
         Catch ex As Exception
-            MsgBox("Erreur : " + ex.Message, MsgBoxStyle.Critical, "SmartNet Search Bar")
+            If MessageBox.Show(ex.Message, "SmartNet Search Bar", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) = DialogResult.Retry Then
+                GoTo ClearCookies
+            End If
         End Try
     End Sub
 
     Private Sub DeleteCache_Click(sender As Object, e As EventArgs) Handles DeleteCache.Click
+ClearCache:
         Try
             Gecko.Cache.CacheService.Clear(Gecko.Cache.CacheStoragePolicy.Anywhere)
         Catch ex As Exception
-            MsgBox("Erreur : " + ex.Message, MsgBoxStyle.Critical, "SmartNet Search Bar")
+            If MessageBox.Show(ex.Message, "SmartNet Search Bar", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) = DialogResult.Retry Then
+                GoTo ClearCache
+            End If
         End Try
     End Sub
 
