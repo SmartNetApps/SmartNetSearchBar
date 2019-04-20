@@ -261,6 +261,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\2019_SmartNetSearchBar_Icon.ico" />
+    <None Include="Resources\2019_SmartNetSearchBar_1024.png" />
     <Content Include="Resources\ButtonImages\Close.png" />
     <Content Include="Resources\ButtonImages\Help.png" />
     <Content Include="Resources\ButtonImages\MenuWhite.png" />
@@ -270,7 +271,6 @@
     <Content Include="Resources\ButtonImages\Search.png" />
     <Content Include="Resources\ButtonImages\SendFeedback.png" />
     <Content Include="Resources\ButtonImages\Settings.png" />
-    <Content Include="Resources\Logo\logo1024.png" />
     <Content Include="Resources\Logo\wordmark_black_36.png" />
     <Content Include="Resources\Logo\wordmark_white_36.png" />
     <Content Include="Resources\NotificationIcon\notif.ico" />

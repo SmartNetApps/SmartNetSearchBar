@@ -73,7 +73,6 @@ Partial Class FormUpdater
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FormUpdater"
-        Me.ShowInTaskbar = False
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

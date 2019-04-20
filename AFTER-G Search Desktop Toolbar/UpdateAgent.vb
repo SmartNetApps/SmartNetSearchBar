@@ -36,12 +36,12 @@ Public Class UpdateAgent
             Dim MAJ As New WebClient()
 
             Dim NTActualVersion As Version = Environment.OSVersion.Version
-            Dim MiniNTVersion As Version = New Version(MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/MinimumNTVersion.txt"))
+            Dim MiniNTVersion As Version = New Version(MAJ.DownloadString("http://updater.smartnetapps.quentinpugeat.fr/searchbar/windows/MinimumNTVersion.txt"))
 
             Dim VersionActuelle As Version = My.Application.Info.Version
-            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/version.txt"))
+            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://updater.smartnetapps.quentinpugeat.fr/searchbar/windows/version.txt"))
 
-            Dim SupportStatus As String = MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/support-status.txt")
+            Dim SupportStatus As String = MAJ.DownloadString("http://updater.smartnetapps.quentinpugeat.fr/searchbar/windows/support-status.txt")
 
             If VersionActuelle > DerniereVersion Then
                 Return UpdateStatus.UpToDate
@@ -71,7 +71,7 @@ Public Class UpdateAgent
     Public Shared Function LastVersionAvailable() As Version
         Try
             Dim MAJ As New WebClient()
-            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/version.txt"))
+            Dim DerniereVersion As Version = New Version(MAJ.DownloadString("http://updater.smartnetapps.quentinpugeat.fr/searchbar/windows/version.txt"))
             Return DerniereVersion
         Catch ex As Exception
             Throw New Exception("La connexion à SmartNet Apps Updater a échoué.", ex)
@@ -86,7 +86,7 @@ Public Class UpdateAgent
     Public Shared Function LastVersionNumberAvailable() As String
         Try
             Dim MAJ As New WebClient()
-            Return MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/version.txt")
+            Return MAJ.DownloadString("http://updater.smartnetapps.quentinpugeat.fr/searchbar/windows/version.txt")
         Catch ex As Exception
             Throw New Exception("La connexion à SmartNet Apps Updater a échoué.", ex)
             Return Nothing
@@ -100,7 +100,7 @@ Public Class UpdateAgent
     Public Shared Function DownloadLink() As String
         Try
             Dim MAJ As New WebClient()
-            Return MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/download.txt")
+            Return MAJ.DownloadString("http://updater.smartnetapps.quentinpugeat.fr/searchbar/windows/download.txt")
         Catch ex As Exception
             Throw New Exception("La connexion à SmartNet Apps Updater a échoué.", ex)
             Return Nothing
@@ -114,7 +114,7 @@ Public Class UpdateAgent
     Public Shared Function ReleaseNotes() As String
         Try
             Dim MAJ As New WebClient
-            Return MAJ.DownloadString("https://smartnetapps.quentinpugeat.fr/updater/searchbar/windows/releasenotes.txt")
+            Return MAJ.DownloadString("http://updater.smartnetapps.quentinpugeat.fr/searchbar/windows/releasenotes.txt")
         Catch ex As Exception
             Throw New Exception("La connexion à SmartNet Apps Updater a échoué.", ex)
             Return Nothing

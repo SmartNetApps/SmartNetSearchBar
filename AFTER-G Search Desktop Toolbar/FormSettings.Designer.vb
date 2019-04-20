@@ -286,7 +286,6 @@ Partial Class FormSettings
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FormSettings"
-        Me.ShowInTaskbar = False
         Me.GeneralSettingsGroupBox.ResumeLayout(False)
         Me.GeneralSettingsGroupBox.PerformLayout()
         Me.SearchBarColorGroupBox.ResumeLayout(False)

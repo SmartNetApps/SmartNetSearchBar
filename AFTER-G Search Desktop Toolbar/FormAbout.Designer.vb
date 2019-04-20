@@ -47,6 +47,9 @@ Partial Class FormAbout
         '
         'PictureBox1
         '
+        Me.PictureBox1.ErrorImage = Global.SmartNet_Search_Bar.My.Resources.Resources.logo1024
+        Me.PictureBox1.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.logo1024
+        Me.PictureBox1.InitialImage = Global.SmartNet_Search_Bar.My.Resources.Resources.logo1024
         resources.ApplyResources(Me.PictureBox1, "PictureBox1")
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.TabStop = False
@@ -71,8 +74,8 @@ Partial Class FormAbout
         '
         'PictureBox2
         '
-        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
         Me.PictureBox2.BackColor = System.Drawing.Color.DarkCyan
+        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
         Me.PictureBox2.ErrorImage = Global.SmartNet_Search_Bar.My.Resources.Resources.wordmark_white_36
         Me.PictureBox2.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.wordmark_white_36
         Me.PictureBox2.InitialImage = Global.SmartNet_Search_Bar.My.Resources.Resources.wordmark_white_36
@@ -89,8 +92,8 @@ Partial Class FormAbout
         '
         'LinkLabel3
         '
-        resources.ApplyResources(Me.LinkLabel3, "LinkLabel3")
         Me.LinkLabel3.ActiveLinkColor = System.Drawing.SystemColors.HotTrack
+        resources.ApplyResources(Me.LinkLabel3, "LinkLabel3")
         Me.LinkLabel3.BackColor = System.Drawing.Color.White
         Me.LinkLabel3.LinkColor = System.Drawing.SystemColors.HotTrack
         Me.LinkLabel3.Name = "LinkLabel3"
@@ -115,36 +118,36 @@ Partial Class FormAbout
         '
         'PictureBox4
         '
-        resources.ApplyResources(Me.PictureBox4, "PictureBox4")
         Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox4.ErrorImage = Global.SmartNet_Search_Bar.My.Resources.Resources.MozillaFoundationLogo
         Me.PictureBox4.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.MozillaFoundationLogo
         Me.PictureBox4.InitialImage = Global.SmartNet_Search_Bar.My.Resources.Resources.GPLv3Logo
+        resources.ApplyResources(Me.PictureBox4, "PictureBox4")
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.TabStop = False
         '
         'PictureBox5
         '
-        resources.ApplyResources(Me.PictureBox5, "PictureBox5")
         Me.PictureBox5.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.PictureBox5, "PictureBox5")
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.TabStop = False
         '
         'PictureBox6
         '
-        resources.ApplyResources(Me.PictureBox6, "PictureBox6")
         Me.PictureBox6.ErrorImage = Global.SmartNet_Search_Bar.My.Resources.Resources.Netscape_gecko_logo
         Me.PictureBox6.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.Netscape_gecko_logo
         Me.PictureBox6.InitialImage = Global.SmartNet_Search_Bar.My.Resources.Resources.Netscape_gecko_logo
+        resources.ApplyResources(Me.PictureBox6, "PictureBox6")
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.TabStop = False
         '
         'GroupBoxThirdPartySoftware
         '
-        resources.ApplyResources(Me.GroupBoxThirdPartySoftware, "GroupBoxThirdPartySoftware")
         Me.GroupBoxThirdPartySoftware.Controls.Add(Me.PictureBox6)
         Me.GroupBoxThirdPartySoftware.Controls.Add(Me.Label4)
         Me.GroupBoxThirdPartySoftware.Controls.Add(Me.PictureBox4)
+        resources.ApplyResources(Me.GroupBoxThirdPartySoftware, "GroupBoxThirdPartySoftware")
         Me.GroupBoxThirdPartySoftware.Name = "GroupBoxThirdPartySoftware"
         Me.GroupBoxThirdPartySoftware.TabStop = False
         '
