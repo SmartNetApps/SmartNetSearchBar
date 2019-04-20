@@ -131,8 +131,9 @@ Public Class FormSearchBar
         End If
     End Sub
 
-    Private Sub UpdaterNotifyIconClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
+    Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
         Me.Visible = True
+        Me.Activate()
     End Sub
 
     Private Sub Form1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles MyBase.MouseDown
