@@ -210,6 +210,12 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="SearchHistoryForm.en.resx">
+      <DependentUpon>SearchHistoryForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchHistoryForm.fr.resx">
+      <DependentUpon>SearchHistoryForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SearchHistoryForm.resx">
       <DependentUpon>SearchHistoryForm.vb</DependentUpon>
     </EmbeddedResource>

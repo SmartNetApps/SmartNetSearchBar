@@ -65,81 +65,81 @@ Partial Class FormSearchBar
         '
         'ContextMenuStrip1
         '
+        resources.ApplyResources(Me.ContextMenuStrip1, "ContextMenuStrip1")
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AffichermasquerToolStripMenuItem, Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        resources.ApplyResources(Me.ContextMenuStrip1, "ContextMenuStrip1")
         '
         'AffichermasquerToolStripMenuItem
         '
-        Me.AffichermasquerToolStripMenuItem.Name = "AffichermasquerToolStripMenuItem"
         resources.ApplyResources(Me.AffichermasquerToolStripMenuItem, "AffichermasquerToolStripMenuItem")
+        Me.AffichermasquerToolStripMenuItem.Name = "AffichermasquerToolStripMenuItem"
         '
         'FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem
         '
+        resources.ApplyResources(Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem, "FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem")
         Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.Close
         Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Name = "FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem"
-        resources.ApplyResources(Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem, "FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem")
         '
         'ContextMenuStrip2
         '
+        resources.ApplyResources(Me.ContextMenuStrip2, "ContextMenuStrip2")
         Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HistoriqueToolStripMenuItem, Me.ParamètresToolStripMenuItem, Me.SupportSurAFTERGAppsToolStripMenuItem, Me.ToolStripSeparator1, Me.VérifierLesMisesÀJourToolStripMenuItem, Me.QuitterToolStripMenuItem})
         Me.ContextMenuStrip2.Name = "ContextMenuStrip2"
-        resources.ApplyResources(Me.ContextMenuStrip2, "ContextMenuStrip2")
         '
         'HistoriqueToolStripMenuItem
         '
+        resources.ApplyResources(Me.HistoriqueToolStripMenuItem, "HistoriqueToolStripMenuItem")
         Me.HistoriqueToolStripMenuItem.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.History
         Me.HistoriqueToolStripMenuItem.Name = "HistoriqueToolStripMenuItem"
-        resources.ApplyResources(Me.HistoriqueToolStripMenuItem, "HistoriqueToolStripMenuItem")
         '
         'ParamètresToolStripMenuItem
         '
+        resources.ApplyResources(Me.ParamètresToolStripMenuItem, "ParamètresToolStripMenuItem")
         Me.ParamètresToolStripMenuItem.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.Settings
         Me.ParamètresToolStripMenuItem.Name = "ParamètresToolStripMenuItem"
-        resources.ApplyResources(Me.ParamètresToolStripMenuItem, "ParamètresToolStripMenuItem")
         '
         'SupportSurAFTERGAppsToolStripMenuItem
         '
+        resources.ApplyResources(Me.SupportSurAFTERGAppsToolStripMenuItem, "SupportSurAFTERGAppsToolStripMenuItem")
         Me.SupportSurAFTERGAppsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CentreDaideEnLigneToolStripMenuItem, Me.ContacterLéquipeToolStripMenuItem, Me.ToolStripSeparator2, Me.AProposDeAFTERGDesktopToolbarToolStripMenuItem, Me.EnvoyerVosCommentairesToolStripMenuItem})
         Me.SupportSurAFTERGAppsToolStripMenuItem.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.Help
         Me.SupportSurAFTERGAppsToolStripMenuItem.Name = "SupportSurAFTERGAppsToolStripMenuItem"
-        resources.ApplyResources(Me.SupportSurAFTERGAppsToolStripMenuItem, "SupportSurAFTERGAppsToolStripMenuItem")
         '
         'CentreDaideEnLigneToolStripMenuItem
         '
-        Me.CentreDaideEnLigneToolStripMenuItem.Name = "CentreDaideEnLigneToolStripMenuItem"
         resources.ApplyResources(Me.CentreDaideEnLigneToolStripMenuItem, "CentreDaideEnLigneToolStripMenuItem")
+        Me.CentreDaideEnLigneToolStripMenuItem.Name = "CentreDaideEnLigneToolStripMenuItem"
         '
         'ContacterLéquipeToolStripMenuItem
         '
-        Me.ContacterLéquipeToolStripMenuItem.Name = "ContacterLéquipeToolStripMenuItem"
         resources.ApplyResources(Me.ContacterLéquipeToolStripMenuItem, "ContacterLéquipeToolStripMenuItem")
+        Me.ContacterLéquipeToolStripMenuItem.Name = "ContacterLéquipeToolStripMenuItem"
         '
         'ToolStripSeparator2
         '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
         resources.ApplyResources(Me.ToolStripSeparator2, "ToolStripSeparator2")
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
         '
         'AProposDeAFTERGDesktopToolbarToolStripMenuItem
         '
-        Me.AProposDeAFTERGDesktopToolbarToolStripMenuItem.Name = "AProposDeAFTERGDesktopToolbarToolStripMenuItem"
         resources.ApplyResources(Me.AProposDeAFTERGDesktopToolbarToolStripMenuItem, "AProposDeAFTERGDesktopToolbarToolStripMenuItem")
+        Me.AProposDeAFTERGDesktopToolbarToolStripMenuItem.Name = "AProposDeAFTERGDesktopToolbarToolStripMenuItem"
         '
         'EnvoyerVosCommentairesToolStripMenuItem
         '
+        resources.ApplyResources(Me.EnvoyerVosCommentairesToolStripMenuItem, "EnvoyerVosCommentairesToolStripMenuItem")
         Me.EnvoyerVosCommentairesToolStripMenuItem.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.SendFeedback
         Me.EnvoyerVosCommentairesToolStripMenuItem.Name = "EnvoyerVosCommentairesToolStripMenuItem"
-        resources.ApplyResources(Me.EnvoyerVosCommentairesToolStripMenuItem, "EnvoyerVosCommentairesToolStripMenuItem")
         '
         'ToolStripSeparator1
         '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         resources.ApplyResources(Me.ToolStripSeparator1, "ToolStripSeparator1")
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         '
         'VérifierLesMisesÀJourToolStripMenuItem
         '
-        Me.VérifierLesMisesÀJourToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TéléchargerLaVersionXXXXToolStripMenuItem})
         resources.ApplyResources(Me.VérifierLesMisesÀJourToolStripMenuItem, "VérifierLesMisesÀJourToolStripMenuItem")
+        Me.VérifierLesMisesÀJourToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TéléchargerLaVersionXXXXToolStripMenuItem})
         Me.VérifierLesMisesÀJourToolStripMenuItem.Name = "VérifierLesMisesÀJourToolStripMenuItem"
         '
         'TéléchargerLaVersionXXXXToolStripMenuItem
@@ -149,22 +149,22 @@ Partial Class FormSearchBar
         '
         'QuitterToolStripMenuItem
         '
+        resources.ApplyResources(Me.QuitterToolStripMenuItem, "QuitterToolStripMenuItem")
         Me.QuitterToolStripMenuItem.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.Close
         Me.QuitterToolStripMenuItem.Name = "QuitterToolStripMenuItem"
-        resources.ApplyResources(Me.QuitterToolStripMenuItem, "QuitterToolStripMenuItem")
         '
         'TextBox1
         '
+        resources.ApplyResources(Me.TextBox1, "TextBox1")
         Me.TextBox1.BackColor = System.Drawing.Color.Black
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        resources.ApplyResources(Me.TextBox1, "TextBox1")
         Me.TextBox1.ForeColor = System.Drawing.Color.White
         Me.TextBox1.Name = "TextBox1"
         '
         'PictureBox2
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         resources.ApplyResources(Me.PictureBox2, "PictureBox2")
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.TabStop = False
         '
@@ -176,12 +176,12 @@ Partial Class FormSearchBar
         '
         'PictureBox4
         '
+        resources.ApplyResources(Me.PictureBox4, "PictureBox4")
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox4.ContextMenuStrip = Me.ContextMenuStrip2
         Me.PictureBox4.ErrorImage = Global.SmartNet_Search_Bar.My.Resources.Resources.MenuWhite
         Me.PictureBox4.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.MenuWhite
         Me.PictureBox4.InitialImage = Global.SmartNet_Search_Bar.My.Resources.Resources.MenuWhite
-        resources.ApplyResources(Me.PictureBox4, "PictureBox4")
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.TabStop = False
         '
@@ -192,19 +192,19 @@ Partial Class FormSearchBar
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.White
         resources.ApplyResources(Me.PictureBox1, "PictureBox1")
+        Me.PictureBox1.BackColor = System.Drawing.Color.White
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.TabStop = False
         '
         'PictureBoxSearchEngineLogo
         '
+        resources.ApplyResources(Me.PictureBoxSearchEngineLogo, "PictureBoxSearchEngineLogo")
         Me.PictureBoxSearchEngineLogo.BackColor = System.Drawing.Color.Transparent
         Me.PictureBoxSearchEngineLogo.ContextMenuStrip = Me.ContextMenuStrip2
         Me.PictureBoxSearchEngineLogo.ErrorImage = Global.SmartNet_Search_Bar.My.Resources.Resources.google
         Me.PictureBoxSearchEngineLogo.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.google
         Me.PictureBoxSearchEngineLogo.InitialImage = Global.SmartNet_Search_Bar.My.Resources.Resources.google
-        resources.ApplyResources(Me.PictureBoxSearchEngineLogo, "PictureBoxSearchEngineLogo")
         Me.PictureBoxSearchEngineLogo.Name = "PictureBoxSearchEngineLogo"
         Me.PictureBoxSearchEngineLogo.TabStop = False
         '
