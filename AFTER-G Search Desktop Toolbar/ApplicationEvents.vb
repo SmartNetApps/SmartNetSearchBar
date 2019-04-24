@@ -25,5 +25,9 @@ Namespace My
                 End Select
             End If
         End Sub
+
+        Private Sub MyApplication_Shutdown(sender As Object, e As EventArgs) Handles Me.Shutdown
+            My.Settings.Save()
+        End Sub
     End Class
 End Namespace

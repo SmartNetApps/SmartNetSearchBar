@@ -38,6 +38,35 @@ Public Class FormSearchBar
         End Select
     End Sub
 
+    Private Sub OpenSearchResults(query As String)
+        Dim url As String
+        Select Case My.Settings.searchengine
+            Case 1
+                url = "https://www.google.fr/search?q=" + query
+            Case 2
+                url = "http://www.bing.com/search?q=" + query
+            Case 3
+                url = "https://fr.search.yahoo.com/search?q=" + query
+            Case 4
+                url = "https://duckduckgo.com/?q=" + query
+            Case 5
+                url = "https://www.qwant.com/?q=" + query
+            Case Else
+                My.Settings.searchengine = 5
+                url = "https://www.qwant.com/?q=" + query
+        End Select
+
+        If My.Settings.OpenBuiltInBrowser = True Then
+            BrowserForm.GeckoWebBrowser1.Navigate(url)
+            BrowserForm.Show()
+        Else
+            Process.Start(url)
+        End If
+
+        My.Settings.SearchHistory.Add(query)
+        My.Settings.Save()
+    End Sub
+
     Private Sub FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem.Click
         Me.Close()
     End Sub
@@ -56,56 +85,12 @@ Public Class FormSearchBar
 
 
     Private Sub SearchButtonClick(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        Dim url As String
-        Select Case My.Settings.searchengine
-            Case 1
-                url = "https://www.google.fr/search?q=" + TextBox1.Text
-            Case 2
-                url = "http://www.bing.com/search?q=" + TextBox1.Text
-            Case 3
-                url = "https://fr.search.yahoo.com/search?q=" + TextBox1.Text
-            Case 4
-                url = "https://duckduckgo.com/?q=" + TextBox1.Text
-            Case 5
-                url = "https://www.qwant.com/?q=" + TextBox1.Text
-            Case Else
-                My.Settings.searchengine = 5
-                url = "https://www.qwant.com/?q=" + TextBox1.Text
-        End Select
-
-        If My.Settings.OpenBuiltInBrowser = True Then
-            BrowserForm.GeckoWebBrowser1.Navigate(url)
-            BrowserForm.Show()
-        Else
-            Process.Start(url)
-        End If
+        OpenSearchResults(TextBox1.Text)
     End Sub
 
     Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
         If e.KeyCode = Keys.Enter Then
-            Dim url As String
-            Select Case My.Settings.searchengine
-                Case 1
-                    url = "https://www.google.fr/search?q=" + TextBox1.Text
-                Case 2
-                    url = "http://www.bing.com/search?q=" + TextBox1.Text
-                Case 3
-                    url = "https://fr.search.yahoo.com/search?q=" + TextBox1.Text
-                Case 4
-                    url = "https://duckduckgo.com/?q=" + TextBox1.Text
-                Case 5
-                    url = "https://www.qwant.com/?q=" + TextBox1.Text
-                Case Else
-                    My.Settings.searchengine = 5
-                    url = "https://www.qwant.com/?q=" + TextBox1.Text
-            End Select
-
-            If My.Settings.OpenBuiltInBrowser = True Then
-                BrowserForm.GeckoWebBrowser1.Navigate(url)
-                BrowserForm.Show()
-            Else
-                Process.Start(url)
-            End If
+            OpenSearchResults(TextBox1.Text)
         End If
     End Sub
 
@@ -190,5 +175,9 @@ Public Class FormSearchBar
 
     Private Sub CentreDaideEnLigneToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CentreDaideEnLigneToolStripMenuItem.Click
         Process.Start("https://smartnetapps.quentinpugeat.fr/searchbar/support/")
+    End Sub
+
+    Private Sub HistoriqueToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HistoriqueToolStripMenuItem.Click
+        SearchHistoryForm.Show()
     End Sub
 End Class

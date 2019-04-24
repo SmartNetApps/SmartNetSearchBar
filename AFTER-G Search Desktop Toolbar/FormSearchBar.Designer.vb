@@ -29,6 +29,7 @@ Partial Class FormSearchBar
         Me.AffichermasquerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FermerLaBarreDoutilsAFTERGSearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.HistoriqueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ParamètresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SupportSurAFTERGAppsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CentreDaideEnLigneToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -81,9 +82,15 @@ Partial Class FormSearchBar
         '
         'ContextMenuStrip2
         '
-        Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ParamètresToolStripMenuItem, Me.SupportSurAFTERGAppsToolStripMenuItem, Me.ToolStripSeparator1, Me.VérifierLesMisesÀJourToolStripMenuItem, Me.QuitterToolStripMenuItem})
+        Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HistoriqueToolStripMenuItem, Me.ParamètresToolStripMenuItem, Me.SupportSurAFTERGAppsToolStripMenuItem, Me.ToolStripSeparator1, Me.VérifierLesMisesÀJourToolStripMenuItem, Me.QuitterToolStripMenuItem})
         Me.ContextMenuStrip2.Name = "ContextMenuStrip2"
         resources.ApplyResources(Me.ContextMenuStrip2, "ContextMenuStrip2")
+        '
+        'HistoriqueToolStripMenuItem
+        '
+        Me.HistoriqueToolStripMenuItem.Image = Global.SmartNet_Search_Bar.My.Resources.Resources.History
+        Me.HistoriqueToolStripMenuItem.Name = "HistoriqueToolStripMenuItem"
+        resources.ApplyResources(Me.HistoriqueToolStripMenuItem, "HistoriqueToolStripMenuItem")
         '
         'ParamètresToolStripMenuItem
         '
@@ -253,4 +260,5 @@ Partial Class FormSearchBar
     Friend WithEvents CentreDaideEnLigneToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EnvoyerVosCommentairesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBoxSearchEngineLogo As PictureBox
+    Friend WithEvents HistoriqueToolStripMenuItem As ToolStripMenuItem
 End Class
