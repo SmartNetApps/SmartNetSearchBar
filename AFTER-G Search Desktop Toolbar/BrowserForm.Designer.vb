@@ -44,8 +44,6 @@ Partial Class BrowserForm
         '
         'FaviconPictureBox
         '
-        Me.FaviconPictureBox.ErrorImage = Global.SmartNet_Search_Bar.My.Resources.Resources.logo1024
-        Me.FaviconPictureBox.InitialImage = Global.SmartNet_Search_Bar.My.Resources.Resources.logo1024
         resources.ApplyResources(Me.FaviconPictureBox, "FaviconPictureBox")
         Me.FaviconPictureBox.Name = "FaviconPictureBox"
         Me.FaviconPictureBox.TabStop = False

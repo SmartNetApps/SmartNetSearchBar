@@ -49,9 +49,9 @@ Partial Class FormUpdater
         '
         'RichTextBoxReleaseNotes
         '
+        resources.ApplyResources(Me.RichTextBoxReleaseNotes, "RichTextBoxReleaseNotes")
         Me.RichTextBoxReleaseNotes.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBoxReleaseNotes.Cursor = System.Windows.Forms.Cursors.Arrow
-        resources.ApplyResources(Me.RichTextBoxReleaseNotes, "RichTextBoxReleaseNotes")
         Me.RichTextBoxReleaseNotes.Name = "RichTextBoxReleaseNotes"
         Me.RichTextBoxReleaseNotes.ReadOnly = True
         '
