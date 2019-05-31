@@ -9,6 +9,8 @@ Namespace My
     ' NetworkAvailabilityChanged : déclenché lorsque la connexion réseau est connectée ou déconnectée.
     Partial Friend Class MyApplication
         Private Sub MyApplication_Startup(sender As Object, e As StartupEventArgs) Handles Me.Startup
+            Gecko.Xpcom.Initialize("Firefox")
+
             If My.Settings.firststart = True Then
                 My.Settings.Upgrade()
                 My.Settings.firststart = False

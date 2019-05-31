@@ -191,6 +191,8 @@ Public Class FormSettings
 ClearCookies:
         Try
             Gecko.CookieManager.RemoveAll()
+            DeleteCookiesButton.Text = "Cookies supprimés"
+            DeleteCookiesButton.Enabled = False
         Catch ex As Exception
             If MessageBox.Show(ex.Message, "SmartNet Search Bar", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) = DialogResult.Retry Then
                 GoTo ClearCookies
@@ -202,6 +204,8 @@ ClearCookies:
 ClearCache:
         Try
             Gecko.Cache.CacheService.Clear(Gecko.Cache.CacheStoragePolicy.Anywhere)
+            DeleteCache.Text = "Cache supprimé"
+            DeleteCache.Enabled = False
         Catch ex As Exception
             If MessageBox.Show(ex.Message, "SmartNet Search Bar", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) = DialogResult.Retry Then
                 GoTo ClearCache
