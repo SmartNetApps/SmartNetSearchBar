@@ -1,6 +1,6 @@
 # SmartNet Search Bar
 
-SmartNet Browser est un widget de recherche pour le bureau construit en Visual Basic sur le framework Microsoft .NET.
+SmartNet Search Bar est un widget de recherche pour le bureau construit en Visual Basic sur le framework Microsoft .NET.
 
 ## Besoin d'aide ?
 
@@ -19,6 +19,6 @@ Il vous faudra réparer les paquets NuGet et sélectionner la configuration "x86
 
 SmartNet Search Bar est un logiciel libre ; vous pouvez le redistribuer ou le modifier suivant les termes de la **GNU General Public License** telle que publiée par la Free Software Foundation ; soit la version 3 de la licence, soit (à votre gré) toute version ultérieure.
 
-SmartNet Browser est distribué dans l'espoir qu'il sera utile, mais **SANS AUCUNE GARANTIE** ; **sans même la garantie tacite de QUALITÉ MARCHANDE** ou d'**ADÉQUATION à UN BUT PARTICULIER**. Consultez la GNU General Public License pour plus de détails.
+SmartNet Search Bar est distribué dans l'espoir qu'il sera utile, mais **SANS AUCUNE GARANTIE** ; **sans même la garantie tacite de QUALITÉ MARCHANDE** ou d'**ADÉQUATION à UN BUT PARTICULIER**. Consultez la GNU General Public License pour plus de détails.
 
 Vous devez avoir reçu une copie de la GNU General Public License en même temps que ce programme ; si ce n'est pas le cas, consultez <http://www.gnu.org/licenses>
