@@ -2,6 +2,9 @@
 
 SmartNet Search Bar est un widget de recherche pour le bureau construit en Visual Basic sur le framework Microsoft .NET.
 
+## Logiciel abandonné
+Le maintien de ce dépôt a été interrompu. Veuillez consulter [notre blog](https://www.lesmajesticiels.org/blog/article/fin_de_vie_de_smartnet_search_bar) pour en apprendre plus.
+
 ## Besoin d'aide ?
 
 Vous trouverez de l'aide pour SmartNet Search Bar :
